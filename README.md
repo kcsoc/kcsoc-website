@@ -4,15 +4,17 @@
 
 KCSoc is creating a new and improved website using React, Gatsby and GraphQL. We are also going to create an accompanying mobile app which will synchronise with the website. 
 
+---
+
 ## Task for Krupa: Styling the website
 
 Styling the website will require knowledge of the following: 
 
-Git and Github (this allows us to easily collaborate on the same code)
-CSS (the bread and butter for styling websites)
-Flexbox (Advanced CSS)
-SCSS and SASS (CSS Preprocessors for making life a little easier)
-CSS Modules (for modularising CSS)
+* Git and Github (this allows us to easily collaborate on the same code)
+* CSS (the bread and butter for styling websites)
+* Flexbox (Advanced CSS)
+* SCSS and SASS (CSS Preprocessors for making life a little easier)
+* CSS Modules (for modularising CSS)
 
 When you are ready to start coding download the following:
 
