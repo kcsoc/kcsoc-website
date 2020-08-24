@@ -1,1 +1,59 @@
+hmtl,
+body {
+    font-family: arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
+.banner {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+	color: #333;
+	background-image: url("/simon-migaj.jpg")
+}
+
+.banner-text {
+    width: 60%;
+    padding: 35% 10% 0 10%;
+    text-align: center;
+}
+
+.banner-text h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+}
+
+// Header css
+
+#header {
+    background-color: rgba(0, 0, 0, 0.2);
+    /*Opacity start*/
+    // -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    // filter: alpha(opacity=80);
+    // -moz-opacity: 0.80;
+    // -khtml-opacity: 0.8;
+    // opacity: 0.8;
+    /*Opacity end*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+}
+#header #header-content {
+    display: flex;
+    margin: 0 40px;
+    padding: 20px;
+}
