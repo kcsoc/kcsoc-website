@@ -47,6 +47,7 @@
 .logo {
     display: block;
     margin: 10px auto 30px auto;
+    min-height: 91px;
     animation: transitionIn 1s ease-in;
 }
 
@@ -66,7 +67,6 @@
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    /* color: #1c1c1c; */
     color: white;
     background-color: rgba(0, 0, 0, 0);
 
