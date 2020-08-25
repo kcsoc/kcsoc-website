@@ -1,0 +1,125 @@
+.background-image {
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    text-align: center;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.background-image,
+.background-image:before {
+    background: 50% 50% / cover;
+}
+
+.background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: url("/simon-migaj-dark-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    height: 100vh;
+}
+.container {
+    // z-index: 2;
+    position: absolute;
+    top: 100vh;
+    background: white;
+    width: 100%;
+    color: grey;
+    padding: 1.4rem;
+}
+
+.inner-container {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+
+    animation: transitionIn 1s ease-in;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.title {
+    font-size: 9rem;
+    margin: 0 0 5rem;
+    font-family: "Cookie", cursive;
+}
+
+.subtitle {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Scroll down mouse */
+
+.scroll-down {
+    align-items: center;
+    bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+
+    animation: transitionIn 1s ease-in;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.mouse {
+    border: 2px solid white;
+    border-radius: 2rem;
+    display: flex;
+    margin-bottom: 0.5rem;
+    height: 3rem;
+    width: 1.5rem;
+
+    span {
+        background-color: white;
+        border-radius: 50%;
+        display: block;
+        height: 0.5rem;
+        margin: auto;
+        width: 0.5rem;
+
+        animation: move-wheel 1.5s linear infinite;
+    }
+}
+
+@keyframes move-wheel {
+    0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}

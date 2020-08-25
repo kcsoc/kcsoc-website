@@ -7,8 +7,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    padding-top: 1rem;
     height: 100vh;
+    padding-top: 1rem;
+    position: relative;
+
+    background-attachment: fixed;
+    
 }
 
 .header {
@@ -131,7 +135,7 @@
         margin: auto;
         width: 0.5rem;
 
-        animation: move-wheel 1s linear infinite;
+        animation: move-wheel 1.5s linear infinite;
     }
 }
 
@@ -147,7 +151,7 @@
     }
 }
 
-#about {
-    height: 100vh;
+.about {
+    height: 1000px;
     width: 100%;
 }

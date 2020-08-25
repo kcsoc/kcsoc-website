@@ -1,0 +1,41 @@
+.header {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    display: flex;
+    height: 8rem;
+    justify-content: space-between;
+    padding: 0 3.2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    ul {
+        display: flex;
+        height: 100%;
+
+        li {
+            list-style-type: none;
+
+            a {
+                color: white;
+                font-family: "Montserrat", sans-serif;
+                font-size: 20px;
+                font-weight: 300;
+                letter-spacing: 2px;
+                padding: 0 2rem;
+                text-decoration: none;
+                transition: 0.5s;
+
+                &:hover {
+                    color: #95a5a6;
+                }
+            }
+        }
+    }
+}
+
+.logo {
+    margin: 0;
+    padding: 0 3rem;
+}

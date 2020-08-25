@@ -52,6 +52,10 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
+
+                <div className={homePageStyles.about}>
+                    <h1>Hello</h1>
+                </div>
             </div>
         </>
     )

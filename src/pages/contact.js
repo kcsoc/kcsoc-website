@@ -1,10 +1,13 @@
 import React from "react"
-import Layout from '../components/layout'
+import Layout from "../components/layout"
+import LandingImage from "../components/landingImage"
+import FadeIn from "../components/fadeIn"
 
 export default function Home() {
-  return (
-    <Layout>
-      <h1>Contact page</h1>
-    </Layout>
-  )
+    return (
+        <FadeIn>
+            <LandingImage />
+            
+        </FadeIn>
+    )
 }
