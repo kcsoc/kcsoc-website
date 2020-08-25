@@ -9,7 +9,7 @@ export default function Header() {
             <img
                 className={headerStyles.logo}
                 alt="kcsoc-logo"
-                src="KCSoc-logo-white.png"
+                src="/KCSoc-logo-white.png"
             />
             <nav>
                 <ul>
