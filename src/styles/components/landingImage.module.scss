@@ -46,20 +46,13 @@
     opacity: 0;
 }
 
-@keyframes transitionIn {
-    from {
-        opacity: 0;
-    }
 
-    to {
-        opacity: 1;
-    }
-}
 
 .title {
     font-size: 9rem;
-    margin: 0 0 5rem;
     font-family: "Cookie", cursive;
+    letter-spacing: 3px;
+    margin: 0 0 5rem;
 }
 
 .subtitle {
@@ -82,6 +75,16 @@
     animation-delay: 2s;
     animation-fill-mode: forwards;
     opacity: 0;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .mouse {

@@ -1,5 +1,4 @@
 .container {
-    // z-index: 2;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -8,13 +7,49 @@
     width: 100%;
     height: 56.26vw;
     color: grey;
-    padding: 1.2rem 8rem 1.2rem;
+    padding: 8rem 8rem 1.2rem;
     box-sizing: border-box;
+}
+
+.sheet {
+    background-image: url(/watercolor-2.jpg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    padding: 4rem 4rem;
+    border-radius: 4rem;
+    box-shadow: 0 0 40px #999;
 }
 
 .h1 {
     color: white;
     opacity: 0;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: Montserrat;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #ff72c0, #55e7fc);
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 4px #999;
+    background-position: center;
+    transition: 0.5s;
+
+    &:hover {
+        color: #c0c0c0;
+    }
 }
 
 .about-info {
@@ -25,7 +60,7 @@
     align-items: center;
 
     p {
-        margin-right:5rem;
+        margin-right: 5rem;
     }
 }
 
@@ -33,6 +68,3 @@
     height: 500px;
 }
 
-.prabhupada {
-    height: 300px;
-}

@@ -1,21 +1,22 @@
 import React from "react"
 import ReactPlayer from "react-player"
-
 import getInvolvedStyles from "../styles/components/getInvolved.module.scss"
+import Fade from "react-reveal/Fade"
 
 export default function GetInvolved() {
     return (
         <div className={getInvolvedStyles.container}>
-            <ReactPlayer
-                url="https://www.youtube.com/watch?v=s6QJBk0NZEM"
-                playing={true}
-                controls={true}
-                width="810px"
-                height="456px"
-            />
-            <h1>Be Part of Something Amazing</h1>
-            <h2>Sounds good?</h2>
-            <button>Get Involved!</button>
+            <div className={getInvolvedStyles.sheet}>
+                <ReactPlayer
+                    url="https://www.youtube.com/watch?v=s6QJBk0NZEM"
+                    controls={true}
+                    width="810px"
+                    height="456px"
+                />
+                <h1>Be Part of Something Amazing</h1>
+                <a className={getInvolvedStyles.btn}>Get Involved</a>
+            </div>
+
             <div className={getInvolvedStyles.aboutInfo}>
                 <div className={getInvolvedStyles.about}>
                     <p>
@@ -34,11 +35,13 @@ export default function GetInvolved() {
                         like-minded people.
                     </p>
                 </div>
-                <img
-                    className={getInvolvedStyles.meditator}
-                    alt="meditation"
-                    src="/Nikita.png"
-                />
+                <Fade>
+                    <img
+                        className={getInvolvedStyles.meditator}
+                        alt="meditation"
+                        src="/Nikita.png"
+                    />
+                </Fade>
             </div>
         </div>
     )

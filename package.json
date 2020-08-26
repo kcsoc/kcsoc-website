@@ -21,7 +21,8 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
-    "react-player": "^2.6.1"
+    "react-player": "^2.6.1",
+    "react-reveal": "^1.2.2"
   },
   "devDependencies": {
     "prettier": "2.0.5"
