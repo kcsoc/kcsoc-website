@@ -31,15 +31,7 @@
     z-index: -1;
     height: 100vh;
 }
-.container {
-    // z-index: 2;
-    position: absolute;
-    top: 100vh;
-    background: white;
-    width: 100%;
-    color: grey;
-    padding: 1.4rem;
-}
+
 
 .inner-container {
     background-color: rgba(0, 0, 0, 0);
@@ -123,3 +115,5 @@
         transform: translateY(0rem);
     }
 }
+
+

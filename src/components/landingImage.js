@@ -1,6 +1,5 @@
 import React from "react"
 import Header from "./header"
-
 import landingImageStyles from "../styles/components/landingImage.module.scss"
 
 export default function landingImage() {
@@ -21,19 +20,6 @@ export default function landingImage() {
                         <span></span>
                     </div>
                 </a>
-            </div>
-
-            <div className={landingImageStyles.container}>
-                <p>Hello</p>
-                <p>Hello</p>
-                <p>Hello</p>
-                <p>Hello</p>
-                <p>Hello</p>
-                <p>Hello</p>
-                <p>Hello</p>
-                <p>Hello</p>
-                <p>Hello</p>
-                <p>Hello</p>
             </div>
         </>
     )

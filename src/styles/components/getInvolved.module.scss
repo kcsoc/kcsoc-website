@@ -1,0 +1,30 @@
+.container {
+    // z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 100vh;
+    background: url("/watercolor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 56.26vw;
+    color: grey;
+    padding: 1.2rem 8rem;
+    box-sizing: border-box;
+}
+
+.about-info {
+    max-width: 1500px;
+    line-height: 2;
+}
+
+.meditator {
+    height: 500px;
+    float: right;
+}
+
+.prabhupada {
+    height: 300px;
+}
