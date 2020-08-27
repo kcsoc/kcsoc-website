@@ -1,46 +1,21 @@
-import React, { useState } from "react"
+import React from "react"
 import neverForgetStyles from "../styles/components/neverForget.module.scss"
 import VisibilitySensor from "react-visibility-sensor"
+import Header from "./header"
 
-export default function NeverForget({ darken }) {
-    const trigger1 = () => {
-        console.log("trigger1")
-    }
-
-    const trigger2 = () => {
-        console.log("trigger2")
-    }
-
-    const trigger3 = () => {
-        console.log("trigger3")
-    }
-
-    const trigger4 = () => {
-        console.log("trigger4")
-    }
-
+export default function NeverForget({ trigger }) {
     return (
-        <VisibilitySensor partialVisibility={true} onChange={trigger1}>
-            <div className={neverForgetStyles.wrapper}>
+        <div className={neverForgetStyles.wrapper}>
+            <Header />
+
+            <div className={neverForgetStyles.messageWrapper}>
                 <h2>Never forget the day you went from fitting in to...</h2>
+                <h1 className={neverForgetStyles.message}>STANDING OUT</h1>
 
-                <div>
-                   <h1 className={neverForgetStyles.message}>STANDING OUT</h1>
-
-                    <VisibilitySensor
-                        partialVisibility={true}
-                        onChange={trigger2}
-                    >
-                        <p className={neverForgetStyles.trigger}>Trigger 2</p>
-                    </VisibilitySensor>
-                    <VisibilitySensor
-                        partialVisibility={true}
-                        onChange={darken}
-                    >
-                        <p className={neverForgetStyles.trigger}>Trigger 3</p>
-                    </VisibilitySensor>
-                </div>
+                <VisibilitySensor partialVisibility={true} onChange={trigger}>
+                    <p className={neverForgetStyles.trigger}>Trigger 3</p>
+                </VisibilitySensor>
             </div>
-        </VisibilitySensor>
+        </div>
     )
 }

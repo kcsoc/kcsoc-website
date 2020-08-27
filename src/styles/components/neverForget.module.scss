@@ -1,18 +1,28 @@
 .wrapper {
-    margin-top: 30vh;
+    height: 100vh;
     transition: background 0.2s ease;
     z-index: 1;
     width: 100vw;
     display: flex;
     align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 0;
+}
+
+.message-wrapper {
+    display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    height: 100%;
 }
 
 .trigger {
-    margin-top: 20vh;
-    font-size: 10px;
+    font-size: 1px;
+    position: absolute;
+    bottom: 0;
 }
 
 .message {

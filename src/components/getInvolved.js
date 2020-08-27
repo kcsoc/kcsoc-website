@@ -59,7 +59,7 @@ export default function GetInvolved() {
 
             <QuoteSlider />
 
-            <NeverForget darken={darken} />
+            <NeverForget trigger={darken} />
         </div>
     )
 }
