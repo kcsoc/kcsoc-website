@@ -1,12 +1,6 @@
 import React from "react"
-import LandingImage from "../components/landingImage"
-import FadeIn from "../components/fadeIn"
+import QuoteSlider from "../components/quoteSlider"
 
-export default function Home() {
-    return (
-        <FadeIn>
-            <LandingImage />
-            
-        </FadeIn>
-    )
+export default function Contact() {
+    return <QuoteSlider />
 }
