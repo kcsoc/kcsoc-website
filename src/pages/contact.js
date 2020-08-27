@@ -1,6 +1,6 @@
 import React from "react"
-import QuoteSlider from "../components/quoteSlider"
+import NeverForget from "../components/neverForget"
 
 export default function Contact() {
-    return <QuoteSlider />
+    return <NeverForget />
 }

@@ -1,12 +1,23 @@
-import React from "react"
+import React, { useState } from "react"
 import ReactPlayer from "react-player"
 import getInvolvedStyles from "../styles/components/getInvolved.module.scss"
 import Fade from "react-reveal/Fade"
 import QuoteSlider from "../components/quoteSlider"
+import NeverForget from "../components/neverForget"
 
 export default function GetInvolved() {
+    const [dark, setDark] = useState(false)
+
+    const darken = isVisible => {
+        console.log("Element is now %s", isVisible ? "visible" : "hidden")
+        setDark(!dark)
+    }
     return (
-        <div className={getInvolvedStyles.container}>
+        <div
+            className={`${getInvolvedStyles.container} ${
+                !dark ? getInvolvedStyles.black : ""
+            }`}
+        >
             <div className={getInvolvedStyles.sheet}>
                 <ReactPlayer
                     url="https://www.youtube.com/watch?v=s6QJBk0NZEM"
@@ -45,14 +56,10 @@ export default function GetInvolved() {
                     />
                 </div>
             </Fade>
-            <h2>Never forget </h2>
-            <h2>the day you went</h2>
-            <h2>from fitting in to</h2>
-            <h1>
-                <em>standing out</em>
-            </h1>
 
             <QuoteSlider />
+
+            <NeverForget darken={darken} />
         </div>
     )
 }

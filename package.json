@@ -23,7 +23,8 @@
     "react-helmet": "^6.1.0",
     "react-player": "^2.6.1",
     "react-responsive-carousel": "^3.2.9",
-    "react-reveal": "^1.2.2"
+    "react-reveal": "^1.2.2",
+    "react-visibility-sensor": "^5.1.1"
   },
   "devDependencies": {
     "prettier": "2.0.5"

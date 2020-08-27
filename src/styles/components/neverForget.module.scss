@@ -1,0 +1,20 @@
+.wrapper {
+    margin-top: 30vh;
+    transition: background 0.2s ease;
+    z-index: 1;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.trigger {
+    margin-top: 20vh;
+    font-size: 10px;
+}
+
+.message {
+    color: white;
+}

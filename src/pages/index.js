@@ -5,10 +5,11 @@ import GetInvolved from "../components/getInvolved"
 
 export default function Home() {
     return (
-        <FadeIn>
-            <LandingImage />
-            <GetInvolved />
-     
-        </FadeIn>
+        <div>
+            <FadeIn>
+                <LandingImage />
+                <GetInvolved />
+            </FadeIn>
+        </div>
     )
 }

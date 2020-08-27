@@ -8,6 +8,12 @@
     color: grey;
     padding: 8rem 8rem 1.2rem;
     box-sizing: border-box;
+
+    transition: background 0.2s ease;
+}
+
+.black {
+    background-color: black;
 }
 
 .sheet {
@@ -66,4 +72,3 @@
 .meditator {
     height: 500px;
 }
-
