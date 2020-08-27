@@ -3,9 +3,13 @@ import { Link } from "gatsby"
 
 import headerStyles from "../styles/components/header.module.scss"
 
-export default function Header() {
+export default function Header({ isOpaque }) {
     return (
-        <header className={headerStyles.header}>
+        <header
+            className={`${headerStyles.header} ${
+                isOpaque ? "" : headerStyles.transparent
+            }`}
+        >
             <img
                 className={headerStyles.logo}
                 alt="kcsoc-logo"

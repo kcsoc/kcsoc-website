@@ -6,7 +6,7 @@ export default function landingImage() {
     return (
         <>
             <div className={landingImageStyles.backgroundImage}>
-                <Header />
+                <Header isOpaque={true} />
 
                 <div className={landingImageStyles.innerContainer}>
                     <h1 className={landingImageStyles.title}>Find Yourself</h1>

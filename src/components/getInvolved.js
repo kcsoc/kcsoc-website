@@ -1,21 +1,22 @@
 import React, { useState } from "react"
+import ReactDOM from "react-dom"
 import ReactPlayer from "react-player"
 import getInvolvedStyles from "../styles/components/getInvolved.module.scss"
 import Fade from "react-reveal/Fade"
 import QuoteSlider from "../components/quoteSlider"
 import NeverForget from "../components/neverForget"
+import Header from "../components/header"
 
 export default function GetInvolved() {
-    const [dark, setDark] = useState(false)
-
-    const darken = isVisible => {
-        console.log("Element is now %s", isVisible ? "visible" : "hidden")
-        setDark(!dark)
+    const [isTriggered, setIsTriggered] = useState(false)
+    const trigger = isVisible => {
+        setIsTriggered(!isTriggered)
     }
+    console.log(isTriggered)
     return (
         <div
             className={`${getInvolvedStyles.container} ${
-                !dark ? getInvolvedStyles.black : ""
+                !isTriggered ? getInvolvedStyles.black : ""
             }`}
         >
             <div className={getInvolvedStyles.sheet}>
@@ -52,14 +53,14 @@ export default function GetInvolved() {
                     <img
                         className={getInvolvedStyles.meditator}
                         alt="meditation"
-                        src="/Nikita.png"
+                        src="/lotus-position.png"
                     />
                 </div>
             </Fade>
 
             <QuoteSlider />
 
-            <NeverForget trigger={darken} />
+            <NeverForget trigger={trigger} isTriggered={isTriggered}/>
         </div>
     )
 }

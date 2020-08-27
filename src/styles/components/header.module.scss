@@ -9,6 +9,7 @@
     position: absolute;
     top: 0;
     width: 100%;
+    transition: opacity 0.5s linear;
 
     ul {
         display: flex;
@@ -40,4 +41,9 @@
     cursor: pointer;
     margin: 0;
     padding: 0 3rem;
+}
+
+.transparent {
+    visibility: hidden;
+    opacity: 0;
 }
