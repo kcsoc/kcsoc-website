@@ -1,22 +1,24 @@
 .map-container {
+    margin-top: 50px;
     position: relative;
     width: 50%;
 }
 
 .outer-container {
     display: flex;
+    height: 600px;
+
     margin: auto;
     max-width: 1000px;
-    height: 500px;
 }
 
 .info-container {
-    width: 50%;
+    box-sizing: border-box;
     display: flex;
-    height: 100%;
     flex-direction: column;
     justify-content: center;
     transition: opacity 0.1s ease-in-out;
+    width: 50%;
 }
 
 .transparent {
@@ -53,7 +55,7 @@
     left: 200px;
 }
 
-.mmu {
+.manchester {
     top: 290px;
     left: 275px;
 }
@@ -68,7 +70,7 @@
     left: 295px;
 }
 
-.dmu {
+.leicester {
     top: 350px;
     left: 303px;
 }
@@ -98,7 +100,7 @@
     left: 300px;
 }
 
-.hertfordshire {
+.hatfield {
     top: 385px;
     left: 330px;
 }
@@ -118,7 +120,7 @@
     left: 260px;
 }
 
-.kent {
+.canterbury {
     top: 410px;
     left: 375px;
 }

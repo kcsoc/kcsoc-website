@@ -23,13 +23,155 @@ export default function UniversityMap() {
                         <h1>
                             32 KCSocs in 17 different locations around the UK!
                         </h1>
-                        <h2>Click a pointer on the map to find out more</h2>
                     </>
                 )
 
             case "glasgow":
-                return <h2>You've selected Glasgow!</h2>
+                return (
+                    <>
+                        <h2>Glasgow</h2>
+                        <p>University of Glasgow KCSoc</p>
+                    </>
+                )
 
+            case "edinburgh":
+                return (
+                    <>
+                        <h2>Edinburgh</h2>
+                        <p>University of Edinburgh KCSoc</p>
+                    </>
+                )
+
+            case "manchester":
+                return (
+                    <>
+                        <h2>Manchester</h2>
+                        <p>Manchester Metropolitan University KCSoc</p>
+                    </>
+                )
+
+            case "nottingham":
+                return (
+                    <>
+                        <h2>Nottingham</h2>
+                        <p>University of Nottingham KCSoc</p>
+                    </>
+                )
+
+            case "loughborough":
+                return (
+                    <>
+                        <h2>Loughborough</h2>
+                        <p>Loughborough University KCSoc</p>
+                    </>
+                )
+
+            case "leicester":
+                return (
+                    <>
+                        <h2>Leicester</h2>
+                        <p>De Montfort University KCSoc</p>
+                    </>
+                )
+
+            case "coventry":
+                return (
+                    <>
+                        <h2>Coventry</h2>
+                        <p>Coventry University KCSoc</p>
+                    </>
+                )
+
+            case "warwick":
+                return (
+                    <>
+                        <h2>Warwick</h2>
+                        <p>University of Warwick KCSoc</p>
+                    </>
+                )
+
+            case "birmingham":
+                return (
+                    <>
+                        <h2>Birmingham</h2>
+                        <p>Aston University KCSoc</p>
+                        <p>Birmingham City University KCSoc</p>
+                        <p>University of Birmingham KCSoc</p>
+                    </>
+                )
+            case "cambridge":
+                return (
+                    <>
+                        <h2>Cambridge</h2>
+                        <p>University of Cambridge KCSoc</p>
+                    </>
+                )
+            case "oxford":
+                return (
+                    <>
+                        <h2>Oxford</h2>
+                        <p>University of Oxford KCSoc</p>
+                    </>
+                )
+            case "hatfield":
+                return (
+                    <>
+                        <h2>Hatfield</h2>
+                        <p>
+                            University of Hertfordshire (College Lane Campus)
+                            KCSoc
+                        </p>
+                    </>
+                )
+            case "bristol":
+                return (
+                    <>
+                        <h2>Bristol</h2>
+                        <p>University of Bristol KCSoc</p>
+                    </>
+                )
+            case "reading":
+                return (
+                    <div>
+                        <h2>Reading</h2>
+                        <p>University of Reading KCSoc</p>
+                    </div>
+                )
+
+            case "london":
+                return (
+                    <div>
+                        <h2>London</h2>
+
+                        <p>Brunel University KCSoc</p>
+                        <p>City KCSoc</p>
+                        <p>Imperial College London KCSoc</p>
+                        <p>King's College London KCSoc</p>
+                        <p>Kingston University KCSoc</p>
+                        <p>London Metropolitan University KCSoc</p>
+                        <p>Queen Mary KCSoc</p>
+                        <p>Roehampton University KCSoc</p>
+                        <p>SOAS KCSoc</p>
+                        <p>St George's KCSoc</p>
+                        <p>University College London KCSoc</p>
+                        <p>University of East London KCSoc</p>
+                    </div>
+                )
+
+            case "canterbury":
+                return (
+                    <>
+                        <h2>Canterbury</h2>
+                        <p>University of Kent KCSoc</p>
+                    </>
+                )
+            case "southampton":
+                return (
+                    <>
+                        <h2>Southampton</h2>
+                        <p>University of Southampton KCSoc</p>
+                    </>
+                )
             default:
                 return <h2>You've selected {selected}!</h2>
         }
@@ -60,11 +202,11 @@ export default function UniversityMap() {
                     }}
                 />
                 <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.mmu}`}
+                    className={`${universityMapStyles.pointer} ${universityMapStyles.manchester}`}
                     src="map-pointer.png"
-                    alt="mmu"
+                    alt="manchester"
                     onClick={() => {
-                        setInfo("mmu")
+                        setInfo("manchester")
                     }}
                 />
                 <img
@@ -84,11 +226,11 @@ export default function UniversityMap() {
                     }}
                 />
                 <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.dmu}`}
+                    className={`${universityMapStyles.pointer} ${universityMapStyles.leicester}`}
                     src="map-pointer.png"
-                    alt="dmu"
+                    alt="leicester"
                     onClick={() => {
-                        setInfo("dmu")
+                        setInfo("leicester")
                     }}
                 />
                 <img
@@ -133,11 +275,11 @@ export default function UniversityMap() {
                 />
 
                 <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.hertfordshire}`}
+                    className={`${universityMapStyles.pointer} ${universityMapStyles.hatfield}`}
                     src="map-pointer.png"
-                    alt="hertfordshire"
+                    alt="hatfield"
                     onClick={() => {
-                        setInfo("hertfordshire")
+                        setInfo("hatfield")
                     }}
                 />
 
@@ -169,11 +311,11 @@ export default function UniversityMap() {
                 />
 
                 <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.kent}`}
+                    className={`${universityMapStyles.pointer} ${universityMapStyles.canterbury}`}
                     src="map-pointer.png"
-                    alt="kent"
+                    alt="canterbury"
                     onClick={() => {
-                        setInfo("kent")
+                        setInfo("canterbury")
                     }}
                 />
 
