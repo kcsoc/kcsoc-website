@@ -1,75 +1,156 @@
 import React from "react"
-import Layout from "../components/layout"
+import Header from "../components/header"
+import FadeIn from "../components/fadeIn"
+import Fade from "react-reveal/Fade"
 
 export default function Home() {
     return (
-        <Layout>
-            <h1>Home page</h1>
-            <div>
-                <h1 className="home-message">Be part of something amazing</h1>
-                <h3>We are the Krishna Consciousness Society</h3>
-                <button>First time here?</button>
-                <button>Upcoming Events</button>
-            </div>
-
-            <div>
-                <h2>Make spirituality practical</h2>
-                <h4>
-                    We organise life-changing events, seminars, retreats, talks,
-                    discussion groups and courses.
-                </h4>
-
-                <h2>What we do</h2>
+        <FadeIn>
+            <Header isOpaque={true} dark={true} />
+            <Fade>
+                <h1>About</h1>
+                <h2> Fuelled by Knowledge and Devotion</h2>
                 <p>
-                    The Krishna Consciousness Society is a platform which brings
-                    together deep thinkers and spiritual seekers for interactive
-                    seminars, refreshing retreats and association of like-minded
-                    people.
+                    Through a dynamic philosophy of self-realization, utilizing
+                    spiritual processes like meditation and yoga for the modern
+                    day, this society is a sacred space for attaining wisdom to
+                    lead a successful and more importantly, a happy life.
                 </p>
                 <p>
-                    Would you say you’re a deep thinker? Are you interested in
-                    finding out how to apply spiritual principles to your every
-                    day life, to not only benefit your life, but the lives of
-                    others? The Krishna Consciousness Society offers a platform
-                    to evolve the mind, give direction in life, and reveal a
-                    deeper level of insight with like-minded people.
+                    We currently have regular weekly events in the UK, as well
+                    as in Canada and Slovenia.
                 </p>
-            </div>
-
-            <h2>
-                Never forget the day you went from fitting in to standing out.
-            </h2>
-
-            <div>
-                <h2>Join thousands of students attending our regular events</h2>
-                <h4>
-                    Join the Krishna Consciousness family - it might just change
-                    your life
-                </h4>
-                <button>Sign up</button>
-            </div>
-
-            <div>
-                <h2>Follow us on Instagram</h2>
-                <img src="/kcsoc-logo-color.jpg" alt="round logo" />
-            </div>
-
-            <h2>Fuelled by knowledge and devotion</h2>
-
-            <p>
-                Through a <b>dynamic philosophy</b> of <b>self-realization</b>,
-                utilizing spiritual processes like <b>meditation</b> and{" "}
-                <b>yoga</b> for the modern day, this society is a sacred space
-                for <b>attaining wisdom</b> to lead a successful and more
-                importantly, <b>a happy life</b>.
-            </p>
-
-            <p>
-                We currently have regular weekly events in the UK, as well as in
-                Canada and Slovenia.
-            </p>
-
-            <button>Upcoming events</button>
-        </Layout>
+            </Fade>
+            <Fade>
+                <h1>Philosophy</h1>
+                <h2>Mind</h2>
+                <p>
+                    Yoga wisdom describes the mind as being harder to control
+                    than the raging wind. And we can relate, right? When the
+                    assignment deadlines are looming and the stresses of life
+                    seem to be never-ending, it’s so hard to get our stubborn
+                    minds to focus and block everything else out. We get so
+                    distracted by the most insignificant things and face a
+                    constant internal battle.
+                </p>
+                <p>
+                    That’s where meditation comes in! We’re the biggest
+                    meditation fans at KCSoc and we want to make it as
+                    accessible as possible for students at uni. Combined with
+                    timeless teachings from ancient yoga texts hand-picked by
+                    monks specifically for students, you’ll leave our weekly
+                    events with a greater sense of focus, clarity and feeling
+                    much better equipped to take on the world.
+                </p>
+                <h2>Body</h2>
+                <p>
+                    Firstly, KCSoc is a society of givers and whenever we meet
+                    up, we’re not letting you go without feeding you a
+                    scrumptious meal of vegetarian goodness. Made in a
+                    karma-free way with lots and lots of love, it’s soul food.
+                    On the house, of course – we’ll look after your bank balance
+                    as well as your body!
+                </p>
+                <p>
+                    At our termly retreats and our big summer getaway at the end
+                    of the year, we’ll give you the complete yoga experience.
+                    That means the real deal taught by experts who are
+                    practically living the yoga lifestyle and aren’t driven by
+                    the money motive.
+                </p>
+                <h2>Soul</h2>
+                <p>
+                    So here’s the big fat one that almost always gets missed
+                    out. All of us at KCSoc want to take care of you and that
+                    means the WHOLE you: your body, mind and soul. That little
+                    spiritual spark inside of you that gives life to the rest of
+                    your body is a huge deal!
+                </p>
+                <p>
+                    We’re a pretty spiritual bunch and love talking about deep
+                    topics and thinking outside the box. You know what they say,
+                    right? Only dead fish go with the flow! We don’t stick to
+                    the status quo and want to create a community of young
+                    people who are conscious that there’s got to be more to
+                    life. If we have so many comforts and conveniences, why do
+                    we often find ourselves feeling dissatisfied, empty and
+                    lacking in purpose?
+                </p>
+                <p>
+                    Feeding our spiritual sides and taking you on a journey of
+                    self-realisation is a big part of the KCSoc mission. As you
+                    gain a deeper sense of who you are and make lifelong friends
+                    with like-minded people, you’ll soon find a greater vision
+                    for your life unfolding that you wouldn’t have been able to
+                    tap into otherwise. We’ve seen countless young people
+                    completely transform after joining KCSoc over the years and
+                    now they’re our there in the big wide world contributing to
+                    society in massive and previously unthinkable ways.
+                </p>
+            </Fade>
+            <Fade>
+                <div>
+                    <h1>Inspiration</h1>
+                    <h2>A.C. Bhaktivedanta Swami Prabhupada</h2>
+                    <Fade>
+                        <img src="/Prabhupada-clear.png" alt="Prabhupada" />
+                    </Fade>
+                    <p>
+                        KCSoc draws from the philosophical teachings of A.C.
+                        Bhaktivedanta Swami Prabhupada (known as Srila
+                        Prabhupada), a swami and saint who travelled to the West
+                        in order to complete his mission to spread the sublime
+                        bliss of spirtuality: the joy of Krishna Consciousness.
+                    </p>
+                    <p>
+                        In 1965, at the age of 69, Srila Prabhupada travelled to
+                        New York City aboard a cargo ship. The journey was
+                        treacherous, and the elderly spiritual teacher suffered
+                        two heart attacks aboard the ship. Arriving in the
+                        United States with just 7 dollars in Indian rupees and
+                        his translations of sacred Sanskrit texts, he began to
+                        spread the teachings of Krishna Consciousness. His
+                        spiritual message resonated with many young people, some
+                        of whom came forward to become serious students of the
+                        Krishna tradition. With the help of these students,
+                        Srila Prabhupada rented a small storefront on New York’s
+                        Lower East Side to use as a temple. On July 11, 1966, he
+                        officially registered his organization in the state of
+                        New York, formally founding the International Society
+                        for Krishna Consciousness (ISKCON).
+                    </p>
+                    <p>
+                        In the 11 years that followed, Srila Prabhupada circled
+                        the globe 14 times on lecture tours, bringing the
+                        teachings of Lord Krishna to thousands of people on 6
+                        continents. Men and women from all backgrounds and walks
+                        of life came forward to accept his message, and with
+                        their help, Srila Prabhupada established ISKCON centers
+                        and projects throughout the world. Under his
+                        inspiration, ISCKON established temples, rural
+                        communities, and educational institutions and started
+                        what would become the world’s largest vegetarian food
+                        relief program. With the desire to nourish the roots of
+                        Krishna Consciousness in its home, Srila Prabhupada
+                        returned to India several times, where he sparked a
+                        revival of the ancient tradition. In India, he opened
+                        dozens of temples, including large centers in the
+                        auspicious towns of Vrindavana and Mayapur.
+                    </p>
+                    <p>
+                        Srila Prabhupada’s most significant contributions,
+                        perhaps, are his books. He authored over 70 volumes on
+                        the Krishna philosophy, which are highly respected by
+                        scholars for their authority, depth and fidelity to the
+                        tradition. Several of his works are used as textbooks in
+                        university courses and his writings have been translated
+                        into 76 languages. His most prominent works include:
+                        Bhagavad-gita As It Is, the multi-volume
+                        Srimad-Bhagavatam and the set of Sri
+                        Caitanya-Caritamrita books.
+                    </p>
+                </div>
+            </Fade>
+        </FadeIn>
     )
 }

@@ -3,26 +3,31 @@ import { Link } from "gatsby"
 
 import headerStyles from "../styles/components/header.module.scss"
 
-export default function Header({ isOpaque }) {
+export default function Header({ isOpaque, dark }) {
     return (
         <header
             className={`${headerStyles.header} ${
                 isOpaque ? "" : headerStyles.transparent
-            }`}
+            } ${dark ? headerStyles.dark : ""}`}
         >
-            <img
-                className={headerStyles.logo}
-                alt="kcsoc-logo"
-                src="/KCSoc-logo-white.png"
-            />
+            {dark ? (
+                <img
+                    className={headerStyles.logo}
+                    alt="kcsoc-logo-dark"
+                    src="/KCSoc-logo-medium.png"
+                />
+            ) : (
+                <img
+                    className={headerStyles.logo}
+                    alt="kcsoc-logo"
+                    src="/KCSoc-logo-white.png"
+                />
+            )}
+
             <nav>
                 <ul>
                     <li>
-                        <Link
-                            href="/"
-                            activeClassName={headerStyles.active}
-                            activeStyle={{ color: "red" }}
-                        >
+                        <Link href="/" activeClassName={headerStyles.active}>
                             Home
                         </Link>
                     </li>

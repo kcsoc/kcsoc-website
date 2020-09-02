@@ -51,3 +51,14 @@
 .active {
     color: #95a5a6;
 }
+
+.dark {
+    position: relative;
+    ul {
+        li {
+            a {
+                color: black;
+            }
+        }
+    }
+}

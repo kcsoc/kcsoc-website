@@ -37,6 +37,7 @@
 }
 
 .btn {
+    cursor: pointer;
     position: relative;
     display: inline-block;
     padding: 12px 36px;
@@ -50,7 +51,6 @@
     border: none;
     border-radius: 40px;
     background: linear-gradient(90deg, #ff72c0, #55e7fc);
-    cursor: pointer;
     outline: none;
     box-shadow: 0 0 4px #999;
     background-position: center;
