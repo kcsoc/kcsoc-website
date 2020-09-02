@@ -1,3 +1,124 @@
-.map {
+.map-container {
+    position: relative;
+    width: 50%;
+}
+
+.outer-container {
+    display: flex;
+    margin: auto;
+    max-width: 1000px;
     height: 500px;
+}
+
+.info-container {
+    width: 50%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    :hover {
+        background-color: black;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+    height: 20px;
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        transform: scale(2);
+    }
+}
+
+.edinburgh {
+    top: 170px;
+    left: 240px;
+}
+
+.glasgow {
+    top: 180px;
+    left: 200px;
+}
+
+.mmu {
+    top: 290px;
+    left: 275px;
+}
+
+.nottingham {
+    top: 330px;
+    left: 300px;
+}
+
+.loughborough {
+    top: 340px;
+    left: 295px;
+}
+
+.dmu {
+    top: 350px;
+    left: 303px;
+}
+
+.birmingham {
+    top: 355px;
+    left: 265px;
+}
+
+.coventry {
+    top: 360px;
+    left: 285px;
+}
+
+.warwick {
+    top: 365px;
+    left: 280px;
+}
+
+.cambridge {
+    top: 365px;
+    left: 350px;
+}
+
+.oxford {
+    top: 385px;
+    left: 300px;
+}
+
+.hertfordshire {
+    top: 385px;
+    left: 330px;
+}
+
+.london {
+    top: 400px;
+    left: 340px;
+}
+
+.reading {
+    top: 400px;
+    left: 310px;
+}
+
+.bristol {
+    top: 395px;
+    left: 260px;
+}
+
+.kent {
+    top: 410px;
+    left: 375px;
+}
+
+.southampton {
+    top: 440px;
+    left: 295px;
 }
