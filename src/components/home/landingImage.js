@@ -15,7 +15,7 @@ export default function landingImage() {
                     </h2>
                 </div>
 
-                <a className={landingImageStyles.scrollDown} href="#about">
+                <a className={landingImageStyles.scrollDown} href="#get-involved">
                     <div className={landingImageStyles.scroll}>
                         <span></span>
                         <span></span>

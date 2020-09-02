@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import ButtonImage from "../components/buttonImage"
 
 export default function Home() {
     return (
@@ -54,10 +53,6 @@ export default function Home() {
                 <h2>Follow us on Instagram</h2>
                 <img src="/kcsoc-logo-color.jpg" alt="round logo" />
             </div>
-
-            <ButtonImage text="Universities" imageUrl="/kcsoc-logo-color.jpg" />
-            <ButtonImage text="Events" imageUrl="/kcsoc-logo-color.jpg" />
-            <ButtonImage text="Retreats" imageUrl="/kcsoc-logo-color.jpg" />
 
             <h2>Fuelled by knowledge and devotion</h2>
 

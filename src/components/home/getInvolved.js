@@ -24,6 +24,7 @@ export default function GetInvolved() {
             className={`${getInvolvedStyles.container} ${
                 !isTriggered ? getInvolvedStyles.black : ""
             }`}
+            id="get-involved"
         >
             <div className={getInvolvedStyles.sheet}>
                 <ReactPlayer
