@@ -23,6 +23,7 @@ export default function UniversityMap() {
                         <h1>
                             32 KCSocs in 17 different locations around the UK!
                         </h1>
+                        <p>Click a pointer to find out more</p>
                     </>
                 )
 
@@ -178,163 +179,169 @@ export default function UniversityMap() {
     }
 
     return (
-        <div className={universityMapStyles.outerContainer}>
-            <div className={universityMapStyles.mapContainer}>
-                <img
-                    className={universityMapStyles.map}
-                    src="uk.png"
-                    alt="uk-map"
-                />
-                <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.glasgow}`}
-                    src="map-pointer.png"
-                    alt="glasgow"
-                    onClick={() => {
-                        setInfo("glasgow")
-                    }}
-                />
-                <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.edinburgh}`}
-                    src="map-pointer-inverted.png"
-                    alt="edinburgh"
-                    onClick={() => {
-                        setInfo("edinburgh")
-                    }}
-                />
-                <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.manchester}`}
-                    src="map-pointer.png"
-                    alt="manchester"
-                    onClick={() => {
-                        setInfo("manchester")
-                    }}
-                />
-                <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.nottingham}`}
-                    src="map-pointer.png"
-                    alt="nottingham"
-                    onClick={() => {
-                        setInfo("nottingham")
-                    }}
-                />
-                <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.loughborough}`}
-                    src="map-pointer-inverted.png"
-                    alt="loughborough"
-                    onClick={() => {
-                        setInfo("loughborough")
-                    }}
-                />
-                <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.leicester}`}
-                    src="map-pointer.png"
-                    alt="leicester"
-                    onClick={() => {
-                        setInfo("leicester")
-                    }}
-                />
-                <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.coventry}`}
-                    src="map-pointer-inverted.png"
-                    alt="coventry"
-                    onClick={() => {
-                        setInfo("coventry")
-                    }}
-                />
-                <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.warwick}`}
-                    src="map-pointer.png"
-                    alt="warwick"
-                    onClick={() => {
-                        setInfo("warwick")
-                    }}
-                />
-                <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.birmingham}`}
-                    src="map-pointer-inverted.png"
-                    alt="birmingham"
-                    onClick={() => {
-                        setInfo("birmingham")
-                    }}
-                />
-                <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.cambridge}`}
-                    src="map-pointer-inverted.png"
-                    alt="cambridge"
-                    onClick={() => {
-                        setInfo("cambridge")
-                    }}
-                />
-                <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.oxford}`}
-                    src="map-pointer-inverted.png"
-                    alt="oxford"
-                    onClick={() => {
-                        setInfo("oxford")
-                    }}
-                />
+        <div>
+            <div className={universityMapStyles.outerContainer}>
+                <div className={universityMapStyles.mapContainer}>
+                    <img
+                        className={universityMapStyles.map}
+                        src="uk.png"
+                        alt="uk-map"
+                    />
+                    <img
+                        className={`${universityMapStyles.pointer} ${universityMapStyles.glasgow}`}
+                        src="map-pointer.png"
+                        alt="glasgow"
+                        onClick={() => {
+                            setInfo("glasgow")
+                        }}
+                    />
+                    <img
+                        className={`${universityMapStyles.pointer} ${universityMapStyles.edinburgh}`}
+                        src="map-pointer-inverted.png"
+                        alt="edinburgh"
+                        onClick={() => {
+                            setInfo("edinburgh")
+                        }}
+                    />
+                    <img
+                        className={`${universityMapStyles.pointer} ${universityMapStyles.manchester}`}
+                        src="map-pointer.png"
+                        alt="manchester"
+                        onClick={() => {
+                            setInfo("manchester")
+                        }}
+                    />
+                    <img
+                        className={`${universityMapStyles.pointer} ${universityMapStyles.nottingham}`}
+                        src="map-pointer.png"
+                        alt="nottingham"
+                        onClick={() => {
+                            setInfo("nottingham")
+                        }}
+                    />
+                    <img
+                        className={`${universityMapStyles.pointer} ${universityMapStyles.loughborough}`}
+                        src="map-pointer-inverted.png"
+                        alt="loughborough"
+                        onClick={() => {
+                            setInfo("loughborough")
+                        }}
+                    />
+                    <img
+                        className={`${universityMapStyles.pointer} ${universityMapStyles.leicester}`}
+                        src="map-pointer.png"
+                        alt="leicester"
+                        onClick={() => {
+                            setInfo("leicester")
+                        }}
+                    />
+                    <img
+                        className={`${universityMapStyles.pointer} ${universityMapStyles.coventry}`}
+                        src="map-pointer-inverted.png"
+                        alt="coventry"
+                        onClick={() => {
+                            setInfo("coventry")
+                        }}
+                    />
+                    <img
+                        className={`${universityMapStyles.pointer} ${universityMapStyles.warwick}`}
+                        src="map-pointer.png"
+                        alt="warwick"
+                        onClick={() => {
+                            setInfo("warwick")
+                        }}
+                    />
+                    <img
+                        className={`${universityMapStyles.pointer} ${universityMapStyles.birmingham}`}
+                        src="map-pointer-inverted.png"
+                        alt="birmingham"
+                        onClick={() => {
+                            setInfo("birmingham")
+                        }}
+                    />
+                    <img
+                        className={`${universityMapStyles.pointer} ${universityMapStyles.cambridge}`}
+                        src="map-pointer-inverted.png"
+                        alt="cambridge"
+                        onClick={() => {
+                            setInfo("cambridge")
+                        }}
+                    />
+                    <img
+                        className={`${universityMapStyles.pointer} ${universityMapStyles.oxford}`}
+                        src="map-pointer-inverted.png"
+                        alt="oxford"
+                        onClick={() => {
+                            setInfo("oxford")
+                        }}
+                    />
 
-                <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.hatfield}`}
-                    src="map-pointer.png"
-                    alt="hatfield"
-                    onClick={() => {
-                        setInfo("hatfield")
-                    }}
-                />
+                    <img
+                        className={`${universityMapStyles.pointer} ${universityMapStyles.hatfield}`}
+                        src="map-pointer.png"
+                        alt="hatfield"
+                        onClick={() => {
+                            setInfo("hatfield")
+                        }}
+                    />
 
-                <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.bristol}`}
-                    src="map-pointer-inverted.png"
-                    alt="bristol"
-                    onClick={() => {
-                        setInfo("bristol")
-                    }}
-                />
+                    <img
+                        className={`${universityMapStyles.pointer} ${universityMapStyles.bristol}`}
+                        src="map-pointer-inverted.png"
+                        alt="bristol"
+                        onClick={() => {
+                            setInfo("bristol")
+                        }}
+                    />
 
-                <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.reading}`}
-                    src="map-pointer.png"
-                    alt="reading"
-                    onClick={() => {
-                        setInfo("reading")
-                    }}
-                />
+                    <img
+                        className={`${universityMapStyles.pointer} ${universityMapStyles.reading}`}
+                        src="map-pointer.png"
+                        alt="reading"
+                        onClick={() => {
+                            setInfo("reading")
+                        }}
+                    />
 
-                <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.london}`}
-                    src="map-pointer-inverted.png"
-                    alt="london"
-                    onClick={() => {
-                        setInfo("london")
-                    }}
-                />
+                    <img
+                        className={`${universityMapStyles.pointer} ${universityMapStyles.london}`}
+                        src="map-pointer-inverted.png"
+                        alt="london"
+                        onClick={() => {
+                            setInfo("london")
+                        }}
+                    />
 
-                <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.canterbury}`}
-                    src="map-pointer.png"
-                    alt="canterbury"
-                    onClick={() => {
-                        setInfo("canterbury")
-                    }}
-                />
+                    <img
+                        className={`${universityMapStyles.pointer} ${universityMapStyles.canterbury}`}
+                        src="map-pointer.png"
+                        alt="canterbury"
+                        onClick={() => {
+                            setInfo("canterbury")
+                        }}
+                    />
 
-                <img
-                    className={`${universityMapStyles.pointer} ${universityMapStyles.southampton}`}
-                    src="map-pointer-inverted.png"
-                    alt="southampton"
-                    onClick={() => {
-                        setInfo("southampton")
-                    }}
-                />
+                    <img
+                        className={`${universityMapStyles.pointer} ${universityMapStyles.southampton}`}
+                        src="map-pointer-inverted.png"
+                        alt="southampton"
+                        onClick={() => {
+                            setInfo("southampton")
+                        }}
+                    />
+                </div>
+
+                <div
+                    className={`${universityMapStyles.infoContainer} ${
+                        transparent ? universityMapStyles.transparent : ""
+                    }`}
+                >
+                    {renderInfo()}
+                </div>
             </div>
-
-            <div
-                className={`${universityMapStyles.infoContainer} ${
-                    transparent ? universityMapStyles.transparent : ""
-                }`}
-            >
-                {renderInfo()}
+            <div className={universityMapStyles.setUpContainer}>
+                <h2>Can't find your university on the list?</h2>
+                <a className={universityMapStyles.btn}>Set Up a KCSoc</a>
             </div>
         </div>
     )

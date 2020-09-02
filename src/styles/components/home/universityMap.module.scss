@@ -1,5 +1,6 @@
 .map-container {
     margin-top: 50px;
+    margin-left: 80px;
     position: relative;
     width: 50%;
 }
@@ -9,7 +10,7 @@
     height: 600px;
 
     margin: auto;
-    max-width: 1000px;
+    width: 1100px;
 }
 
 .info-container {
@@ -128,4 +129,36 @@
 .southampton {
     top: 440px;
     left: 295px;
+}
+
+.set-up-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: Montserrat;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #ff72c0, #55e7fc);
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 4px #999;
+    background-position: center;
+    transition: 0.5s;
+
+    &:hover {
+        color: #c0c0c0;
+    }
 }
