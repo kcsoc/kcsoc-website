@@ -1,7 +1,7 @@
 import React from "react"
-import neverForgetStyles from "../styles/components/neverForget.module.scss"
+import neverForgetStyles from "../../styles/components/home/neverForget.module.scss"
 import VisibilitySensor from "react-visibility-sensor"
-import Header from "./header"
+import Header from "../header"
 
 export default function NeverForget({ trigger, isTriggered }) {
     return (
@@ -18,7 +18,7 @@ export default function NeverForget({ trigger, isTriggered }) {
                 </h1>
 
                 <VisibilitySensor partialVisibility={true} onChange={trigger}>
-                    <p className={neverForgetStyles.trigger}>Trigger 3</p>
+                    <p className={neverForgetStyles.trigger}>Trigger</p>
                 </VisibilitySensor>
             </div>
         </div>

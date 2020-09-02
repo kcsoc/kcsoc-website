@@ -1,6 +1,6 @@
 import React from "react"
-import Header from "./header"
-import landingImageStyles from "../styles/components/landingImage.module.scss"
+import Header from "../header"
+import landingImageStyles from "../../styles/components/home/landingImage.module.scss"
 
 export default function landingImage() {
     return (

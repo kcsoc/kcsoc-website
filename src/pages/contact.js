@@ -1,6 +1,6 @@
 import React from "react"
-import NeverForget from "../components/neverForget"
+import UniversityMap from "../components/home/universityMap"
 
 export default function Contact() {
-    return <NeverForget />
+    return <UniversityMap  />
 }

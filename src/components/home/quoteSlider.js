@@ -2,7 +2,7 @@ import React from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
 import { Carousel } from "react-responsive-carousel"
 
-import quoteSliderStyles from "../styles/components/quoteSlider.module.scss"
+import quoteSliderStyles from "../../styles/components/home/quoteSlider.module.scss"
 
 export default function QuoteSlider() {
     return (
