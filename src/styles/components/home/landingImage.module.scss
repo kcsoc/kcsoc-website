@@ -32,7 +32,6 @@
     height: 100vh;
 }
 
-
 .inner-container {
     background-color: rgba(0, 0, 0, 0);
     color: white;
@@ -45,8 +44,6 @@
     animation-fill-mode: forwards;
     opacity: 0;
 }
-
-
 
 .title {
     font-size: 9rem;
@@ -64,7 +61,7 @@
 
 .scroll-down {
     align-items: center;
-    bottom: 5rem;
+    bottom: 3rem;
     display: flex;
     flex-direction: column;
     left: 50%;
@@ -87,36 +84,73 @@
     }
 }
 
-.mouse {
-    border: 2px solid white;
-    border-radius: 2rem;
-    display: flex;
-    margin-bottom: 0.5rem;
-    height: 3rem;
-    width: 1.5rem;
+.scroll {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    transform: translateY(-80px) translateX(-50%) rotate(45deg);
 
     span {
-        background-color: white;
-        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
         display: block;
-        height: 0.5rem;
-        margin: auto;
-        width: 0.5rem;
-
-        animation: move-wheel 1.5s linear infinite;
+        width: 100%;
+        height: 100%;
+        border-bottom: 2px solid #fff;
+        border-right: 2px solid #fff;
+        animation: move-down 1s linear infinite;
     }
 }
 
-@keyframes move-wheel {
+@keyframes move-down {
     0% {
+        top: -5px;
+        left: -5px;
         opacity: 0;
-        transform: translateY(-1rem);
     }
-
-    100% {
+    25% {
+        top: 0px;
+        left: 0px;
         opacity: 1;
-        transform: translateY(0rem);
+    }
+    100% {
+        top: 5px;
+        left: 5px;
+        opacity: 0;
     }
 }
 
+// .mouse {
+//     border: 2px solid white;
+//     border-radius: 2rem;
+//     display: flex;
+//     margin-bottom: 0.5rem;
+//     height: 3rem;
+//     width: 1.5rem;
 
+//     span {
+//         background-color: white;
+//         border-radius: 50%;
+//         display: block;
+//         height: 0.5rem;
+//         margin: auto;
+//         width: 0.5rem;
+
+//         animation: move-wheel 1.5s linear infinite;
+//     }
+// }
+
+// @keyframes move-wheel {
+//     0% {
+//         opacity: 0;
+//         transform: translateY(-1rem);
+//     }
+
+//     100% {
+//         opacity: 1;
+//         transform: translateY(0rem);
+//     }
+// }

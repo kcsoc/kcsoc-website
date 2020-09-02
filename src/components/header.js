@@ -18,22 +18,19 @@ export default function Header({ isOpaque }) {
             <nav>
                 <ul>
                     <li>
-                        <Link href="#">About</Link>
+                        <Link href="/about">About</Link>
                     </li>
                     <li>
-                        <Link href="#">Events</Link>
+                        <Link href="/events">Events</Link>
                     </li>
                     <li>
-                        <Link href="#">Retreats</Link>
+                        <Link href="/explore">Explore</Link>
                     </li>
                     <li>
-                        <Link href="#">Explore</Link>
+                        <Link href="/shop">Shop</Link>
                     </li>
                     <li>
-                        <Link href="#">Shop</Link>
-                    </li>
-                    <li>
-                        <Link href="#">Contact</Link>
+                        <Link href="/contact">Contact</Link>
                     </li>
                 </ul>
             </nav>

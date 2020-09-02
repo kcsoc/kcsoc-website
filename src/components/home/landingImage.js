@@ -16,11 +16,13 @@ export default function landingImage() {
                 </div>
 
                 <a className={landingImageStyles.scrollDown} href="#about">
-                    <div className={landingImageStyles.mouse}>
+                    <div className={landingImageStyles.scroll}>
+                        <span></span>
+                        <span></span>
                         <span></span>
                     </div>
                 </a>
-            </div>
+            </div>π
         </>
     )
 }
