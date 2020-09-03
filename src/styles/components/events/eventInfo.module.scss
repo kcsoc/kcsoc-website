@@ -1,7 +1,7 @@
 .outerContainer {
     display: flex;
     flex-direction: row;
-    margin: auto;
+    margin: 0 auto 5rem;
     width: 1100px;
     min-height: 500px;
 }
@@ -29,7 +29,7 @@
             bottom: -1px;
             content: "";
             display: block;
-            height: 2px;
+            height: 1px;
             left: 50%;
             position: absolute;
             background: black;
