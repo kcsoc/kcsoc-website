@@ -65,7 +65,7 @@ export default function Header({ isOpaque, dark }) {
                     </li>
                     <li>
                         <Link
-                            href="/shop"
+                            href="/contact"
                             activeClassName={headerStyles.active}
                         >
                             Contact

@@ -1,10 +1,16 @@
 import React from "react"
-import Layout from '../components/layout'
+import Header from "../components/header"
+import FadeIn from "../components/fadeIn"
+import Fade from "react-reveal/Fade"
+import EventInfo from "../components/events/eventInfo"
 
 export default function Events() {
-  return (
-    <Layout>
-      <h1>Events page</h1>
-    </Layout>
-  )
+    return (
+        <FadeIn>
+            <Header isOpaque={true} dark={true} />
+            <Fade>
+                <EventInfo />
+            </Fade>
+        </FadeIn>
+    )
 }

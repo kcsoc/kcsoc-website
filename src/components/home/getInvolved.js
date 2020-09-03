@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from "gatsby"
 import ReactPlayer from "react-player"
 import getInvolvedStyles from "../../styles/components/home/getInvolved.module.scss"
 import Fade from "react-reveal/Fade"
@@ -57,6 +58,9 @@ export default function GetInvolved() {
                             evolve the mind, give direction in life, and reveal
                             a deeper level of insight with like-minded people.
                         </p>
+                        <Link to="/about">
+                            <p>Find out more</p>
+                        </Link>
                     </div>
 
                     <img

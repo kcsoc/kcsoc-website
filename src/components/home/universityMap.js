@@ -21,9 +21,9 @@ export default function UniversityMap() {
                 return (
                     <>
                         <h1>
-                            32 KCSocs in 17 different locations around the UK!
+                            32 KCSocs in 17 different locations around the UK
                         </h1>
-                        <p>Click a pointer to find out more</p>
+                        <p>Click a pointer to discover more</p>
                     </>
                 )
 

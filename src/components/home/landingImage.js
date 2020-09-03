@@ -15,14 +15,12 @@ export default function landingImage() {
                     </h2>
                 </div>
 
-                <a className={landingImageStyles.scrollDown} href="#get-involved">
+                <div className={landingImageStyles.scrollDown}>
                     <div className={landingImageStyles.scroll}>
                         <span></span>
-                        <span></span>
-                        <span></span>
                     </div>
-                </a>
-            </div>π
+                </div>
+            </div>
         </>
     )
 }

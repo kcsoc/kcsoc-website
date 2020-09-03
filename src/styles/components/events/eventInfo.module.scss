@@ -1,0 +1,48 @@
+.outerContainer {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 1100px;
+    min-height: 600px;
+}
+
+.menu {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 400;
+
+    border-right: 1px solid grey;
+
+    h2 {
+        cursor: pointer;
+        margin: 2rem auto;
+        padding: 15px 20px;
+        position: relative;
+
+        &:after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 1px;
+            left: 50%;
+            position: absolute;
+            background: black;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+        &:hover:after {
+            width: 100%;
+            left: 0;
+        }
+    }
+}
+
+.underlined {
+}
+
+.content-container {
+    width: 75%;
+}
