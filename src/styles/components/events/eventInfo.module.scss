@@ -7,13 +7,16 @@
 }
 
 .menu {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    height: 400;
-
     border-right: 1px solid grey;
+    display: flex;
+    height: 400;
+    flex-direction: column;
+    margin: auto;
+    width: 25%;
+
+    div {
+        display: flex;
+    }
 
     h2 {
         cursor: pointer;
@@ -23,7 +26,7 @@
 
         &:after {
             background: none repeat scroll 0 0 transparent;
-            bottom: 0;
+            bottom: -1px;
             content: "";
             display: block;
             height: 1px;
@@ -41,8 +44,15 @@
 }
 
 .underlined {
+    h2:after {
+        width: 100%;
+        left: 0;
+    }
 }
 
 .content-container {
+    background-color: red;
+    box-sizing: border-box;
+    padding: 2rem;
     width: 75%;
 }
