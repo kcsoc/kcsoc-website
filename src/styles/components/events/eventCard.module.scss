@@ -1,0 +1,10 @@
+.container {
+    background-color: rgba($color: (cyan), $alpha: 0.2);
+    margin: 30px 12px;
+    height: 500px;
+    width: 350px;
+
+    -webkit-box-shadow: 3px 8px 16px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 8px 16px 4px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 8px 16px 4px rgba(0, 0, 0, 0.75);
+}
