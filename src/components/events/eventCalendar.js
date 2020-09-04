@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import Fade from "react-reveal/Fade"
 import CalendarMenu from "./calendarMenu"
 import eventCalendarStyles from "../../styles/components/events/eventCalendar.module.scss"
 import EventContext from "../contexts/eventContext"
@@ -13,11 +14,36 @@ export default function EventCalendar() {
     const eventData = [
         {
             id: 0,
+            type: "weekly",
             name: "24 Hours to Live",
             speaker: "Bhuta Bhavana Das",
-            university: "Cambridge",
-            location: "King's College",
+            university: "UCL",
+            location: "Front Room",
             time: "7 pm",
+            date: "18th September 2020",
+            imageURL: "/weekly-poster.jpeg"
+        },
+        {
+            id: 0,
+            type: "flagship",
+            name: "The Meaning of Life",
+            speaker: "Radhanath Swami",
+            university: undefined,
+            location: "Special Room",
+            time: "8 pm",
+            date: "20th September 2020",
+            imageURL: "/flagship-poster.jpeg"
+        },
+        {
+            id: 0,
+            type: "retreat",
+            name: "November Retreat",
+            speaker: undefined,
+            university: undefined,
+            location: "Bhaktivedanta Manor",
+            time: "8am - 7pm",
+            date: "28th September 2020",
+            imageURL: "/retreat-poster.jpeg"
         },
     ]
 
@@ -36,20 +62,21 @@ export default function EventCalendar() {
         >
             <div className={eventCalendarStyles.outerContainer}>
                 <h1 className={eventCalendarStyles.title}>Calendar</h1>
-                <CalendarMenu />
+                <Fade>
+                    <CalendarMenu />
+                </Fade>
                 <div className={eventCalendarStyles.contentContainer}>
-                    <EventCard />
-                    <EventCard />
+                    <EventCard data={eventData[0]} />
+                    <EventCard data={eventData[1]} />
+                    <EventCard data={eventData[2]} />
 
-                    <EventCard />
-                    
-
-                    <EventCard />
-                    <EventCard />
-
-                    <EventCard />
-
-                    </div>
+                    <EventCard data={eventData[0]} />
+                    <EventCard data={eventData[0]} />
+                    <EventCard data={eventData[0]} />
+                    <EventCard data={eventData[0]} />
+                    <EventCard data={eventData[0]} />
+                    <EventCard data={eventData[0]} />
+                </div>
             </div>
         </EventContext.Provider>
     )
