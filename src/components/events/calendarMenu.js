@@ -10,8 +10,8 @@ export default function CalendarMenu() {
         <div className={eventCalendarStyles.menuContainer}>
             <UniversityPicker />
             <EventTypePicker /> 
-            <MenuDatePicker title="Start Date"/>
-            <MenuDatePicker title="End Date"/>
+            <MenuDatePicker type="start"/>
+            <MenuDatePicker type="end"/>
         </div>
     )
 }
