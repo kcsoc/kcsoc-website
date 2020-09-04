@@ -10,11 +10,24 @@
 }
 
 .university-container {
-    width: 50%;
-    padding: 0 1rem;
+    width: 25%;
+    padding: 0 2px 0 0;
 }
 
 .event-type-container {
     width: 25%;
-    padding: 0 1rem;
+    padding: 0 2px;
+}
+
+.date-picker-container {
+    width: 25%;
+    padding: 0 2px;
+}
+
+.date-picker {
+    display: flex;
+    p {
+        cursor: pointer;
+        margin: auto 4px;
+    }
 }

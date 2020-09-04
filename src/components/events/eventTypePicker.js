@@ -40,11 +40,12 @@ export default function EventTypePicker() {
                 style={{
                     searchBox: {
                         // To change search box element look
-                        "border-radius": "10px",
+                        "border-radius": "30px",
+                        "border-color": "#A4A7B5",
                     },
                     inputField: {
                         // To change input field position or margin
-                        margin: "10px",
+                        margin: "6px",
                     },
 
                     option: {
