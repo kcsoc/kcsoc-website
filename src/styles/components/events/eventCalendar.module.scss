@@ -5,7 +5,17 @@
 }
 
 .menu-container {
-    margin: 0 2rem;
-
+    display: flex;
+    flex-direction: row;
     background-color: red;
+}
+
+.university-container {
+    width: 50%;
+    padding: 0 1rem;
+}
+
+.event-type-container {
+    width: 25%;
+    padding: 0 1rem;
 }
