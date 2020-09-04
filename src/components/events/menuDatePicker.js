@@ -7,6 +7,14 @@ export default function MenuDatePicker({ title }) {
     const [date, setDate] = useState()
     const [transparent, setTransparent] = useState(false)
 
+    const clear = () => {
+        setTransparent(true)
+        setDate(undefined)
+        setTimeout(() => {
+            setTransparent(false)
+        }, 100)
+    }
+
     return (
         <div className={eventCalendarStyles.datePickerContainer}>
             <h2>{title}</h2>
@@ -18,9 +26,10 @@ export default function MenuDatePicker({ title }) {
                     locale="en-GB"
                 />
                 <p
-                    onClick={() => {
-                        setDate(undefined)
-                    }}
+                    className={
+                        transparent ? eventCalendarStyles.transparent : ""
+                    }
+                    onClick={clear}
                 >
                     &#10005;
                 </p>
