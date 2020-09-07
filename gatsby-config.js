@@ -4,5 +4,4 @@ module.exports = {
         author: "KCSoc National",
     },
     plugins: ["gatsby-plugin-sass", "gatsby-plugin-react-helmet"],
-    pathPrefix: `/kcsoc-website`,
 }
