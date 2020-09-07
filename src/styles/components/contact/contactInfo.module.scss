@@ -18,11 +18,24 @@
 
 .info-box {
     padding: 1rem;
+    position: relative;
     width: 33%;
     p {
         text-align: center;
+        margin-top: 3rem;
     }
-    a{
+    a {
         color: grey;
+    }
+    b {
+        color: black;
+    }
+
+    svg {
+        color: black;
+        position: absolute;
+        left:50%;
+        right: 50%;
+
     }
 }
