@@ -3,8 +3,29 @@ import { Link } from "gatsby"
 
 import headerStyles from "../styles/components/header.module.scss"
 
+
 import logoDark from "./logo-dark.png"
 import logoLight from "./logo-light.png"
+
+// Temporarily removed the Explore and Shop menu items
+
+// <li>
+// <Link
+//     href="/explore"
+//     activeClassName={headerStyles.active}
+// >
+//     Explore
+// </Link>
+// </li>
+// <li>
+// <Link
+//     href="/shop"
+//     activeClassName={headerStyles.active}
+// >
+//     Shop
+// </Link>
+// </li>
+
 
 export default function Header({ isOpaque, dark }) {
     return (
@@ -50,22 +71,7 @@ export default function Header({ isOpaque, dark }) {
                             Events
                         </Link>
                     </li>
-                    <li>
-                        <Link
-                            href="/explore"
-                            activeClassName={headerStyles.active}
-                        >
-                            Explore
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            href="/shop"
-                            activeClassName={headerStyles.active}
-                        >
-                            Shop
-                        </Link>
-                    </li>
+
                     <li>
                         <Link
                             href="/contact"

@@ -1,14 +1,17 @@
 import React from "react"
-import UniversityMap from "../components/home/universityMap"
+import Header from "../components/header"
+import FadeIn from "../components/fadeIn"
+import ContactInfo from "../components/contact/contactInfo"
+import { FaPhone } from 'react-icons/fa';
 
 export default function Contact() {
     return (
         <div>
-            <a href="#bottom">Click</a>
-            <UniversityMap />
-            <UniversityMap />
-            <UniversityMap />
-            <h1 id="bottom">Bottom</h1>
+            <FaPhone />
+            <FadeIn>
+                <Header isOpaque={true} dark={true} />
+                <ContactInfo />
+            </FadeIn>
         </div>
     )
 }
