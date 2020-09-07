@@ -35,41 +35,24 @@ export default function EventCalendar() {
         }
     `)
 
-    const eventData = [
-        {
-            id: 0,
-            type: "weekly",
-            name: "24 Hours to Live",
-            speaker: "Bhuta Bhavana Das",
-            university: "UCL",
-            location: "Front Room",
-            time: "7 pm",
-            date: "18th September 2020",
-            imageURL: "/weekly-poster.jpeg",
-        },
-        {
-            id: 0,
-            type: "flagship",
-            name: "The Meaning of Life",
-            speaker: "Radhanath Swami",
-            university: undefined,
-            location: "Special Room",
-            time: "8 pm",
-            date: "20th September 2020",
-            imageURL: "/flagship-poster.jpeg",
-        },
-        {
-            id: 0,
-            type: "retreat",
-            name: "November Retreat",
-            speaker: undefined,
-            university: undefined,
-            location: "Bhaktivedanta Manor",
-            time: "8am - 7pm",
-            date: "28th September 2020",
-            imageURL: "/retreat-poster.jpeg",
-        },
-    ]
+    const filteredData = data.allContentfulEvent.edges.filter(edge => {
+        if (universities.length) {
+            const names = universities.map(university => university.name)
+            if (!names.includes(edge.node.university)) return false
+        }
+
+        if (eventTypes.length) {
+            const types = eventTypes.map(eventType =>
+                eventType.type.toLowerCase()
+            )
+            console.log(types)
+            console.log(edge.node.slug)
+            if (!types.includes(edge.node.slug)) return false
+        }
+
+        return true
+    })
+    console.log(filteredData)
 
     return (
         <EventContext.Provider
@@ -90,8 +73,8 @@ export default function EventCalendar() {
                     <CalendarMenu />
                 </Fade>
                 <div className={eventCalendarStyles.contentContainer}>
-                    {data.allContentfulEvent.edges.map(edge => (
-                        <EventCard data={edge.node} />
+                    {filteredData.map((edge, index) => (
+                        <EventCard key={index} data={edge.node} />
                     ))}
                 </div>
             </div>
