@@ -7,6 +7,8 @@ import QuoteSlider from "./quoteSlider"
 import UniversityMap from "./universityMap"
 import NeverForget from "./neverForget"
 
+import lotusPosition from "./lotus-position.png"
+
 // <svg
 //     className={getInvolvedStyles.wave}
 //     xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +68,7 @@ export default function GetInvolved() {
                     <img
                         className={getInvolvedStyles.meditator}
                         alt="meditation"
-                        src="/lotus-position.png"
+                        src={lotusPosition}
                     />
                 </div>
 

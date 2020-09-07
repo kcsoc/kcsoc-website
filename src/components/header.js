@@ -3,6 +3,9 @@ import { Link } from "gatsby"
 
 import headerStyles from "../styles/components/header.module.scss"
 
+import logoDark from "./logo-dark.png"
+import logoLight from "./logo-light.png"
+
 export default function Header({ isOpaque, dark }) {
     return (
         <header
@@ -14,13 +17,13 @@ export default function Header({ isOpaque, dark }) {
                 <img
                     className={headerStyles.logo}
                     alt="kcsoc-logo-dark"
-                    src="/KCSoc-logo-medium.png"
+                    src={logoDark}
                 />
             ) : (
                 <img
                     className={headerStyles.logo}
                     alt="kcsoc-logo"
-                    src="/KCSoc-logo-white.png"
+                    src={logoLight}
                 />
             )}
 
