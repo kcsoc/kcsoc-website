@@ -20,7 +20,7 @@ export default function MenuDatePicker({ type }) {
         }
         setTimeout(() => {
             setTransparent(false)
-        }, 100)
+        }, 1000)
     }
 
     return (
