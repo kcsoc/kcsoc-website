@@ -33,6 +33,8 @@ export default function MenuDatePicker({ type }) {
                         if (type === "start") {
                             setStartDate(value)
                         } else {
+                            value.setHours(value.getHours() + 23)
+                            value.setMinutes(value.getMinutes() + 59)
                             setEndDate(value)
                         }
                     }}

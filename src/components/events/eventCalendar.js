@@ -21,7 +21,7 @@ export default function EventCalendar() {
                         speaker
                         location
                         university
-                        dateAndTime(formatString: "h:mm a|Do MMMM YYYY")
+                        dateAndTime
                         slug
                         poster {
                             title
@@ -40,19 +40,22 @@ export default function EventCalendar() {
             const names = universities.map(university => university.name)
             if (!names.includes(edge.node.university)) return false
         }
-
         if (eventTypes.length) {
             const types = eventTypes.map(eventType =>
                 eventType.type.toLowerCase()
             )
-            console.log(types)
-            console.log(edge.node.slug)
             if (!types.includes(edge.node.slug)) return false
+        }
+        const nodeDate = new Date(edge.node.dateAndTime)
+        if (startDate) {
+            if (nodeDate < startDate) return false
+        }
+        if (endDate) {
+            if (nodeDate > endDate) return false
         }
 
         return true
     })
-    console.log(filteredData)
 
     return (
         <EventContext.Provider

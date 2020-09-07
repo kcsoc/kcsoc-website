@@ -1,5 +1,5 @@
 import React from "react"
-
+import moment from "moment"
 import eventCardStyles from "../../styles/components/events/eventCard.module.scss"
 
 export default function EventCard({ data }) {
@@ -8,6 +8,8 @@ export default function EventCard({ data }) {
         if (data.slug === "flagship") return eventCardStyles.flagship
         if (data.slug === "retreat") return eventCardStyles.retreat
     }
+
+    const date = moment(data.dateAndTime)
 
     return (
         <div className={`${eventCardStyles.container} ${colorCard()}`}>
@@ -20,10 +22,10 @@ export default function EventCard({ data }) {
                 )}
                 {data.speaker && <p>Speaker: {data.speaker}</p>}
                 {data.dateAndTime && (
-                    <p>Date: {data.dateAndTime.split("|")[1]}</p>
+                    <p>Date: {date.format("Do MMMM YYYY")}</p>
                 )}
                 {data.dateAndTime && (
-                    <p>Time: {data.dateAndTime.split("|")[0]}</p>
+                    <p>Time: {date.format("h:mm a")}</p>
                 )}
                 {data.location && <p>Location: {data.location}</p>}
             </div>
