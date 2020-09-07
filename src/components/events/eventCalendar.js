@@ -21,8 +21,14 @@ export default function EventCalendar() {
                         speaker
                         location
                         university
-                        dateAndTime
+                        dateAndTime(formatString: "h:mm a|Do MMMM YYYY")
                         slug
+                        poster {
+                            title
+                            resize {
+                                src
+                            }
+                        }
                     }
                 }
             }
@@ -87,17 +93,6 @@ export default function EventCalendar() {
                     {data.allContentfulEvent.edges.map(edge => (
                         <EventCard data={edge.node} />
                     ))}
-
-                    <EventCard data={eventData[0]} />
-                    <EventCard data={eventData[1]} />
-                    <EventCard data={eventData[2]} />
-
-                    <EventCard data={eventData[0]} />
-                    <EventCard data={eventData[0]} />
-                    <EventCard data={eventData[0]} />
-                    <EventCard data={eventData[0]} />
-                    <EventCard data={eventData[0]} />
-                    <EventCard data={eventData[0]} />
                 </div>
             </div>
         </EventContext.Provider>

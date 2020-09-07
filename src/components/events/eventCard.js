@@ -10,18 +10,24 @@ export default function EventCard({ data }) {
         if (data.slug === "retreat") return eventCardStyles.retreat
     }
 
-    console.log(data)
+    console.log(data.dateAndTime.split("|"))
     return (
         <Fade>
             <div className={`${eventCardStyles.container} ${colorCard()}`}>
-                {data.imageURL && <img src={data.imageURL} alt="event-image" />}
+                {data.poster && (
+                    <img src={data.poster.resize.src} alt={data.poster.title} />
+                )}
                 <div className={eventCardStyles.content}>
                     {data.name && (
                         <p className={eventCardStyles.title}>{data.name}</p>
                     )}
                     {data.speaker && <p>Speaker: {data.speaker}</p>}
-                    {data.date && <p>Date: {data.date}</p>}
-                    {data.time && <p>Time: {data.time}</p>}
+                    {data.dateAndTime && (
+                        <p>Date: {data.dateAndTime.split("|")[1]}</p>
+                    )}
+                    {data.dateAndTime && (
+                        <p>Time: {data.dateAndTime.split("|")[0]}</p>
+                    )}
                     {data.location && <p>Location: {data.location}</p>}
                 </div>
                 <p className={eventCardStyles.metaInfo}>
