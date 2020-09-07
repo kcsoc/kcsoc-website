@@ -4,7 +4,6 @@ import eventInfoStyles from "../../styles/components/events/eventInfo.module.scs
 export default function EventInfo() {
     const [selected, setSelected] = useState("weekly")
 
-<<<<<<< HEAD
     const renderBackground = () => {
         switch (selected) {
             case "weekly":
@@ -57,8 +56,6 @@ export default function EventInfo() {
         }
     }
 
-=======
->>>>>>> parent of df7c2ed... Event Info Made Responsive To Menu Selection
     return (
         <div className={eventInfoStyles.outerContainer}>
             <div className={eventInfoStyles.menu}>
@@ -100,7 +97,9 @@ export default function EventInfo() {
                 </div>
             </div>
 
-            <div className={eventInfoStyles.contentContainer}></div>
+            <div className={renderBackground()}>
+                <div className={eventInfoStyles.content}>{renderContent()}</div>
+            </div>
         </div>
     )
 }
