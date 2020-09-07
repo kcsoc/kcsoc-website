@@ -4,13 +4,13 @@ import { Multiselect } from "multiselect-react-dropdown"
 import eventCalendarStyles from "../../styles/components/events/eventCalendar.module.scss"
 
 export default function EventTypePicker() {
-    const [options] = useState([
+    const [options, setOptions] = useState([
         { type: "Weekly", id: 1 },
         { type: "Flagship", id: 2 },
         { type: "Retreats", id: 3 },
     ])
 
-    const [selectedValue] = useState({})
+    const [selectedValue, setSelectedValue] = useState({})
 
     const onSelect = (selectedList, selectedItem) => {
         console.log("onSelect")
