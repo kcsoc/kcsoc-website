@@ -7,6 +7,7 @@
 }
 
 .menu {
+    border-right: 1px solid grey;
     display: flex;
     height: 400;
     flex-direction: column;
@@ -31,7 +32,7 @@
             height: 1px;
             left: 50%;
             position: absolute;
-            background: #333333;
+            background: black;
             transition: width 0.3s ease 0s, left 0.3s ease 0s;
             width: 0;
         }
