@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import Fade from "react-reveal/Fade"
 import CalendarMenu from "./calendarMenu"
 import eventCalendarStyles from "../../styles/components/events/eventCalendar.module.scss"
@@ -11,6 +12,23 @@ export default function EventCalendar() {
     const [startDate, setStartDate] = useState(new Date())
     const [endDate, setEndDate] = useState()
 
+    const data = useStaticQuery(graphql`
+        query {
+            allContentfulEvent {
+                edges {
+                    node {
+                        name
+                        speaker
+                        location
+                        university
+                        dateAndTime
+                        slug
+                    }
+                }
+            }
+        }
+    `)
+
     const eventData = [
         {
             id: 0,
@@ -21,7 +39,7 @@ export default function EventCalendar() {
             location: "Front Room",
             time: "7 pm",
             date: "18th September 2020",
-            imageURL: "/weekly-poster.jpeg"
+            imageURL: "/weekly-poster.jpeg",
         },
         {
             id: 0,
@@ -32,7 +50,7 @@ export default function EventCalendar() {
             location: "Special Room",
             time: "8 pm",
             date: "20th September 2020",
-            imageURL: "/flagship-poster.jpeg"
+            imageURL: "/flagship-poster.jpeg",
         },
         {
             id: 0,
@@ -43,7 +61,7 @@ export default function EventCalendar() {
             location: "Bhaktivedanta Manor",
             time: "8am - 7pm",
             date: "28th September 2020",
-            imageURL: "/retreat-poster.jpeg"
+            imageURL: "/retreat-poster.jpeg",
         },
     ]
 
@@ -66,6 +84,10 @@ export default function EventCalendar() {
                     <CalendarMenu />
                 </Fade>
                 <div className={eventCalendarStyles.contentContainer}>
+                    {data.allContentfulEvent.edges.map(edge => (
+                        <EventCard data={edge.node} />
+                    ))}
+
                     <EventCard data={eventData[0]} />
                     <EventCard data={eventData[1]} />
                     <EventCard data={eventData[2]} />
