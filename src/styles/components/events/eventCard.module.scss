@@ -1,57 +1,10 @@
 .container {
-    border-radius: 5px;
+    background-color: rgba($color: (cyan), $alpha: 0.2);
     margin: 30px 12px;
-    min-height: 500px;
+    height: 500px;
     width: 350px;
-    padding: 10px;
-    box-sizing: border-box;
-    position: relative;
 
     -webkit-box-shadow: 3px 8px 16px 4px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 8px 16px 4px rgba(0, 0, 0, 0.75);
     box-shadow: 3px 8px 16px 4px rgba(0, 0, 0, 0.75);
-
-    img {
-        width: 330px;
-    }
-
-    * {
-        color: #313639;
-    }
-}
-
-.title {
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.content {
-    padding: 0 10px;
-}
-
-.meta-info {
-    font-size: 20px;
-    font-weight: bold;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    bottom: -5px;
-    text-align: center;
-    text-transform: capitalize;
-
-}
-
-.flagship {
-    background-color: rgba(0, 255, 255, 0.2);
-}
-
-.weekly {
-    background-color: rgba(255, 0, 0, 0.199);
-}
-
-.retreat {
-    background-color: rgba(0, 255, 0, 0.2);
 }
