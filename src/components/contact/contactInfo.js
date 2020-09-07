@@ -1,4 +1,6 @@
 import React from "react"
+import { FaPhone } from 'react-icons/fa';
+
 import contactInfoStyles from "../../styles/components/contact/contactInfo.module.scss"
 
 export default function ContactInfo() {
@@ -18,7 +20,8 @@ export default function ContactInfo() {
                     <p>
                         Call us at <b>07875 209 682</b>
                     </p>
-                </div>
+                    <FaPhone />
+                    </div>
                 <div
                     className={`${contactInfoStyles.visit} ${contactInfoStyles.infoBox}`}
                 >
@@ -34,7 +37,10 @@ export default function ContactInfo() {
                     className={`${contactInfoStyles.email} ${contactInfoStyles.infoBox}`}
                 >
                     <p>
-                        Email us at <a href="mailto:info@krishnasoc.com"><b>info@krishnasoc.com</b></a>
+                        Email us at{" "}
+                        <a href="mailto:info@krishnasoc.com">
+                            <b>info@krishnasoc.com</b>
+                        </a>
                     </p>
                 </div>
             </div>
