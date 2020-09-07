@@ -5,7 +5,6 @@ export default function EventInfo() {
     const [selected, setSelected] = useState("weekly")
 
 <<<<<<< HEAD
-<<<<<<< HEAD
     const renderBackground = () => {
         switch (selected) {
             case "weekly":
@@ -58,8 +57,6 @@ export default function EventInfo() {
         }
     }
 
-=======
->>>>>>> parent of df7c2ed... Event Info Made Responsive To Menu Selection
 =======
 >>>>>>> parent of df7c2ed... Event Info Made Responsive To Menu Selection
     return (
