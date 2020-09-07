@@ -1,20 +1,9 @@
-import React, { useState, useContext } from "react"
+import React, { useState } from "react"
 import { Multiselect } from "multiselect-react-dropdown"
-import EventContext from "../contexts/eventContext"
 
 import eventCalendarStyles from "../../styles/components/events/eventCalendar.module.scss"
 
 export default function UniversityPicker() {
-    const { setUniversities } = useContext(EventContext)
-
-    const onSelect = (selectedList, selectedItem) => {
-        setUniversities([...selectedList])
-    }
-
-    const onRemove = (selectedList, removedItem) => {
-        setUniversities([...selectedList])
-    }
-
     const [options] = useState([
         { name: "Online - open to all", id: 1 },
         { name: "Brunel", id: 2 },
@@ -49,11 +38,26 @@ export default function UniversityPicker() {
         { name: "Edinburgh", id: 31 },
     ])
 
+    const [selectedValue] = useState({})
+
+    const onSelect = (selectedList, selectedItem) => {
+        console.log("onSelect")
+        console.log(selectedList)
+        console.log(selectedItem)
+    }
+
+    const onRemove = (selectedList, removedItem) => {
+        console.log("onRemove")
+        console.log(selectedList)
+        console.log(removedItem)
+    }
+
     return (
         <div className={eventCalendarStyles.universityContainer}>
             <h2>University</h2>
             <Multiselect
                 options={options} // Options to display in the dropdown
+                selectedValues={selectedValue} // Preselected value to persist in dropdown
                 onSelect={onSelect} // Function will trigger on select event
                 onRemove={onRemove} // Function will trigger on remove event
                 displayValue="name" // Property name to display in the dropdown options

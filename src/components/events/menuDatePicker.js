@@ -1,41 +1,27 @@
-import React, { useState, useContext } from "react"
-import { DatePicker } from "react-rainbow-components"
-import EventContext from "../contexts/eventContext"
+import React, { useState } from "react"
+import { Picklist, PicklistOption, DatePicker } from "react-rainbow-components"
 
 import eventCalendarStyles from "../../styles/components/events/eventCalendar.module.scss"
 
-export default function MenuDatePicker({ type }) {
-    const { startDate, setStartDate, endDate, setEndDate } = useContext(
-        EventContext
-    )
-
+export default function MenuDatePicker({ title }) {
+    const [date, setDate] = useState()
     const [transparent, setTransparent] = useState(false)
 
     const clear = () => {
         setTransparent(true)
-        if (type === "start") {
-            setStartDate(undefined)
-        } else {
-            setEndDate(undefined)
-        }
+        setDate(undefined)
         setTimeout(() => {
             setTransparent(false)
-        }, 1000)
+        }, 100)
     }
 
     return (
         <div className={eventCalendarStyles.datePickerContainer}>
-            <h2>{type === "start" ? "Start Date" : "End Date"}</h2>
+            <h2>{title}</h2>
             <div className={eventCalendarStyles.datePicker}>
                 <DatePicker
-                    value={type === "start" ? startDate : endDate}
-                    onChange={value => {
-                        if (type === "start") {
-                            setStartDate(value)
-                        } else {
-                            setEndDate(value)
-                        }
-                    }}
+                    value={date}
+                    onChange={value => setDate(value)}
                     formatStyle="large"
                     locale="en-GB"
                 />
