@@ -28,10 +28,10 @@
             bottom: -1px;
             content: "";
             display: block;
-            height: 2px;
+            height: 1px;
             left: 50%;
             position: absolute;
-            background: grey;
+            background: #333333;
             transition: width 0.3s ease 0s, left 0.3s ease 0s;
             width: 0;
         }

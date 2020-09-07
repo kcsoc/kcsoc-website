@@ -68,12 +68,11 @@ export default function UniversityPicker() {
                 style={{
                     searchBox: {
                         // To change search box element look
-                        "border-radius": "30px",
-                        "border-color": "#A4A7B5",
+                        "border-radius": "10px",
                     },
                     inputField: {
                         // To change input field position or margin
-                        margin: "6px",
+                        margin: "10px",
                     },
 
                     option: {
