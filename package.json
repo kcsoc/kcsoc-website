@@ -14,15 +14,9 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "dotenv": "^8.2.0",
     "gatsby": "^2.24.47",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sass": "^2.3.12",
-    "gatsby-plugin-sharp": "^2.6.32",
-    "gatsby-remark-images": "^3.3.29",
-    "gatsby-remark-relative-images": "^2.0.2",
-    "gatsby-source-contentful": "^2.3.42",
-    "gatsby-transformer-remark": "^2.8.33",
     "multiselect-react-dropdown": "^1.5.7",
     "node-sass": "^4.14.1",
     "react": "^16.12.0",
