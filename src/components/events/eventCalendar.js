@@ -13,7 +13,7 @@ export default function EventCalendar() {
     const [endDate, setEndDate] = useState()
 
     const data = useStaticQuery(graphql`
-        query {∂
+        query {
             allContentfulEvent {
                 edges {
                     node {
