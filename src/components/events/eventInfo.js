@@ -22,19 +22,35 @@ export default function EventInfo() {
             case "weekly":
                 return (
                     <p>
-                        Our weekly events provide a place for students and
-                        faculty members alike to connect to themselves and other
-                        like minded individuals in a safe, light hearted
-                        environment where they can detach themselves from any
-                        external worries and stress and learn more about ways in
-                        which they can live a more driven and fulfilling
-                        lifestyle.
+                        Join our weekly events at KCSocs around the country to
+                        learn more about the ancient philosophy and tradition of
+                        spirituality. Enjoy delicious free sanctified vegetarian
+                        food (made with love) and connect with like-minded
+                        individuals.
                     </p>
                 )
             case "flagship":
-                return <p>Information on Flagship events go here</p>
+                return (
+                    <p>
+                        Dive deeper with our flagship events where hundreds of
+                        spiritual seekers are brought together. Listen to the
+                        wisdom and advice of globally renowned spiritual gurus
+                        who have been practising for multiple decades and take
+                        an opportunity to ask your own penetrating questions.
+                    </p>
+                )
             case "retreats":
-                return <p>Information on Retreats!</p>
+                return (
+                    <p>
+                        Immerse yourself in the complete holistic spritual
+                        experience. Listen to philosophy from monks and spritual
+                        practioners at Bhaktivedanta Manor near London. Connect
+                        to nature and feed the cows at the sanctuary, stretch
+                        out and relax during our in-house yoga sessions or learn
+                        the ancient wisdom of Ayurveda in our cooking classes.
+                        To finish it off, enjoy an ecstatic kirtan experience.
+                    </p>
+                )
             default:
                 return "Error invalid 'selected' variable"
         }

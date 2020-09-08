@@ -1,13 +1,12 @@
 .outerContainer {
     display: flex;
     flex-direction: row;
-    margin: auto;
+    margin: 0 auto 5rem;
     width: 1100px;
     min-height: 500px;
 }
 
 .menu {
-    border-right: 1px solid grey;
     display: flex;
     height: 400;
     flex-direction: column;
@@ -32,7 +31,7 @@
             height: 2px;
             left: 50%;
             position: absolute;
-            background: black;
+            background: grey;
             transition: width 0.3s ease 0s, left 0.3s ease 0s;
             width: 0;
         }
