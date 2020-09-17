@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react"
-import { Multiselect } from "multiselect-react-dropdown"
+import Select from "react-select"
 import EventContext from "../contexts/eventContext"
 
 import eventCalendarStyles from "../../styles/components/events/eventCalendar.module.scss"
@@ -24,7 +24,7 @@ export default function EventTypePicker() {
     return (
         <div className={eventCalendarStyles.eventTypeContainer}>
             <h2>Event Type</h2>
-            <Multiselect
+            <Select
                 options={options} // Options to display in the dropdown
                 onSelect={onSelect} // Function will trigger on select event
                 onRemove={onRemove} // Function will trigger on remove event
