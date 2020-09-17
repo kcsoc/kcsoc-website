@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Fade from "react-reveal/Fade"
 import CalendarMenu from "./calendarMenu"
 import eventCalendarStyles from "../../styles/components/events/eventCalendar.module.scss"
 import EventContext from "../contexts/eventContext"
@@ -71,7 +72,9 @@ export default function EventCalendar() {
         >
             <div className={eventCalendarStyles.outerContainer}>
                 <h1 className={eventCalendarStyles.title}>Calendar</h1>
-                <CalendarMenu />
+                <Fade>
+                    <CalendarMenu />
+                </Fade>
                 <div className={eventCalendarStyles.contentContainer}>
                     {filteredData.map((edge, index) => (
                         <EventCard key={index} data={edge.node} />
