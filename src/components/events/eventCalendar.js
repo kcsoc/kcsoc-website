@@ -42,7 +42,7 @@ export default function EventCalendar() {
         }
         if (eventTypes.length) {
             const types = eventTypes.map(eventType =>
-                eventType.type.toLowerCase()
+                eventType.value.toLowerCase()
             )
             if (!types.includes(edge.node.slug)) return false
         }

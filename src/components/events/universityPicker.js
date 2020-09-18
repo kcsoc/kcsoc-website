@@ -7,76 +7,56 @@ import eventCalendarStyles from "../../styles/components/events/eventCalendar.mo
 export default function UniversityPicker() {
     const { setUniversities } = useContext(EventContext)
 
-    const onSelect = (selectedList, selectedItem) => {
-        setUniversities([...selectedList])
+    const onChange = selectedList => {
+        try {
+            setUniversities([...selectedList])
+        } catch (error) {
+            setUniversities([])
+        }
     }
-
-    const onRemove = (selectedList, removedItem) => {
-        setUniversities([...selectedList])
-    }
-
-    const [options] = useState([
-        { name: "Online - open to all", id: 1 },
-        { name: "Brunel", id: 2 },
-        { name: "City", id: 3 },
-        { name: "Imperial", id: 4 },
-        { name: "KCL", id: 5 },
-        { name: "Kingston", id: 6 },
-        { name: "London Met", id: 7 },
-        { name: "Queen Mary", id: 8 },
-        { name: "Roehampton", id: 9 },
-        { name: "SOAS", id: 10 },
-        { name: "St George's", id: 11 },
-        { name: "UCL", id: 12 },
-        { name: "East London", id: 13 },
-        { name: "Kent", id: 14 },
-        { name: "Southampton", id: 15 },
-        { name: "Hertfordshire", id: 16 },
-        { name: "Cambridge", id: 17 },
-        { name: "Oxford", id: 18 },
-        { name: "Bristol", id: 19 },
-        { name: "Reading", id: 20 },
-        { name: "Warwick", id: 21 },
-        { name: "DMU", id: 22 },
-        { name: "Coventry", id: 23 },
-        { name: "Aston", id: 24 },
-        { name: "BCU", id: 25 },
-        { name: "Birmingham", id: 26 },
-        { name: "Loughborough", id: 27 },
-        { name: "Nottingham", id: 28 },
-        { name: "MMU", id: 29 },
-        { name: "Glasgow", id: 30 },
-        { name: "Edinburgh", id: 31 },
-    ])
+    const options = [
+        { value: "Online - open to all", label: "Online - open to all" },
+        { value: "Brunel", label: "Brunel" },
+        { value: "City", label: "City" },
+        { value: "Imperial", label: "Imperial" },
+        { value: "KCL", label: "KCL" },
+        { value: "Kingston", label: "Kingston" },
+        { value: "London Met", label: "London Met" },
+        { value: "Queen Mary", label: "Queen Mary" },
+        { value: "Roehampton", label: "Roehampton" },
+        { value: "SOAS", label: "SOAS" },
+        { value: "St George's", label: "St George's" },
+        { value: "UCL", label: "UCL" },
+        { value: "East London", label: "East London" },
+        { value: "Kent", label: "Kent" },
+        { value: "Southampton", label: "Southampton" },
+        { value: "Hertfordshire", label: "Hertfordshire" },
+        { value: "Cambridge", label: "Cambridge" },
+        { value: "Oxford", label: "Oxford" },
+        { value: "Bristol", label: "Bristol" },
+        { value: "Reading", label: "Reading" },
+        { value: "Warwick", label: "Warwick" },
+        { value: "DMU", label: "DMU" },
+        { value: "Coventry", label: "Coventry" },
+        { value: "Aston", label: "Aston" },
+        { value: "BCU", label: "BCU" },
+        { value: "Birmingham", label: "Birmingham" },
+        { value: "Loughborough", label: "Loughborough" },
+        { value: "Nottingham", label: "Nottingham" },
+        { value: "MMU", label: "MMU" },
+        { value: "Glasgow", label: "Glasgow" },
+        { value: "Edinburgh", label: "Edinburgh" },
+    ]
 
     return (
         <div className={eventCalendarStyles.universityContainer}>
             <h2>University</h2>
             <Select
-                options={options} // Options to display in the dropdown
-                onSelect={onSelect} // Function will trigger on select event
-                onRemove={onRemove} // Function will trigger on remove event
-                displayValue="name" // Property name to display in the dropdown options
-                avoidHighlightFirstOption={true}
-                hidePlaceholder={true}
+                options={options}
+                onChange={onChange}
+                isMulti
                 placeholder="All Universities"
-                closeIcon="cancel"
-                style={{
-                    searchBox: {
-                        // To change search box element look
-                        "border-radius": "30px",
-                        "border-color": "#A4A7B5",
-                    },
-                    inputField: {
-                        // To change input field position or margin
-                        margin: "6px",
-                    },
-
-                    option: {
-                        // To change css for dropdown options
-                        color: "black",
-                    },
-                }}
+                className={eventCalendarStyles.select}
             />
         </div>
     )
