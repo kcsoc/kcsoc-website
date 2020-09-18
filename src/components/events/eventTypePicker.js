@@ -13,7 +13,7 @@ export default function EventTypePicker() {
         } catch (error) {
             setEventTypes([])
         }
-    }
+    } 
 
     const options = [
         { value: "Weekly", label: "Weekly", },
