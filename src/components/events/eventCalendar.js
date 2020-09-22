@@ -22,7 +22,7 @@ export default function EventCalendar() {
                         location
                         university
                         dateAndTime
-                        slug
+                        type
                         poster {
                             title
                             resize {
@@ -37,14 +37,14 @@ export default function EventCalendar() {
 
     const filteredData = data.allContentfulEvent.edges.filter(edge => {
         if (universities.length) {
-            const names = universities.map(university => university.name)
+            const names = universities.map(university => university.label)
             if (!names.includes(edge.node.university)) return false
         }
         if (eventTypes.length) {
             const types = eventTypes.map(eventType =>
-                eventType.type.toLowerCase()
+                eventType.label.toLowerCase()
             )
-            if (!types.includes(edge.node.slug)) return false
+            if (!types.includes(edge.node.type)) return false
         }
         const nodeDate = new Date(edge.node.dateAndTime)
         if (startDate) {

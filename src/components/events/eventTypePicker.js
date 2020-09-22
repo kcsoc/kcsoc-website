@@ -16,9 +16,9 @@ export default function EventTypePicker() {
     }
 
     const [options] = useState([
-        { type: "Weekly", id: 1 },
-        { type: "Flagship", id: 2 },
-        { type: "Retreats", id: 3 },
+        { label: "Weekly", value: 1 },
+        { label: "Flagship", value: 2 },
+        { label: "Retreats", value: 3 },
     ])
 
     return (
@@ -26,29 +26,18 @@ export default function EventTypePicker() {
             <h2>Event Type</h2>
             <Select
                 options={options} // Options to display in the dropdown
+                onChange={newValue => {
+                    if (!newValue) {
+                        setEventTypes([])
+                    } else {
+                        setEventTypes(newValue)
+                    }
+                }}
+                isMulti
                 onSelect={onSelect} // Function will trigger on select event
                 onRemove={onRemove} // Function will trigger on remove event
-                displayValue="type" // Property name to display in the dropdown options
-                avoidHighlightFirstOption={true}
-                hidePlaceholder={true}
                 placeholder="All Types"
-                closeIcon="cancel"
-                style={{
-                    searchBox: {
-                        // To change search box element look
-                        "border-radius": "30px",
-                        "border-color": "#A4A7B5",
-                    },
-                    inputField: {
-                        // To change input field position or margin
-                        margin: "6px",
-                    },
-
-                    option: {
-                        // To change css for dropdown options
-                        color: "black",
-                    },
-                }}
+                className={eventCalendarStyles.multiSelect}
             />
         </div>
     )
