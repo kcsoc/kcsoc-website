@@ -2,8 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 
 import headerStyles from "../styles/components/header.module.scss"
-
-
 import logoDark from "./logo-dark.png"
 import logoLight from "./logo-light.png"
 
@@ -26,7 +24,6 @@ import logoLight from "./logo-light.png"
 // </Link>
 // </li>
 
-
 export default function Header({ isOpaque, dark }) {
     return (
         <header
@@ -35,17 +32,21 @@ export default function Header({ isOpaque, dark }) {
             } ${dark ? headerStyles.dark : ""}`}
         >
             {dark ? (
-                <img
-                    className={headerStyles.logo}
-                    alt="kcsoc-logo-dark"
-                    src={logoDark}
-                />
+                <Link href="/" activeClassName={headerStyles.active}>
+                    <img
+                        className={headerStyles.logo}
+                        alt="kcsoc-logo-dark"
+                        src={logoDark}
+                    />
+                </Link>
             ) : (
-                <img
-                    className={headerStyles.logo}
-                    alt="kcsoc-logo"
-                    src={logoLight}
-                />
+                <Link href="/" activeClassName={headerStyles.active}>
+                    <img
+                        className={headerStyles.logo}
+                        alt="kcsoc-logo"
+                        src={logoLight}
+                    />
+                </Link>
             )}
 
             <nav>
