@@ -7,12 +7,12 @@ import eventCalendarStyles from "../../styles/components/events/eventCalendar.mo
 export default function UniversityPicker() {
     const { setUniversities } = useContext(EventContext)
 
-    const onSelect = (selectedList, selectedItem) => {
-        setUniversities([...selectedList])
-    }
-
-    const onRemove = (selectedList, removedItem) => {
-        setUniversities([...selectedList])
+    const onChange = selectedList => {
+        try {
+            setUniversities([...selectedList])
+        } catch (error) {
+            setUniversities([])
+        }
     }
 
     const options = [
@@ -53,19 +53,11 @@ export default function UniversityPicker() {
         <div className={eventCalendarStyles.universityContainer}>
             <h2>University</h2>
             <Select
-                options={options} // Options to display in the dropdown
+                options={options}
+                onChange={onChange}
                 isMulti
-                onChange={newValue => {
-                    if (!newValue) {
-                        setUniversities([])
-                    } else {
-                        setUniversities(newValue)
-                    }
-                }}
-                onSelect={onSelect} // Function will trigger on select event
-                onRemove={onRemove} // Function will trigger on remove event
                 placeholder="All Universities"
-                className={eventCalendarStyles.multiSelect}
+                className={eventCalendarStyles.select}
             />
         </div>
     )
