@@ -1,10 +1,13 @@
 import React from "react"
 import FadeIn from "../components/fadeIn"
+import Header from "../components/header"
+import GetInvolvedInfo from "../components/get-involved/getInvolvedInfo"
 
 export default function GetInvolved() {
     return (
         <FadeIn>
-            <h1>Get Involved!</h1>
+            <Header isOpaque={true} dark={true} />
+            <GetInvolvedInfo />
         </FadeIn>
     )
 }
