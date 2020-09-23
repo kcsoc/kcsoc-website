@@ -34,7 +34,7 @@ export default function QuoteSlider() {
                 <div>
                     <img src={quote2} />
                     <div
-                        className={`${quoteSliderStyles.text} ${quoteSliderStyles.leftText}`}
+                        className={`${quoteSliderStyles.text} ${quoteSliderStyles.leftText} ${quoteSliderStyles.blackText}`}
                     >
                         <p>
                             "I feel like it's been connecting the dots for me
@@ -46,7 +46,7 @@ export default function QuoteSlider() {
                 <div>
                     <img src={quote3} />
                     <div
-                        className={`${quoteSliderStyles.text} ${quoteSliderStyles.rightText}`}
+                        className={`${quoteSliderStyles.text} ${quoteSliderStyles.rightText} ${quoteSliderStyles.blackText}`}
                     >
                         <p>
                             "The people are amazing! Honestly, they're just so
@@ -61,7 +61,7 @@ export default function QuoteSlider() {
                         className={`${quoteSliderStyles.text} ${quoteSliderStyles.rightText}`}
                     >
                         <p>
-                            "I got to socialise with poeple I got to truly feel
+                            "I got to socialise with people I got to truly feel
                             comfortable with. Here, I actually felt like I was
                             learning something that isn't useless knowledge."
                         </p>
@@ -73,9 +73,9 @@ export default function QuoteSlider() {
                         className={`${quoteSliderStyles.text} ${quoteSliderStyles.leftText}`}
                     >
                         <p>
-                            "I got to socialise with poeple I got to truly feel
-                            comfortable with. Here, I actually felt like I was
-                            learning something that isn't useless knowledge."
+                            "The whole world should come to these retreats.
+                            Every university should come at least once to these
+                            things."
                         </p>
                     </div>
                 </div>
