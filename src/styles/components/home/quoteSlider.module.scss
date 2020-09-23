@@ -1,8 +1,32 @@
 .slider {
-    max-width: 800px;
+    max-width: 1100px;
     align-items: center;
+    margin-top: 6rem;
 }
 
-.thumb {
-    opacity: 0;
+.text {
+    font-family: "Lobster", sans-serif;
+    font-size: 2.5rem;
+    position: absolute;
+    text-align: left;
+    width: 350px;
+    p {
+        color: white;
+    }
+}
+
+.right-text {
+    top: 50px;
+    left: 670px;
+}
+
+.left-text {
+    top: 50px;
+    left: 130px;
+}
+
+.black-text {
+    p {
+        color: black;
+    }
 }

@@ -39,7 +39,9 @@ export default function GetInvolved() {
                 <h1 className={getInvolvedStyles.headline}>
                     Be Part of Something Amazing
                 </h1>
-                <a className={getInvolvedStyles.btn}>Get Involved</a>
+                <Link to="/get-involved" className={getInvolvedStyles.btn}>
+                    Get Involved
+                </Link>
             </div>
             <Fade>
                 <div className={getInvolvedStyles.aboutInfo}>
@@ -73,6 +75,7 @@ export default function GetInvolved() {
                 </div>
 
                 <UniversityMap />
+                <QuoteSlider />
                 <NeverForget trigger={trigger} isTriggered={isTriggered} />
             </Fade>
         </div>
