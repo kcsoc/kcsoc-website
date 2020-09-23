@@ -52,6 +52,10 @@
     z-index:-1;
 }
 
-.multiSelect {
-    color: black;
+.select {
+    * {
+        border-radius: 30px !important;
+        border-color: #A4A7B5;
+        color: black;
+    }
 }
