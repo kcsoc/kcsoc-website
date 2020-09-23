@@ -4,9 +4,9 @@ import eventCardStyles from "../../styles/components/events/eventCard.module.scs
 
 export default function EventCard({ data }) {
     const colorCard = () => {
-        if (data.slug === "weekly") return eventCardStyles.weekly
-        if (data.slug === "flagship") return eventCardStyles.flagship
-        if (data.slug === "retreat") return eventCardStyles.retreat
+        if (data.type === "weekly") return eventCardStyles.weekly
+        if (data.type === "flagship") return eventCardStyles.flagship
+        if (data.type === "retreat") return eventCardStyles.retreat
     }
 
     const date = moment(data.dateAndTime)
@@ -30,7 +30,7 @@ export default function EventCard({ data }) {
                 {data.location && <p>Location: {data.location}</p>}
             </div>
             <p className={eventCardStyles.metaInfo}>
-                {data.slug}
+                {data.type}
                 {data.university && ` - ${data.university}`}
             </p>
         </div>

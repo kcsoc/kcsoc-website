@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react"
+import React, { useContext } from "react"
 import Select from "react-select"
 import EventContext from "../contexts/eventContext"
 
@@ -14,38 +14,39 @@ export default function UniversityPicker() {
             setUniversities([])
         }
     }
+
     const options = [
-        { value: "Online - open to all", label: "Online - open to all" },
-        { value: "Brunel", label: "Brunel" },
-        { value: "City", label: "City" },
-        { value: "Imperial", label: "Imperial" },
-        { value: "KCL", label: "KCL" },
-        { value: "Kingston", label: "Kingston" },
-        { value: "London Met", label: "London Met" },
-        { value: "Queen Mary", label: "Queen Mary" },
-        { value: "Roehampton", label: "Roehampton" },
-        { value: "SOAS", label: "SOAS" },
-        { value: "St George's", label: "St George's" },
-        { value: "UCL", label: "UCL" },
-        { value: "East London", label: "East London" },
-        { value: "Kent", label: "Kent" },
-        { value: "Southampton", label: "Southampton" },
-        { value: "Hertfordshire", label: "Hertfordshire" },
-        { value: "Cambridge", label: "Cambridge" },
-        { value: "Oxford", label: "Oxford" },
-        { value: "Bristol", label: "Bristol" },
-        { value: "Reading", label: "Reading" },
-        { value: "Warwick", label: "Warwick" },
-        { value: "DMU", label: "DMU" },
-        { value: "Coventry", label: "Coventry" },
-        { value: "Aston", label: "Aston" },
-        { value: "BCU", label: "BCU" },
-        { value: "Birmingham", label: "Birmingham" },
-        { value: "Loughborough", label: "Loughborough" },
-        { value: "Nottingham", label: "Nottingham" },
-        { value: "MMU", label: "MMU" },
-        { value: "Glasgow", label: "Glasgow" },
-        { value: "Edinburgh", label: "Edinburgh" },
+        { label: "Online - open to all", value: 1 },
+        { label: "Brunel", value: 2 },
+        { label: "City", value: 3 },
+        { label: "Imperial", value: 4 },
+        { label: "KCL", value: 5 },
+        { label: "Kingston", value: 6 },
+        { label: "London Met", value: 7 },
+        { label: "Queen Mary", value: 8 },
+        { label: "Roehampton", value: 9 },
+        { label: "SOAS", value: 10 },
+        { label: "St George's", value: 11 },
+        { label: "UCL", value: 12 },
+        { label: "East London", value: 13 },
+        { label: "Kent", value: 14 },
+        { label: "Southampton", value: 15 },
+        { label: "Hertfordshire", value: 16 },
+        { label: "Cambridge", value: 17 },
+        { label: "Oxford", value: 18 },
+        { label: "Bristol", value: 19 },
+        { label: "Reading", value: 20 },
+        { label: "Warwick", value: 21 },
+        { label: "DMU", value: 22 },
+        { label: "Coventry", value: 23 },
+        { label: "Aston", value: 24 },
+        { label: "BCU", value: 25 },
+        { label: "Birmingham", value: 26 },
+        { label: "Loughborough", value: 27 },
+        { label: "Nottingham", value: 28 },
+        { label: "MMU", value: 29 },
+        { label: "Glasgow", value: 30 },
+        { label: "Edinburgh", value: 31 },
     ]
 
     return (

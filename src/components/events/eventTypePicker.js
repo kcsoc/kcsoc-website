@@ -16,9 +16,9 @@ export default function EventTypePicker() {
     }
 
     const options = [
-        { value: "Weekly", label: "Weekly", },
-        { value: "Flagship", label: "Flagship", },
-        { value: "Retreats", label: "Retreats", },
+        { label: "Weekly", value: 1 },
+        { label: "Flagship", value: 2 },
+        { label: "Retreats", value: 3 },
     ]
 
     return (
@@ -27,9 +27,9 @@ export default function EventTypePicker() {
             <Select
                 options={options}
                 onChange={onChange}
-                isMulti
-                placeholder="All"
                 className={eventCalendarStyles.select}
+                isMulti
+                placeholder="All Types"
             />
         </div>
     )
