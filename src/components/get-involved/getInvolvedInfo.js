@@ -24,9 +24,10 @@ export default function GetInvolvedInfo() {
                         </p>
                     </div>
 
-                    <img src={bg} alt="Bhagavad Gita" />
+                    <img className={getInvolvedInfoStyles.bg} src={bg} alt="Bhagavad Gita" />
                 </div>
-                <p className={getInvolvedInfoStyles.instruction}>
+                <p className={getInvolvedInfoStyles.instruction
+                }>
                     Fill out your information below and a member of the KCSOC
                     National team will reach out to help find the right KCSOC
                     for you.
