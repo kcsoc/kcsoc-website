@@ -10,15 +10,6 @@
     margin: 0 auto 5rem;
     padding: 2rem 1rem;
 
-    p {
-        color: #bf1650;
-
-        &::before {
-            display: inline;
-            content: "⚠ ";
-        }
-    }
-
     input,
     select {
         display: block;
@@ -66,5 +57,27 @@
         &:hover {
             transform: scale(1.04);
         }
+
+        &:disabled {
+            background: linear-gradient(
+                90deg,
+                lighten(#ff72c0, 10%),
+                lighten(#55e7fc, 10%)
+            );
+        }
     }
+}
+
+.error-message {
+    color: #bf1650;
+
+    &::before {
+        display: inline;
+        content: "⚠ ";
+    }
+}
+
+.message {
+    color: black;
+    text-align: center;
 }
