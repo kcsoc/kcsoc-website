@@ -16,7 +16,7 @@ export default function GetInvolvedForm() {
         try {
             setDisabledButton(true)
             setMessage("")
-            const res = await fetch(`${url}forms/get-involved`, {
+            const res = await fetch(`${url}/forms/get-involved`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

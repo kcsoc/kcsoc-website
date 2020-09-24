@@ -16,7 +16,7 @@ export default function SetUpAKCSOCForm() {
         try {
             setDisabledButton(true)
             setMessage("")
-            const res = await fetch(`${url}forms/set-up-a-kcsoc`, {
+            const res = await fetch(`${url}/forms/set-up-a-kcsoc`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
