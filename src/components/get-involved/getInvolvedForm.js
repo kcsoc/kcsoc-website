@@ -26,6 +26,8 @@ export default function GetInvolvedForm() {
             reset()
             if (res.status === 201) {
                 setMessage("Form submitted successfully")
+            } else {
+                setMessage("Form submission failed")
             }
 
             setDisabledButton(false)
