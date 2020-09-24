@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from "gatsby"
 import universityMapStyles from "../../styles/components/home/universityMap.module.scss"
 
 export default function UniversityMap() {
@@ -341,7 +342,9 @@ export default function UniversityMap() {
             </div>
             <div className={universityMapStyles.setUpContainer}>
                 <h2>Can't find your university on the list?</h2>
-                <a className={universityMapStyles.btn}>Set Up a KCSoc</a>
+                <Link to="/set-up-a-kcsoc">
+                    <a className={universityMapStyles.btn}>Set Up a KCSoc</a>
+                </Link>
             </div>
         </div>
     )
