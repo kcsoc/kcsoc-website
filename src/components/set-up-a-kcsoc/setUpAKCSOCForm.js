@@ -9,7 +9,7 @@ export default function SetUpAKCSOCForm() {
     const { register, handleSubmit, errors, reset } = useForm()
 
     // CHANGE FOR PRODUCTION //////////////
-    const url = "http://localhost:5000/"
+    const url = process.env.SERVER_URL
     //////////////////////////////////////
 
     const onSubmit = async data => {
