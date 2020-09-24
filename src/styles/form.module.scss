@@ -5,7 +5,7 @@
 
 .form {
     border-radius: 1rem;
-    background-image: url(../home/watercolor-2.jpg);
+    background-image: url(../../static/watercolor-2.jpg);
     max-width: 500px;
     margin: 0 auto 5rem;
     padding: 2rem 1rem;
@@ -44,21 +44,11 @@
 
     button[type="submit"],
     input[type="submit"] {
-        // background: #ec5990;
-        // color: white;
-        // text-transform: uppercase;
-        // border: none;
-        // margin-top: 40px;
-        // padding: 20px;
-        // font-size: 16px;
-        // font-weight: 100;
-        // letter-spacing: 10px;
-
         cursor: pointer;
         position: relative;
         display: inline-block;
         padding: 12px 36px;
-        margin: 10px 0;
+        margin: 2rem 0;
         color: white;
         text-decoration: none;
         text-transform: uppercase;
