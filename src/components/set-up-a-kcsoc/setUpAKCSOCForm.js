@@ -8,9 +8,7 @@ export default function SetUpAKCSOCForm() {
 
     const { register, handleSubmit, errors, reset } = useForm()
 
-    // CHANGE FOR PRODUCTION //////////////
-    const url = process.env.SERVER_URL
-    //////////////////////////////////////
+    const url = process.env.GATSBY_SERVER_URL.replace(/\/$/, "")
 
     const onSubmit = async data => {
         try {
