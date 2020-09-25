@@ -1,0 +1,83 @@
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.form {
+    border-radius: 1rem;
+    background-image: url(../../static/watercolor-2.jpg);
+    max-width: 500px;
+    margin: 0 auto 5rem;
+    padding: 2rem 1rem;
+
+    input,
+    select {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid white;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    label {
+        line-height: 2;
+        text-align: left;
+        display: block;
+        margin-bottom: 13px;
+        margin-top: 20px;
+        color: black;
+        font-size: 14px;
+        font-weight: 200;
+    }
+
+    button[type="submit"],
+    input[type="submit"] {
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        padding: 12px 36px;
+        margin: 2rem 0;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-family: Montserrat;
+        letter-spacing: 2px;
+        border: none;
+        border-radius: 40px;
+        background: linear-gradient(90deg, #ff72c0, #55e7fc);
+        outline: none;
+        box-shadow: 0 0 4px #999;
+        background-position: center;
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(1.04);
+        }
+
+        &:disabled {
+            background: linear-gradient(
+                90deg,
+                lighten(#ff72c0, 10%),
+                lighten(#55e7fc, 10%)
+            );
+        }
+    }
+}
+
+.error-message {
+    color: #bf1650;
+
+    &::before {
+        display: inline;
+        content: "⚠ ";
+    }
+}
+
+.message {
+    color: black;
+    text-align: center;
+}

@@ -10,76 +10,77 @@ import quote5 from "../../../static/QuoteImages/quote5.png"
 
 export default function QuoteSlider() {
     return (
-        <div className={quoteSliderStyles.slider}>
-            <Carousel
-                showThumbs={false}
-                showStatus={false}
-                infiniteLoop={true}
-                useKeyboardArrows={true}
-                autoPlay={true}
-                interval={5000}
-            >
-                <div>
-                    <img src={quote1} />
-                    <div
-                        className={`${quoteSliderStyles.text} ${quoteSliderStyles.rightText}`}
-                    >
-                        <p>
-                            "Going to KCSOC has definitely allowed me to have a
-                            bit more freedom of thought when I'm talking to
-                            people."
-                        </p>
+            <div className={quoteSliderStyles.slider}>
+                <Carousel
+                    showThumbs={false}
+                    showStatus={false}
+                    infiniteLoop={true}
+                    useKeyboardArrows={true}
+                    autoPlay={true}
+                    interval={5000}
+                >
+                    <div>
+                        <img src={quote1} />
+                        <div
+                            className={`${quoteSliderStyles.text} ${quoteSliderStyles.rightText}`}
+                        >
+                            <p>
+                                "Going to KCSOC has definitely allowed me to
+                                have a bit more freedom of thought when I'm
+                                talking to people."
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img src={quote2} />
-                    <div
-                        className={`${quoteSliderStyles.text} ${quoteSliderStyles.leftText} ${quoteSliderStyles.blackText}`}
-                    >
-                        <p>
-                            "I feel like it's been connecting the dots for me
-                            which I've been confused about for such a long
-                            time."
-                        </p>
+                    <div>
+                        <img src={quote2} />
+                        <div
+                            className={`${quoteSliderStyles.text} ${quoteSliderStyles.leftText} ${quoteSliderStyles.blackText}`}
+                        >
+                            <p>
+                                "I feel like it's been connecting the dots for
+                                me which I've been confused about for such a
+                                long time."
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img src={quote3} />
-                    <div
-                        className={`${quoteSliderStyles.text} ${quoteSliderStyles.rightText} ${quoteSliderStyles.blackText}`}
-                    >
-                        <p>
-                            "The people are amazing! Honestly, they're just so
-                            genuine and so ready to explore and dig deeper into
-                            their spiritual lives."
-                        </p>
+                    <div>
+                        <img src={quote3} />
+                        <div
+                            className={`${quoteSliderStyles.text} ${quoteSliderStyles.rightText} ${quoteSliderStyles.blackText}`}
+                        >
+                            <p>
+                                "The people are amazing! Honestly, they're just
+                                so genuine and so ready to explore and dig
+                                deeper into their spiritual lives."
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img src={quote4} />
-                    <div
-                        className={`${quoteSliderStyles.text} ${quoteSliderStyles.rightText}`}
-                    >
-                        <p>
-                            "I got to socialise with people I got to truly feel
-                            comfortable with. Here, I actually felt like I was
-                            learning something that isn't useless knowledge."
-                        </p>
+                    <div>
+                        <img src={quote4} />
+                        <div
+                            className={`${quoteSliderStyles.text} ${quoteSliderStyles.rightText}`}
+                        >
+                            <p>
+                                "I got to socialise with people I got to truly
+                                feel comfortable with. Here, I actually felt
+                                like I was learning something that isn't useless
+                                knowledge."
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <img src={quote5} />
-                    <div
-                        className={`${quoteSliderStyles.text} ${quoteSliderStyles.leftText}`}
-                    >
-                        <p>
-                            "The whole world should come to these retreats.
-                            Every university should come at least once to these
-                            things."
-                        </p>
+                    <div>
+                        <img src={quote5} />
+                        <div
+                            className={`${quoteSliderStyles.text} ${quoteSliderStyles.leftText}`}
+                        >
+                            <p>
+                                "The whole world should come to these retreats.
+                                Every university should come at least once to
+                                these things."
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </Carousel>
-        </div>
+                </Carousel>
+            </div>
     )
 }

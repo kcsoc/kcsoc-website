@@ -9,7 +9,7 @@ export default function ContactInfo() {
             <h1>Contact</h1>
             <div className={contactInfoStyles.container}>
                 <h2>Got a question or a query?</h2>
-                <h2>Get in touch by sending a message below.</h2>
+                <h2>Get in touch below.</h2>
             </div>
             <hr />
 
@@ -20,7 +20,7 @@ export default function ContactInfo() {
                     <FaPhone size="1.2em"/>
 
                     <p>
-                        Call us at <b>07875 209 682</b>
+                        Call us at <b>07553 556 903</b>
                     </p>
                 </div>
                 <div
