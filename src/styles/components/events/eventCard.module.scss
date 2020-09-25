@@ -1,18 +1,20 @@
 .container {
-    border-radius: 5px;
-    margin: 30px 12px;
-    min-height: 500px;
-    width: 350px;
-    padding: 10px;
+    border: 1px solid grey;
     box-sizing: border-box;
+    // border-radius: 5px;
+    margin: 30px 12px;
+    min-height: 520px;
     position: relative;
+    width: 350px;
+    // padding: 10px;
 
     -webkit-box-shadow: 3px 8px 16px 4px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 8px 16px 4px rgba(0, 0, 0, 0.75);
     box-shadow: 3px 8px 16px 4px rgba(0, 0, 0, 0.75);
 
     img {
-        width: 330px;
+        // border-radius: 5px;
+        width: 350px;
     }
 
     * {
@@ -41,17 +43,16 @@
     bottom: -5px;
     text-align: center;
     text-transform: capitalize;
-
 }
 
 .flagship {
-    background-color: rgba(0, 255, 255, 0.2);
+    // background-color: rgba(0, 255, 255, 0.2);
 }
 
 .weekly {
-    background-color: rgba(255, 0, 0, 0.199);
+    // background-color: rgba(255, 0, 0, 0.199);
 }
 
 .retreat {
-    background-color: rgba(0, 255, 0, 0.2);
+    // background-color: rgba(0, 255, 0, 0.2);
 }

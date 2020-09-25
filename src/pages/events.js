@@ -9,6 +9,7 @@ export default function Events() {
     return (
         <FadeIn>
             <Header isOpaque={true} dark={true} />
+
             <Fade>
                 <EventInfo />
             </Fade>
@@ -18,3 +19,4 @@ export default function Events() {
         </FadeIn>
     )
 }
+

@@ -22,13 +22,15 @@
         margin: 2rem auto;
         padding: 15px 20px;
         position: relative;
+        color: grey;
+        font-weight: 200;
 
         &:after {
             background: none repeat scroll 0 0 transparent;
             bottom: -1px;
             content: "";
             display: block;
-            height: 2px;
+            height: 1px;
             left: 50%;
             position: absolute;
             background: grey;
