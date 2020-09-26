@@ -2,33 +2,28 @@
     max-width: 1100px;
     align-items: center;
     margin-top: 6rem;
-    border: 1rem solid black;
-    border-radius: 1rem;
+    border: 0.5rem solid black;
+    border-radius: 0.5rem;
 }
 
 .text {
-    font-family: "Lobster", cursive;
-    font-size: 2.5rem;
+    background-color: rgba($color: black, $alpha: 0.5);
+    font-weight: 200;
     position: absolute;
+    top: 50%;
     text-align: left;
+    transform: translateY(-50%);
+    padding: 1rem;
     width: 350px;
-    p {
+    h2 {
         color: white;
     }
 }
 
 .right-text {
-    top: 50px;
     left: 670px;
 }
 
 .left-text {
-    top: 50px;
     left: 130px;
-}
-
-.black-text {
-    p {
-        color: black;
-    }
 }
