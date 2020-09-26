@@ -14,20 +14,31 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "gatsby": "^2.24.47",
+    "acorn": "^6.4.1",
+    "bootstrap": "^4.5.2",
+    "chokidar": "^3.4.2",
+    "gatsby": "^2.24.57",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sass": "^2.3.12",
+    "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "popper.js": "^1.16.1",
+    "react": "^16.13.1",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.8.1",
     "react-helmet": "^6.1.0",
     "react-player": "^2.6.1",
+    "react-refresh": "^0.8.3",
     "react-responsive-carousel": "^3.2.9",
     "react-reveal": "^1.2.2",
-    "react-visibility-sensor": "^5.1.1"
+    "react-visibility-sensor": "^5.1.1",
+    "typescript": "^4.0.2"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "prettier": "2.0.5",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.2",
+    "webpack": "^4.44.1"
   },
   "repository": {
     "type": "git",

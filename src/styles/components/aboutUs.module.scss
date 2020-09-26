@@ -1,0 +1,209 @@
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-image: linear-gradient(to right bottom,
+  rgba(grey, 0.2),
+  rgba(black,0.8)),
+  url("/BGIMG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.banner {
+  background-image: url("/banner.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.heading {  
+  font-size: 12rem;
+  font-family: "Cookie", cursive;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: 600;
+  background-image: linear-gradient(to left, white, white);
+  background-clip: text;
+  color: transparent;
+  }
+
+
+ /*.head2 {
+  text-align: center;
+  font-weight: 500;
+  font-family: "Cookie", cursive;
+  font-size: 7rem;
+  letter-spacing: -2px;
+  border-bottom: 2px solid black; 
+
+} */
+
+.head2 {
+    text-align: center;
+		color: white;
+		font-size: 90px;
+		font-weight: 700;
+		font-family: "Cookie", cursive;
+		background: white;
+		background-size: auto auto;
+		background-clip: border-box;
+		background-size: 200% auto;
+		color: white;
+		background-clip: text;
+		text-fill-color: transparent;
+		-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+  }
+
+  .h3 {
+    color: black;
+    font-size: 3rem;
+    font-weight: 2000;
+  }
+
+  .h4 {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+		font-size: 70px;
+		font-weight: 500;
+		font-family: "Cookie", cursive;
+		background: black;
+		background-size: auto auto;
+		background-clip: border-box;
+		background-size: 100% auto;
+		color: #fff;
+		background-clip: text;
+		text-fill-color: transparent;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+  }
+
+  .philosophy {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+		font-size: 80px;
+		font-weight: 500;
+		font-family: "Cookie", cursive;
+		background: black;
+		background-size: auto auto;
+		background-clip: border-box;
+		background-size: 100% auto;
+		color: #fff;
+		background-clip: text;
+		text-fill-color: transparent;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+  }
+
+  
+  .philosophycont {
+    margin: 0 auto;
+    max-width: 1000px;
+    line-height: 2;
+    align-items: center;
+
+    p {
+        margin-right: 1rem;
+        color: black;
+    }
+  }
+
+  .featurebox {
+    background-image: url("/watercolor-2.jpg");
+    font-size: 1rem;
+    padding: 5rem;
+    margin: 0 5rem 2rem 5rem;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 1.5rem 4rem rgba(black, .15);
+    transition: transform .3s;
+
+    &:hover {
+      transform: translateY(-0.5rem) scale(1.03);
+
+    }
+  }
+
+  .featurebox2 {
+    background-color:rgba(white,0.8);
+    font-size: 1rem;
+    padding: 3rem;
+    margin: 1rem 1rem 1rem;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0 1.5rem 4rem rgba(black, .15);
+    transition: transform .3s;
+  }
+
+  .featurebox3 {
+    background-color:rgba(black, 0.4);
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 0.8rem 1rem 1rem;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0 1.5rem 4rem rgba(black, .15);
+    transition: transform .3s;
+  }
+
+  .para {
+    font-size: 1.4rem;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-family: "Avantgarde", "TeX Gyre" ,"Adventor", "URW Gothic L", "sans-serif";
+    font-style: italic;
+    font-weight: 500;
+    width: 70%;
+
+  }
+
+  .ac {
+    background-image: url("/acBg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    /*-webkit-clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);*/
+}
+  .img {
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ACPcont {
+    margin: 0 auto;
+    max-width: 900px;
+    line-height: 1;
+    align-items: center;
+
+    p {
+        margin-right: 1rem;
+        color: black;
+    }
+  }
+
+
+
+
+  
+
+ 
+
+

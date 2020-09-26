@@ -9,7 +9,7 @@ export default function landingImage() {
                 <Header isOpaque={true} />
 
                 <div className={landingImageStyles.innerContainer}>
-                    <h1 className={landingImageStyles.title}>Find Yourself</h1>
+                <h1 className={landingImageStyles.title}>Find Yourself</h1>
                     <h2 className={landingImageStyles.subtitle}>
                         Your online spiritual experience
                     </h2>
@@ -22,7 +22,7 @@ export default function landingImage() {
                         <span></span>
                     </div>
                 </a>
-            </div>π
+            </div>
         </>
     )
 }
