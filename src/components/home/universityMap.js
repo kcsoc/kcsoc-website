@@ -188,7 +188,9 @@ export default function UniversityMap() {
                         src="uk.png"
                         alt="uk-map"
                     />
-                    <img
+
+                    <input
+                        type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.glasgow}`}
                         src="map-pointer.png"
                         alt="glasgow"
@@ -196,7 +198,9 @@ export default function UniversityMap() {
                             setInfo("glasgow")
                         }}
                     />
-                    <img
+
+                    <input
+                        type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.edinburgh}`}
                         src="map-pointer-inverted.png"
                         alt="edinburgh"
@@ -204,7 +208,9 @@ export default function UniversityMap() {
                             setInfo("edinburgh")
                         }}
                     />
-                    <img
+
+                    <input
+                        type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.manchester}`}
                         src="map-pointer.png"
                         alt="manchester"
@@ -212,7 +218,9 @@ export default function UniversityMap() {
                             setInfo("manchester")
                         }}
                     />
-                    <img
+
+                    <input
+                        type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.nottingham}`}
                         src="map-pointer.png"
                         alt="nottingham"
@@ -220,7 +228,9 @@ export default function UniversityMap() {
                             setInfo("nottingham")
                         }}
                     />
-                    <img
+
+                    <input
+                        type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.loughborough}`}
                         src="map-pointer-inverted.png"
                         alt="loughborough"
@@ -228,7 +238,9 @@ export default function UniversityMap() {
                             setInfo("loughborough")
                         }}
                     />
-                    <img
+
+                    <input
+                        type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.leicester}`}
                         src="map-pointer.png"
                         alt="leicester"
@@ -236,7 +248,9 @@ export default function UniversityMap() {
                             setInfo("leicester")
                         }}
                     />
-                    <img
+
+                    <input
+                        type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.coventry}`}
                         src="map-pointer-inverted.png"
                         alt="coventry"
@@ -244,7 +258,9 @@ export default function UniversityMap() {
                             setInfo("coventry")
                         }}
                     />
-                    <img
+
+                    <input
+                        type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.warwick}`}
                         src="map-pointer.png"
                         alt="warwick"
@@ -252,7 +268,9 @@ export default function UniversityMap() {
                             setInfo("warwick")
                         }}
                     />
-                    <img
+
+                    <input
+                        type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.birmingham}`}
                         src="map-pointer-inverted.png"
                         alt="birmingham"
@@ -260,7 +278,9 @@ export default function UniversityMap() {
                             setInfo("birmingham")
                         }}
                     />
-                    <img
+
+                    <input
+                        type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.cambridge}`}
                         src="map-pointer-inverted.png"
                         alt="cambridge"
@@ -268,7 +288,9 @@ export default function UniversityMap() {
                             setInfo("cambridge")
                         }}
                     />
-                    <img
+
+                    <input
+                        type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.oxford}`}
                         src="map-pointer-inverted.png"
                         alt="oxford"
@@ -277,7 +299,8 @@ export default function UniversityMap() {
                         }}
                     />
 
-                    <img
+                    <input
+                        type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.hatfield}`}
                         src="map-pointer.png"
                         alt="hatfield"
@@ -286,7 +309,8 @@ export default function UniversityMap() {
                         }}
                     />
 
-                    <img
+                    <input
+                        type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.bristol}`}
                         src="map-pointer-inverted.png"
                         alt="bristol"
@@ -295,7 +319,8 @@ export default function UniversityMap() {
                         }}
                     />
 
-                    <img
+                    <input
+                        type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.reading}`}
                         src="map-pointer.png"
                         alt="reading"
@@ -304,7 +329,8 @@ export default function UniversityMap() {
                         }}
                     />
 
-                    <img
+                    <input
+                        type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.london}`}
                         src="map-pointer-inverted.png"
                         alt="london"
@@ -313,7 +339,8 @@ export default function UniversityMap() {
                         }}
                     />
 
-                    <img
+                    <input
+                        type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.canterbury}`}
                         src="map-pointer.png"
                         alt="canterbury"
@@ -322,7 +349,8 @@ export default function UniversityMap() {
                         }}
                     />
 
-                    <img
+                    <input
+                        type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.southampton}`}
                         src="map-pointer-inverted.png"
                         alt="southampton"
@@ -342,8 +370,8 @@ export default function UniversityMap() {
             </div>
             <div className={universityMapStyles.setUpContainer}>
                 <h2>Can't find your university on the list?</h2>
-                <Link to="/set-up-a-kcsoc">
-                    <a className={universityMapStyles.btn}>Set Up a KCSoc</a>
+                <Link className={universityMapStyles.btn} to="/set-up-a-kcsoc">
+                    Set Up a KCSoc
                 </Link>
             </div>
         </div>

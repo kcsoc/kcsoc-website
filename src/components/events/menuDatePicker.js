@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react"
+import React, { useContext } from "react"
 import { DatePicker } from "react-rainbow-components"
 import EventContext from "../contexts/eventContext"
 
@@ -8,20 +8,6 @@ export default function MenuDatePicker({ type }) {
     const { startDate, setStartDate, endDate, setEndDate } = useContext(
         EventContext
     )
-
-    const [transparent, setTransparent] = useState(false)
-
-    const clear = () => {
-        setTransparent(true)
-        if (type === "start") {
-            setStartDate(undefined)
-        } else {
-            setEndDate(undefined)
-        }
-        setTimeout(() => {
-            setTransparent(false)
-        }, 100)
-    }
 
     return (
         <div className={eventCalendarStyles.datePickerContainer}>
@@ -41,14 +27,6 @@ export default function MenuDatePicker({ type }) {
                     formatStyle="large"
                     locale="en-GB"
                 />
-                <p
-                    className={
-                        transparent ? eventCalendarStyles.transparent : ""
-                    }
-                    onClick={clear}
-                >
-                    &#10005;
-                </p>
             </div>
         </div>
     )

@@ -59,7 +59,7 @@ export default function EventInfo() {
     return (
         <div className={eventInfoStyles.outerContainer}>
             <div className={eventInfoStyles.menu}>
-                <div
+                <button
                     className={
                         selected === "weekly" ? eventInfoStyles.underlined : ""
                     }
@@ -68,22 +68,19 @@ export default function EventInfo() {
                     }}
                 >
                     <h2>Weekly Events</h2>
-                </div>
+                </button>
 
-                <div
-                    className={
-                        selected === "flagship"
-                            ? eventInfoStyles.underlined
-                            : ""
-                    }
-                    onClick={() => {
+                <button
+                    className=
+                    {selected === "flagship" ? eventInfoStyles.underlined : ""}
+                    onClick=
+                    {() => {
                         setSelected("flagship")
                     }}
-                >
-                    <h2> Flagship Events</h2>
-                </div>
+                    ><h2> Flagship Events</h2>
+                </button>
 
-                <div
+                <button
                     className={
                         selected === "retreats"
                             ? eventInfoStyles.underlined
@@ -94,7 +91,7 @@ export default function EventInfo() {
                     }}
                 >
                     <h2>Retreats</h2>
-                </div>
+                </button>
             </div>
 
             <div className={renderBackground()}>

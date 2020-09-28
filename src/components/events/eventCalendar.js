@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Fade from "react-reveal/Fade"
 import CalendarMenu from "./calendarMenu"
 import eventCalendarStyles from "../../styles/components/events/eventCalendar.module.scss"
 import EventContext from "../contexts/eventContext"

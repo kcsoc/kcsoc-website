@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react"
+import React, { useContext } from "react"
 import Select from "react-select"
 import EventContext from "../contexts/eventContext"
 
