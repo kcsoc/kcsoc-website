@@ -72,8 +72,10 @@
         color: #4267b2;
     }
     cursor: pointer;
-    position: relative;
-    z-index: 2;
+    transition: 0.2s linear;
+    &:hover {
+        transform: translateY(-3px) scale(1.1);
+    }
 }
 
 .instagram {
@@ -81,4 +83,21 @@
         color: purple;
     }
     cursor: pointer;
+    transition: 0.2s linear;
+
+    &:hover {
+        transform: translateY(-3px) scale(1.1);
+    }
+}
+
+.zoom {
+    height: 35px;
+    outline: none;
+    width: 35px;
+    transition: 0.2s linear;
+    &:hover {
+        transform: translateY(-3px) scale(1.1);
+    }
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
 }

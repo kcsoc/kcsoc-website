@@ -30,6 +30,7 @@ export default function EventCalendar() {
                         }
                         instagramUrl
                         facebookUrl
+                        zoomUrl
                     }
                 }
             }
