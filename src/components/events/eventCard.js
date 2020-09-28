@@ -5,7 +5,7 @@ import eventCardStyles from "../../styles/components/events/eventCard.module.scs
 
 export default function EventCard({ data }) {
     const date = moment(data.dateAndTime)
-
+    console.log(data.instagramUrl, data.facebookUrl)
     return (
         <div className={eventCardStyles.card}>
             <div className={eventCardStyles.image}>
@@ -31,12 +31,20 @@ export default function EventCard({ data }) {
                 {data.location && <p>Location: {data.location}</p>}
 
                 <div className={eventCardStyles.icons}>
-                    <div className={eventCardStyles.facebook}>
-                        <FaFacebookF size="2em" />
-                    </div>
-                    <div className={eventCardStyles.instagram}>
-                        <FaInstagram size="2em" />
-                    </div>
+                    {data.facebookUrl && (
+                        <div className={eventCardStyles.facebook}>
+                            <a href={data.facebookUrl} target="_blank" >
+                                <FaFacebookF size="2em" />
+                            </a>
+                        </div>
+                    )}
+                    {data.instagramUrl && (
+                        <div className={eventCardStyles.instagram}>
+                            <a href={data.instagramUrl} target="_blank" >
+                                <FaInstagram size="2em" />
+                            </a>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

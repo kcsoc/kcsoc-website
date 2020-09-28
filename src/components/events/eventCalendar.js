@@ -29,6 +29,8 @@ export default function EventCalendar() {
                                 src
                             }
                         }
+                        instagramUrl
+                        facebookUrl
                     }
                 }
             }
@@ -72,9 +74,9 @@ export default function EventCalendar() {
         >
             <div className={eventCalendarStyles.outerContainer}>
                 <h1 className={eventCalendarStyles.title}>Calendar</h1>
-                <Fade>
-                    <CalendarMenu />
-                </Fade>
+
+                <CalendarMenu />
+
                 <div className={eventCalendarStyles.contentContainer}>
                     {filteredData.map((edge, index) => (
                         <EventCard key={index} data={edge.node} />
