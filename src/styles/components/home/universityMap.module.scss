@@ -41,6 +41,7 @@
     height: 20px;
     position: absolute;
     transition: all 0.2s ease-in-out;
+    outline: none;
     &:hover {
         transform: scale(2);
     }

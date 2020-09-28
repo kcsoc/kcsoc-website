@@ -14,7 +14,6 @@
     height: 100%;
     position: absolute;
     transition: opacity 0.3s linear;
-    z-index: 1;
 }
 
 .image img {
@@ -27,15 +26,21 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
+    opacity: 0;
     transform: translate(-50%, -50%);
+    transition: opacity 0.3s linear;
     width: 100%;
 }
 
 .card:hover > .image {
     opacity: 0;
+}
+
+.card:hover > .content {
+    opacity: 1;
 }
 
 .title {
@@ -48,9 +53,15 @@
     font-weight: 200;
 }
 
+.dateAndTime {
+    font-weight: 500;
+}
+
 .icons {
     display: flex;
     margin-top: 1rem;
+    position: relative;
+
     div {
         padding: 0 1rem;
     }
@@ -60,10 +71,33 @@
     svg {
         color: #4267b2;
     }
+    cursor: pointer;
+    transition: 0.2s linear;
+    &:hover {
+        transform: translateY(-3px) scale(1.1);
+    }
 }
 
 .instagram {
     svg {
         color: purple;
     }
+    cursor: pointer;
+    transition: 0.2s linear;
+
+    &:hover {
+        transform: translateY(-3px) scale(1.1);
+    }
+}
+
+.zoom {
+    height: 35px;
+    outline: none;
+    width: 35px;
+    transition: 0.2s linear;
+    &:hover {
+        transform: translateY(-3px) scale(1.1);
+    }
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
 }

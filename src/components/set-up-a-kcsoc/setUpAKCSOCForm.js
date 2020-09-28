@@ -39,23 +39,21 @@ export default function SetUpAKCSOCForm() {
     return (
         <div className={formStyles.container}>
             <form className={formStyles.form} onSubmit={handleSubmit(onSubmit)}>
-                <label className={formStyles.label}>First Name</label>
+                <label htmlFor="firstName" className={formStyles.label}>First Name</label>
                 <input name="firstName" ref={register({ required: true })} />
                 {errors.firstName && (
                     <p className={formStyles.errorMessage}>
                         First name is required.
                     </p>
                 )}
-
-                <label className={formStyles.label}>Last Name</label>
+                <label htmlFor="lastName" className={formStyles.label}>Last Name</label>
                 <input name="lastName" ref={register({ required: true })} />
                 {errors.lastName && (
                     <p className={formStyles.errorMessage}>
                         Last name is required.
                     </p>
                 )}
-
-                <label className={formStyles.label}>Email Address</label>
+                <label htmlFor="email" className={formStyles.label}>Email Address</label>
                 <input
                     name="email"
                     ref={register({
@@ -76,14 +74,14 @@ export default function SetUpAKCSOCForm() {
                         Valid email address required.
                     </p>
                 )}
-                <label className={formStyles.label}>Phone Number</label>
+                <label htmlFor="phoneNumber" className={formStyles.label}>Phone Number</label>
                 <input name="phoneNumber" ref={register({ required: true })} />
                 {errors.phoneNumber && (
                     <p className={formStyles.errorMessage}>
                         Phone number is required.
                     </p>
                 )}
-                <input type="submit" />
+                <input type="submit" disabled={disabledButton} />
                 <p className={formStyles.message}>{message}</p>
             </form>
         </div>

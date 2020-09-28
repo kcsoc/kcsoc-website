@@ -20,7 +20,7 @@ export default function QuoteSlider() {
                 interval={5000}
             >
                 <div>
-                    <img src={quote1} />
+                    <img src={quote1} alt="quote1"/>
                     <div
                         className={`${quoteSliderStyles.text} ${quoteSliderStyles.rightText}`}
                     >
@@ -32,7 +32,7 @@ export default function QuoteSlider() {
                     </div>
                 </div>
                 <div>
-                    <img src={quote2} />
+                    <img src={quote2} alt="quote2"/>
                     <div
                         className={`${quoteSliderStyles.text} ${quoteSliderStyles.leftText}`}
                     >
@@ -44,7 +44,7 @@ export default function QuoteSlider() {
                     </div>
                 </div>
                 <div>
-                    <img src={quote3} />
+                    <img src={quote3} alt="quote3"/>
                     <div
                         className={`${quoteSliderStyles.text} ${quoteSliderStyles.rightText}`}
                     >
@@ -56,7 +56,7 @@ export default function QuoteSlider() {
                     </div>
                 </div>
                 <div>
-                    <img src={quote4} />
+                    <img src={quote4} alt="quote4"/>
                     <div
                         className={`${quoteSliderStyles.text} ${quoteSliderStyles.rightText}`}
                     >
@@ -68,7 +68,7 @@ export default function QuoteSlider() {
                     </div>
                 </div>
                 <div>
-                    <img src={quote5} />
+                    <img src={quote5} alt="quote5"/>
                     <div
                         className={`${quoteSliderStyles.text} ${quoteSliderStyles.leftText}`}
                     >
