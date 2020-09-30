@@ -6,6 +6,7 @@ import FadeIn from "../components/fadeIn"
 import Fade from "react-reveal/Fade"
 import EventInfo from "../components/events/eventInfo"
 import EventCalendar from "../components/events/eventCalendar"
+import loadingStyles from "../styles/loading.module.scss"
 
 export default function Events() {
     const [weeklyLoaded, setWeeklyLoaded] = useState(false)
@@ -24,7 +25,7 @@ export default function Events() {
             </Fade>
         </FadeIn>
     ) : (
-        <div>
+        <div className={loadingStyles.container}>
             <BackgroundImageOnLoad
                 src={"/weekly.png"}
                 onLoadBg={() => setWeeklyLoaded(true)}
@@ -40,7 +41,11 @@ export default function Events() {
                 onLoadBg={() => setRetreatsLoaded(true)}
                 onError={err => console.log("Error: ", err)}
             />
-            <RingLoader size={60} color={"#9113FE"} loading={!bgLoaded} />
+            <RingLoader
+                size={60}
+                color={"#9113FE"}
+                loading={!(weeklyLoaded && flagshipLoaded && retreatsloaded)}
+            />
         </div>
     )
 }
