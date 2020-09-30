@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 // import BackgroundImageOnLoad from "background-image-on-load"
-import RingLoader from "react-spinners/RingLoader"
+// import RingLoader from "react-spinners/RingLoader"
 import FadeIn from "../components/fadeIn"
 import LandingImage from "../components/home/landingImage"
 import GetInvolved from "../components/home/getInvolved"
@@ -33,7 +33,6 @@ export default function Home() {
 
 
 
-            <RingLoader size={60} color={"#9113FE"} loading={!bgLoaded} />
         </div>
     ) : (
         <div>
@@ -52,3 +51,5 @@ export default function Home() {
 // }}
 // onError={err => console.log("Error: ", err)}
 // />
+
+// <RingLoader size={60} color={"#9113FE"} loading={!bgLoaded} />

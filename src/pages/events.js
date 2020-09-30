@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 // import BackgroundImageOnLoad from "background-image-on-load"
-import RingLoader from "react-spinners/RingLoader"
+// import RingLoader from "react-spinners/RingLoader"
 import Header from "../components/header"
 import FadeIn from "../components/fadeIn"
 import Fade from "react-reveal/Fade"
@@ -44,11 +44,6 @@ export default function Events() {
 
 
 
-            <RingLoader
-                size={60}
-                color={"#9113FE"}
-                loading={!(weeklyLoaded && flagshipLoaded && retreatsloaded)}
-            />
         </div>
     ) : (
         <div>
@@ -77,4 +72,11 @@ export default function Events() {
 //     }, 5000)
 // }}
 // onError={err => console.log("Error: ", err)}
+// />
+
+
+// <RingLoader
+// size={60}
+// color={"#9113FE"}
+// loading={!(weeklyLoaded && flagshipLoaded && retreatsloaded)}
 // />
