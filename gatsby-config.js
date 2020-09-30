@@ -1,5 +1,4 @@
 require("dotenv").config({ path: __dirname + "/.env" })
-const path = require("path")
 
 module.exports = {
     siteMetadata: {
@@ -16,14 +15,6 @@ module.exports = {
         },
         "gatsby-plugin-sass",
         "gatsby-plugin-react-helmet",
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `static`,
-                path: path.join(__dirname, `static`),
-            },
-        },
-        "gatsby-transformer-sharp",
         "gatsby-plugin-sharp",
         {
             resolve: "gatsby-transformer-remark",

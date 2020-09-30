@@ -1,6 +1,4 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
 import Header from "../components/header"
 import FadeIn from "../components/fadeIn"
 import Fade from "react-reveal/Fade"
@@ -29,34 +27,17 @@ import aboutUSStyles from "../styles/components/about/aboutUS.module.scss"
 //                 </div>
 
 export default function Home() {
-    const data = useStaticQuery(graphql`
-        query {
-            image: file(relativePath: { eq: "book.jpg" }) {
-                id
-                childImageSharp {
-                    fluid(maxWidth: 700) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-        }
-    `)
     return (
         <FadeIn>
             <Header isOpaque={true} dark={true} />
             <Fade>
                 <div className={aboutUSStyles.top}>
                     <h1>About</h1>
-                    <BackgroundImage
-                        fluid={data.image.childImageSharp.fluid}
-                        className={aboutUSStyles.subtitleContainer}
-                    >
-                        <div className={aboutUSStyles.blackOverlay}>
-                            <h2 className={aboutUSStyles.subtitle}>
-                                Fuelled by Knowledge and Devotion
-                            </h2>
-                        </div>
-                    </BackgroundImage>
+                    <div className={aboutUSStyles.subtitleContainer}>
+                        <h2 className={aboutUSStyles.subtitle}>
+                            Fuelled by Knowledge and Devotion
+                        </h2>
+                    </div>
                 </div>
             </Fade>
             <Fade>
@@ -152,11 +133,7 @@ export default function Home() {
             <Fade>
                 <div className={aboutUSStyles.ac}>
                     <div>
-                        <h1
-                            className={`${aboutUSStyles.h4} ${aboutUSStyles.inspiration}`}
-                        >
-                            Inspiration
-                        </h1>
+                        <h1 className={`${aboutUSStyles.h4} ${aboutUSStyles.inspiration}`}>Inspiration</h1>
                         <h2 className={aboutUSStyles.h4}>
                             A.C. Bhaktivedanta Swami Prabhupada
                         </h2>
