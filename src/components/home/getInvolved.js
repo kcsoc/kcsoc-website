@@ -21,7 +21,7 @@ export default function GetInvolved() {
     const trigger = isVisible => {
         setIsTriggered(!isTriggered)
     }
-    console.log(isTriggered)
+
     return (
         <div
             className={`${getInvolvedStyles.container} ${
