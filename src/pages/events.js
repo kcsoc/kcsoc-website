@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import BackgroundImageOnLoad from "background-image-on-load"
+// import BackgroundImageOnLoad from "background-image-on-load"
 import RingLoader from "react-spinners/RingLoader"
 import Header from "../components/header"
 import FadeIn from "../components/fadeIn"
