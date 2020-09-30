@@ -3,11 +3,13 @@ import BackgroundImageOnLoad from "background-image-on-load"
 import FadeIn from "../components/fadeIn"
 import LandingImage from "../components/home/landingImage"
 import GetInvolved from "../components/home/getInvolved"
+import RingLoader from "react-spinners/RingLoader"
+import loadingStyles from "../styles/loading.module.scss"
 
 export default function Home() {
-    const [bgloaded, setBgLoaded] = useState(false)
-    console.log(bgloaded)
-    return bgloaded ? (
+    const [bgLoaded, setbgLoaded] = useState(false)
+
+    return bgLoaded ? (
         <div>
             <FadeIn>
                 <LandingImage />
@@ -15,14 +17,17 @@ export default function Home() {
             </FadeIn>
         </div>
     ) : (
-        <div>
+        <div className={loadingStyles.container}>
             <BackgroundImageOnLoad
                 src={"/simon-migaj-dark-3.jpg"}
-                onLoadBg={() => setBgLoaded(true)}
+                onLoadBg={() => {
+                    setTimeout(() => {
+                        setbgLoaded(true)
+                    }, 5000)
+                }}
                 onError={err => console.log("Error: ", err)}
             />
-
-            <h1>Images are loading...</h1>
+            <RingLoader size={60} color={"#9113FE"} loading={!bgLoaded} />
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import BackgroundImageOnLoad from "background-image-on-load"
+import RingLoader from "react-spinners/RingLoader"
 import Header from "../components/header"
 import FadeIn from "../components/fadeIn"
 import Fade from "react-reveal/Fade"
@@ -39,8 +40,7 @@ export default function Events() {
                 onLoadBg={() => setRetreatsLoaded(true)}
                 onError={err => console.log("Error: ", err)}
             />
-
-            <h1>Images are loading...</h1>
+            <RingLoader size={60} color={"#9113FE"} loading={!bgLoaded} />
         </div>
     )
 }
