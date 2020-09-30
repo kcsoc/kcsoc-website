@@ -33,18 +33,6 @@ export default function Events() {
                 <EventCalendar />
             </Fade>
         </FadeIn>
-    ) : window ? (
-        <div
-            className={`${loadingStyles.container} ${
-                fadeOut && loadingStyles.fadeOut
-            } `}
-        >
-        
-
-
-
-
-        </div>
     ) : (
         <div>
             <h1>Loading...</h1>

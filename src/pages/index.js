@@ -23,17 +23,6 @@ export default function Home() {
                 <GetInvolved />
             </FadeIn>
         </div>
-    ) : window ? (
-        <div
-            className={`${loadingStyles.container} ${
-                fadeOut && loadingStyles.fadeOut
-            } `}
-        >
-           
-
-
-
-        </div>
     ) : (
         <div>
             <h1>Loading...</h1>
