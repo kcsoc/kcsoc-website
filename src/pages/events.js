@@ -1,10 +1,12 @@
 import React, { useState } from "react"
 import loadable from "@loadable/component"
+import RingLoader from "react-spinners/RingLoader"
 import Header from "../components/header"
 import FadeIn from "../components/fadeIn"
 import Fade from "react-reveal/Fade"
 import EventInfo from "../components/events/eventInfo"
 import EventCalendar from "../components/events/eventCalendar"
+import loadingStyles from "../styles/loading.module.scss"
 
 const BackgroundImageOnLoad = loadable(
     () => import("background-image-on-load"),
@@ -28,7 +30,7 @@ export default function Events() {
             </Fade>
         </FadeIn>
     ) : (
-        <div>
+        <div className={loadingStyles.container}>
             <BackgroundImageOnLoad
                 src={"/weekly.png"}
                 onLoadBg={() => setWeeklyLoaded(true)}
@@ -45,7 +47,11 @@ export default function Events() {
                 onError={err => console.log("Error: ", err)}
             />
 
-            <h1>Images are loading...</h1>
+            <RingLoader
+                size={60}
+                color={"#9113FE"}
+                loading={!(weeklyLoaded && flagshipLoaded && retreatsloaded)}
+            />
         </div>
     )
 }
