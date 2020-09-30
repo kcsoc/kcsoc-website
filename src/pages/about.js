@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
+// import BackgroundImage from "gatsby-background-image"
 import Header from "../components/header"
 import FadeIn from "../components/fadeIn"
 import Fade from "react-reveal/Fade"
@@ -47,16 +47,7 @@ export default function Home() {
             <Fade>
                 <div className={aboutUSStyles.top}>
                     <h1>About</h1>
-                    <BackgroundImage
-                        fluid={data.image.childImageSharp.fluid}
-                        className={aboutUSStyles.subtitleContainer}
-                    >
-                        <div className={aboutUSStyles.blackOverlay}>
-                            <h2 className={aboutUSStyles.subtitle}>
-                                Fuelled by Knowledge and Devotion
-                            </h2>
-                        </div>
-                    </BackgroundImage>
+                   
                 </div>
             </Fade>
             <Fade>
