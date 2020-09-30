@@ -29,14 +29,10 @@ export default function Home() {
                 fadeOut && loadingStyles.fadeOut
             } `}
         >
-            <BackgroundImageOnLoad
-                src={"/simon-migaj-dark-3.jpg"}
-                onLoadBg={() => {
-                    setFadeOut(true)
-                    setBgLoaded(true)
-                }}
-                onError={err => console.log("Error: ", err)}
-            />
+           
+
+
+
             <RingLoader size={60} color={"#9113FE"} loading={!bgLoaded} />
         </div>
     ) : (
@@ -46,3 +42,13 @@ export default function Home() {
         </div>
     )
 }
+
+
+// <BackgroundImageOnLoad
+// src={"/simon-migaj-dark-3.jpg"}
+// onLoadBg={() => {
+//     setFadeOut(true)
+//     setBgLoaded(true)
+// }}
+// onError={err => console.log("Error: ", err)}
+// />

@@ -39,25 +39,11 @@ export default function Events() {
                 fadeOut && loadingStyles.fadeOut
             } `}
         >
-            <BackgroundImageOnLoad
-                src={"/weekly.png"}
-                onLoadBg={() => setWeeklyLoaded(true)}
-                onError={err => console.log("Error: ", err)}
-            />
-            <BackgroundImageOnLoad
-                src={"/flagship.jpg"}
-                onLoadBg={() => setFlagshipLoaded(true)}
-                onError={err => console.log("Error: ", err)}
-            />
-            <BackgroundImageOnLoad
-                src={"/retreats.png"}
-                onLoadBg={() => {
-                    setTimeout(() => {
-                        setRetreatsLoaded(true)
-                    }, 5000)
-                }}
-                onError={err => console.log("Error: ", err)}
-            />
+        
+
+
+
+
             <RingLoader
                 size={60}
                 color={"#9113FE"}
@@ -71,3 +57,24 @@ export default function Events() {
         </div>
     )
 }
+
+
+// <BackgroundImageOnLoad
+// src={"/weekly.png"}
+// onLoadBg={() => setWeeklyLoaded(true)}
+// onError={err => console.log("Error: ", err)}
+// />
+// <BackgroundImageOnLoad
+// src={"/flagship.jpg"}
+// onLoadBg={() => setFlagshipLoaded(true)}
+// onError={err => console.log("Error: ", err)}
+// />
+// <BackgroundImageOnLoad
+// src={"/retreats.png"}
+// onLoadBg={() => {
+//     setTimeout(() => {
+//         setRetreatsLoaded(true)
+//     }, 5000)
+// }}
+// onError={err => console.log("Error: ", err)}
+// />
