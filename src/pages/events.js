@@ -1,10 +1,15 @@
 import React, { useState } from "react"
-import BackgroundImageOnLoad from "background-image-on-load"
+import loadable from "@loadable/component"
 import Header from "../components/header"
 import FadeIn from "../components/fadeIn"
 import Fade from "react-reveal/Fade"
 import EventInfo from "../components/events/eventInfo"
 import EventCalendar from "../components/events/eventCalendar"
+
+const BackgroundImageOnLoad = loadable(
+    () => import("background-image-on-load"),
+    { ssr: false }
+)
 
 export default function Events() {
     const [weeklyLoaded, setWeeklyLoaded] = useState(false)
