@@ -26,7 +26,7 @@ export default function Events() {
                 <EventCalendar />
             </Fade>
         </FadeIn>
-    ) : (
+    ) : window ? (
         <div>
             <BackgroundImageOnLoad
                 src={"/weekly.png"}
@@ -46,5 +46,7 @@ export default function Events() {
 
             <h1>Images are loading...</h1>
         </div>
+    ) : (
+        <div>Nothin to see here</div>
     )
 }
