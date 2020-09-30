@@ -12,6 +12,15 @@ export default function Events() {
     const [weeklyLoaded, setWeeklyLoaded] = useState(false)
     const [flagshipLoaded, setFlagshipLoaded] = useState(false)
     const [retreatsloaded, setRetreatsLoaded] = useState(false)
+    const [fadeOut, setFadeOut] = useState(false)
+
+    const loadPage = () =>
+        setTimeout(() => {
+            setWeeklyLoaded(true)
+            setFlagshipLoaded(true)
+            setRetreatsLoaded(true)
+            setFadeOut(true)
+        }, 5000)
 
     return weeklyLoaded && flagshipLoaded && retreatsloaded ? (
         <FadeIn>
@@ -24,8 +33,12 @@ export default function Events() {
                 <EventCalendar />
             </Fade>
         </FadeIn>
-    ) : (
-        <div className={loadingStyles.container}>
+    ) : window ? (
+        <div
+            className={`${loadingStyles.container} ${
+                fadeOut && loadingStyles.fadeOut
+            } `}
+        >
             <BackgroundImageOnLoad
                 src={"/weekly.png"}
                 onLoadBg={() => setWeeklyLoaded(true)}
@@ -38,7 +51,11 @@ export default function Events() {
             />
             <BackgroundImageOnLoad
                 src={"/retreats.png"}
-                onLoadBg={() => setRetreatsLoaded(true)}
+                onLoadBg={() => {
+                    setTimeout(() => {
+                        setRetreatsLoaded(true)
+                    }, 5000)
+                }}
                 onError={err => console.log("Error: ", err)}
             />
             <RingLoader
@@ -46,6 +63,11 @@ export default function Events() {
                 color={"#9113FE"}
                 loading={!(weeklyLoaded && flagshipLoaded && retreatsloaded)}
             />
+        </div>
+    ) : (
+        <div>
+            <h1>Loading...</h1>
+            {loadPage()}
         </div>
     )
 }

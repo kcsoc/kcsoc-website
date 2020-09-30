@@ -7,8 +7,14 @@ import GetInvolved from "../components/home/getInvolved"
 import loadingStyles from "../styles/loading.module.scss"
 
 export default function Home() {
-    const [bgLoaded, setbgLoaded] = useState(false)
+    const [bgLoaded, setBgLoaded] = useState(false)
     const [fadeOut, setFadeOut] = useState(false)
+
+    const loadPage = () =>
+        setTimeout(() => {
+            setBgLoaded(true)
+            setFadeOut(true)
+        }, 5000)
 
     return bgLoaded ? (
         <div>
@@ -17,7 +23,7 @@ export default function Home() {
                 <GetInvolved />
             </FadeIn>
         </div>
-    ) : (
+    ) : window ? (
         <div
             className={`${loadingStyles.container} ${
                 fadeOut && loadingStyles.fadeOut
@@ -27,11 +33,16 @@ export default function Home() {
                 src={"/simon-migaj-dark-3.jpg"}
                 onLoadBg={() => {
                     setFadeOut(true)
-                    setbgLoaded(true)
+                    setBgLoaded(true)
                 }}
                 onError={err => console.log("Error: ", err)}
             />
             <RingLoader size={60} color={"#9113FE"} loading={!bgLoaded} />
+        </div>
+    ) : (
+        <div>
+            <h1>Loading...</h1>
+            {loadPage()}
         </div>
     )
 }
