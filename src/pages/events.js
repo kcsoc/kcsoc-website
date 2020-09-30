@@ -11,10 +11,6 @@ export default function Events() {
     const [flagshipLoaded, setFlagshipLoaded] = useState(false)
     const [retreatsloaded, setRetreatsLoaded] = useState(false)
 
-    console.log(weeklyLoaded)
-
-    console.log(weeklyLoaded && flagshipLoaded && retreatsloaded)
-
     return weeklyLoaded && flagshipLoaded && retreatsloaded ? (
         <FadeIn>
             <Header isOpaque={true} dark={true} />
