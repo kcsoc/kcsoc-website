@@ -43,3 +43,33 @@ button {
     font-family: "Montserrat", sans-serif;
     outline: none;
 }
+
+.mobile {
+    visibility: hidden;
+    display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+    .desktop {
+        visibility: hidden;
+        display: none;
+    }
+
+    .mobile {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        background-color: yellow;
+        margin: 3rem auto;
+        border: 10px black solid;
+        border-radius: 5px;
+        padding: 1rem;
+        width: 80%;
+
+        img {
+            object-fit: cover;
+            width: 200px;
+            margin: 2rem auto;
+        }
+    }
+}

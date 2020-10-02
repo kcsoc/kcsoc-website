@@ -22,7 +22,7 @@ export default function EventInfo() {
             case "weekly":
                 return (
                     <p>
-                        Join our weekly events at KCSocs around the country to
+                        Join our weekly events at KCSOCs around the country to
                         learn more about the ancient philosophy and tradition of
                         spirituality. Enjoy delicious free sanctified vegetarian
                         food (made with love) and connect with like-minded

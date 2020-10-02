@@ -7,6 +7,7 @@ import Fade from "react-reveal/Fade"
 import EventInfo from "../components/events/eventInfo"
 import EventCalendar from "../components/events/eventCalendar"
 import loadingStyles from "../styles/loading.module.scss"
+import Layout from "../components/layout"
 
 const BackgroundImageOnLoad = loadable(
     () => import("background-image-on-load"),
@@ -19,39 +20,45 @@ export default function Events() {
     const [retreatsloaded, setRetreatsLoaded] = useState(false)
 
     return weeklyLoaded && flagshipLoaded && retreatsloaded ? (
-        <FadeIn>
-            <Header isOpaque={true} dark={true} />
+        <Layout>
+            <FadeIn>
+                <Header isOpaque={true} dark={true} />
 
-            <Fade>
-                <EventInfo />
-            </Fade>
-            <Fade>
-                <EventCalendar />
-            </Fade>
-        </FadeIn>
+                <Fade>
+                    <EventInfo />
+                </Fade>
+                <Fade>
+                    <EventCalendar />
+                </Fade>
+            </FadeIn>
+        </Layout>
     ) : (
-        <div className={loadingStyles.container}>
-            <BackgroundImageOnLoad
-                src={"/weekly.png"}
-                onLoadBg={() => setWeeklyLoaded(true)}
-                onError={err => console.log("Error: ", err)}
-            />
-            <BackgroundImageOnLoad
-                src={"/flagship.jpg"}
-                onLoadBg={() => setFlagshipLoaded(true)}
-                onError={err => console.log("Error: ", err)}
-            />
-            <BackgroundImageOnLoad
-                src={"/retreats.png"}
-                onLoadBg={() => setRetreatsLoaded(true)}
-                onError={err => console.log("Error: ", err)}
-            />
+        <Layout>
+            <div className={loadingStyles.container}>
+                <BackgroundImageOnLoad
+                    src={"/weekly.png"}
+                    onLoadBg={() => setWeeklyLoaded(true)}
+                    onError={err => console.log("Error: ", err)}
+                />
+                <BackgroundImageOnLoad
+                    src={"/flagship.jpg"}
+                    onLoadBg={() => setFlagshipLoaded(true)}
+                    onError={err => console.log("Error: ", err)}
+                />
+                <BackgroundImageOnLoad
+                    src={"/retreats.png"}
+                    onLoadBg={() => setRetreatsLoaded(true)}
+                    onError={err => console.log("Error: ", err)}
+                />
 
-            <RingLoader
-                size={60}
-                color={"#9113FE"}
-                loading={!(weeklyLoaded && flagshipLoaded && retreatsloaded)}
-            />
-        </div>
+                <RingLoader
+                    size={60}
+                    color={"#9113FE"}
+                    loading={
+                        !(weeklyLoaded && flagshipLoaded && retreatsloaded)
+                    }
+                />
+            </div>
+        </Layout>
     )
 }
