@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
+import { Helmet } from "react-helmet"
 import Header from "../components/header"
 import FadeIn from "../components/fadeIn"
 import Fade from "react-reveal/Fade"
@@ -44,6 +45,10 @@ export default function Home() {
     `)
     return (
         <Layout>
+            <Helmet>
+                <title>About | KCSOC</title>
+                <meta name="description" content="About KCSOC" />
+            </Helmet>
             <FadeIn>
                 <Header isOpaque={true} dark={true} />
                 <Fade>

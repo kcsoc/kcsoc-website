@@ -1,10 +1,15 @@
 import React from "react"
-import Layout from '../components/layout'
+import { Helmet } from "react-helmet"
+import Layout from "../components/layout"
 
 export default function Home() {
-  return (
-    <Layout>
-      <h1>Retreats page</h1>
-    </Layout>
-  )
+    return (
+        <Layout>
+            <Helmet>
+                <title>Retreats | KCSOC</title>
+                <meta name="description" content="KCSOC Retreats" />
+            </Helmet>
+            <h1>Retreats page</h1>
+        </Layout>
+    )
 }

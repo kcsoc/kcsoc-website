@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import loadable from "@loadable/component"
 import RingLoader from "react-spinners/RingLoader"
+import { Helmet } from "react-helmet"
 import Header from "../components/header"
 import FadeIn from "../components/fadeIn"
 import Fade from "react-reveal/Fade"
@@ -21,6 +22,10 @@ export default function Events() {
 
     return weeklyLoaded && flagshipLoaded && retreatsloaded ? (
         <Layout>
+            <Helmet>
+                <title>Events | KCSOC</title>
+                <meta name="description" content="KCSOC Events" />
+            </Helmet>
             <FadeIn>
                 <Header isOpaque={true} dark={true} />
 
@@ -35,6 +40,10 @@ export default function Events() {
     ) : (
         <Layout>
             <div className={loadingStyles.container}>
+                <Helmet>
+                    <title>Events | KCSOC</title>
+                    <meta name="description" content="KCSOC Events" />
+                </Helmet>
                 <BackgroundImageOnLoad
                     src={"/weekly.png"}
                     onLoadBg={() => setWeeklyLoaded(true)}

@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import loadable from "@loadable/component"
+import { Helmet } from "react-helmet"
 import RingLoader from "react-spinners/RingLoader"
 import FadeIn from "../components/fadeIn"
 import LandingImage from "../components/home/landingImage"
@@ -17,6 +18,13 @@ export default function Home() {
 
     return bgLoaded ? (
         <Layout>
+            <Helmet>
+                <title>Home | KCSOC</title>
+                <meta
+                    name="description"
+                    content="Welcome to KCSOC, the Krishna Consciousness Society."
+                />
+            </Helmet>
             <FadeIn>
                 <LandingImage />
                 <GetInvolved />
@@ -24,6 +32,13 @@ export default function Home() {
         </Layout>
     ) : (
         <Layout>
+            <Helmet>
+                <title>Home | KCSOC</title>
+                <meta
+                    name="description"
+                    content="Welcome to KCSOC, the Krishna Consciousness Society."
+                />
+            </Helmet>
             <div className={loadingStyles.container}>
                 <BackgroundImageOnLoad
                     src={"/simon-migaj-dark-3.jpg"}
