@@ -23,13 +23,15 @@ export default function Home() {
             </FadeIn>
         </Layout>
     ) : (
-        <div className={loadingStyles.container}>
-            <BackgroundImageOnLoad
-                src={"/simon-migaj-dark-3.jpg"}
-                onLoadBg={() => setBgLoaded(true)}
-                onError={err => console.log("Error: ", err)}
-            />
-            <RingLoader size={60} color={"#9113FE"} loading={!bgLoaded} />
-        </div>
+        <Layout>
+            <div className={loadingStyles.container}>
+                <BackgroundImageOnLoad
+                    src={"/simon-migaj-dark-3.jpg"}
+                    onLoadBg={() => setBgLoaded(true)}
+                    onError={err => console.log("Error: ", err)}
+                />
+                <RingLoader size={60} color={"#9113FE"} loading={!bgLoaded} />
+            </div>
+        </Layout>
     )
 }
