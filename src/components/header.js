@@ -1,35 +1,19 @@
-import React from "react"
+import React, { useContext } from "react"
 import { Link } from "gatsby"
-
+import MenuContext from "./contexts/menuContext"
 import headerStyles from "../styles/components/header.module.scss"
+
 import logoDark from "./logo-dark.png"
 import logoLight from "./logo-light.png"
 
-// Temporarily removed the Explore and Shop menu items
-
-// <li>
-// <Link
-//     href="/explore"
-//     activeClassName={headerStyles.active}
-// >
-//     Explore
-// </Link>
-// </li>
-// <li>
-// <Link
-//     href="/shop"
-//     activeClassName={headerStyles.active}
-// >
-//     Shop
-// </Link>
-// </li>
-
 export default function Header({ isOpaque, dark }) {
+    const { menuCross } = useContext(MenuContext)
+
     return (
         <header
             className={`${headerStyles.header} ${
-                isOpaque ? "" : headerStyles.transparent
-            } ${dark ? headerStyles.dark : ""}`}
+                !isOpaque && headerStyles.transparent
+            } ${dark && headerStyles.dark}`}
         >
             {dark ? (
                 <Link href="/" activeClassName={headerStyles.active}>
@@ -49,7 +33,7 @@ export default function Header({ isOpaque, dark }) {
                 </Link>
             )}
 
-            <nav>
+            <nav className={headerStyles.overlay}>
                 <ul>
                     <li>
                         <Link href="/" activeClassName={headerStyles.active}>
@@ -83,6 +67,15 @@ export default function Header({ isOpaque, dark }) {
                     </li>
                 </ul>
             </nav>
+
+            <label
+                for="overlay-input"
+                className={`${headerStyles.overlayButton} ${
+                    menuCross && headerStyles.cross
+                } ${dark && headerStyles.dark}`}
+            >
+                <span></span>
+            </label>
         </header>
     )
 }
