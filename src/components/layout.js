@@ -66,6 +66,7 @@ export default function Layout(props) {
                     className={layoutStyles.overlayInput}
                 />
                 <label
+                    htmlFor="overlay-input"
                     for="overlay-input"
                     className={`${layoutStyles.overlayButton} ${
                         menuCross && layoutStyles.cross

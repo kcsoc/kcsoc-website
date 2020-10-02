@@ -69,6 +69,7 @@ export default function Header({ isOpaque, dark }) {
             </nav>
 
             <label
+                htmlFor="overlay-input"
                 for="overlay-input"
                 className={`${headerStyles.overlayButton} ${
                     menuCross && headerStyles.cross

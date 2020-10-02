@@ -14,7 +14,7 @@
     .mobile-menu {
         height: 100vh;
         width: 100vw;
-        background-color: blue;
+        background-image: url(../../../static/watercolor-2.jpg);
         position: fixed;
         z-index: 1;
     }
@@ -22,7 +22,7 @@
     .overlay {
         height: 100vh;
         width: 100vw;
-        background: #ffb347;
+        background-color: rgba(0, 0, 0, 0.5);
 
         visibility: visible;
         position: fixed;
