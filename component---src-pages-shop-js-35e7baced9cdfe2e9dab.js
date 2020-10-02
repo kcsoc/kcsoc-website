@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[19],{vg2q:function(e,n,t){"use strict";t.r(n),t.d(n,"default",(function(){return o}));var a=t("q1tI"),l=t.n(a),c=t("qhky"),r=t("Bl7J");function o(){return l.a.createElement(r.a,null,l.a.createElement(c.a,null,l.a.createElement("title",null,"Shop | KCSOC"),l.a.createElement("meta",{name:"description",content:"KCSOC Shop"})),l.a.createElement("h1",null,"Shop page"))}}}]);
+//# sourceMappingURL=component---src-pages-shop-js-35e7baced9cdfe2e9dab.js.map

@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[14],{f6x9:function(e,t,n){"use strict";n.r(t),n.d(t,"default",(function(){return c}));var a=n("q1tI"),l=n.n(a),r=n("qhky"),o=n("Bl7J");function c(){return l.a.createElement(o.a,null,l.a.createElement(r.a,null,l.a.createElement("title",null,"Explore | KCSOC"),l.a.createElement("meta",{name:"description",content:"Explore what KCSOC has to offer."})),l.a.createElement("h1",null,"Explore page"))}}}]);
+//# sourceMappingURL=component---src-pages-explore-js-82e3a92773bb87c7e385.js.map
