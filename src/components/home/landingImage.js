@@ -8,18 +8,14 @@ export default function landingImage() {
             <div className={landingImageStyles.backgroundImage}>
                 <Header isOpaque={true} />
 
-                <div
-                    className={`${landingImageStyles.innerContainer} hideOnMobileMenu`}
-                >
+                <div className={landingImageStyles.innerContainer}>
                     <h1 className={landingImageStyles.title}>Find Yourself</h1>
                     <h2 className={landingImageStyles.subtitle}>
                         Your online spiritual experience
                     </h2>
                 </div>
 
-                <div
-                    className={`${landingImageStyles.scrollDown} hideOnMobileMenu`}
-                >
+                <div className={landingImageStyles.scrollDown}>
                     <div className={landingImageStyles.scroll}>
                         <span></span>
                     </div>

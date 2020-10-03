@@ -125,34 +125,14 @@
     }
 }
 
-// .mouse {
-//     border: 2px solid white;
-//     border-radius: 2rem;
-//     display: flex;
-//     margin-bottom: 0.5rem;
-//     height: 3rem;
-//     width: 1.5rem;
-
-//     span {
-//         background-color: white;
-//         border-radius: 50%;
-//         display: block;
-//         height: 0.5rem;
-//         margin: auto;
-//         width: 0.5rem;
-
-//         animation: move-wheel 1.5s linear infinite;
-//     }
-// }
-
-// @keyframes move-wheel {
-//     0% {
-//         opacity: 0;
-//         transform: translateY(-1rem);
-//     }
-
-//     100% {
-//         opacity: 1;
-//         transform: translateY(0rem);
-//     }
-// }
+@media only screen and (max-width: 750px) {
+    .title {
+        font-size: 4rem;
+    }
+    .subtitle{
+        font-size: 1rem;
+    }
+    .scroll {
+        bottom: -50px;
+    }
+}
