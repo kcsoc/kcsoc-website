@@ -372,7 +372,7 @@ export default function UniversityMap() {
                 <h2 className={universityMapStyles.setUpMessage}>
                     Can't find your university on the list?
                 </h2>
-                <Link className={universityMapStyles.btn} to="/set-up-a-KCSOC">
+                <Link className={universityMapStyles.btn} to="/set-up-a-kcsoc">
                     Set Up a KCSOC
                 </Link>
             </div>
