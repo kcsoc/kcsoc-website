@@ -106,3 +106,37 @@
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0) scale(1, 1);
 }
+
+.icons-mobile {
+    display: none;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 90vw;
+        height: 65vw;
+    }
+
+    .content {
+        width: 90vw;
+        height: 65vw;
+
+        p {
+            font-size: 0.8rem;
+        }
+    }
+    .icons {
+        visibility: hidden;
+        display: none;
+    }
+    .icons-mobile {
+        display: flex;
+        margin: 0 0 2rem;
+        position: relative;
+        visibility: visible;
+        div {
+            padding: 0 1rem;
+        }
+    }
+}
