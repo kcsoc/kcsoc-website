@@ -27,3 +27,32 @@
 .left-text {
     left: 130px;
 }
+
+@media only screen and (max-width: 1000px) {
+    .slider {
+        margin-top: 0;
+        border: none;
+        position: relative;
+        margin: auto;
+        width: 80vw;
+    }
+
+    .right-text {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .left-text {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .text {
+        width: 100%;
+       h2 {
+            font-size: 1rem;
+            color: white;
+        }
+        position: relative;
+    }
+}

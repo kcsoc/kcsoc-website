@@ -27,7 +27,7 @@
 }
 
 .map {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     height: 500px;
@@ -162,5 +162,44 @@
 
     &:hover {
         transform: scale(1.1);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .outer-container {
+        flex-direction: column;
+    }
+
+    .info-container {
+        margin: auto;
+        margin-top: 3rem;
+        width: 80vw;
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    }
+
+    .map-container {
+        margin: auto;
+    }
+
+    .outer-container {
+        height: auto;
+    }
+
+    .set-up-container {
+        margin-top: 3rem;
+    }
+
+    .set-up-message {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1.5rem;
     }
 }

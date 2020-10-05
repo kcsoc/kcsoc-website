@@ -32,3 +32,15 @@
 .hidden {
     visibility: hidden;
 }
+
+@media only screen and (max-width: 1000px) {
+    .message-wrapper {
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .message {
+        text-align: center;
+    }
+}

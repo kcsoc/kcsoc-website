@@ -369,7 +369,9 @@ export default function UniversityMap() {
                 </div>
             </div>
             <div className={universityMapStyles.setUpContainer}>
-                <h2>Can't find your university on the list?</h2>
+                <h2 className={universityMapStyles.setUpMessage}>
+                    Can't find your university on the list?
+                </h2>
                 <Link className={universityMapStyles.btn} to="/set-up-a-KCSOC">
                     Set Up a KCSOC
                 </Link>

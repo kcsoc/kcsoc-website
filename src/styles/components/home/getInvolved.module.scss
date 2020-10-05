@@ -34,6 +34,7 @@
 
 .headline {
     margin: 20px 0;
+    text-align: center;
 }
 
 .btn {
@@ -45,6 +46,7 @@
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
     font-size: 40px;
     font-family: Montserrat;
     letter-spacing: 2px;
@@ -74,5 +76,38 @@
 }
 
 .meditator {
-    height: 500px;
+    height: 30vw;
+}
+
+@media only screen and (max-width: 1000px) {
+    .sheet {
+        width: 90%;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .container {
+        padding: 2rem 3rem 0;
+    }
+
+    .about-info {
+        flex-direction: column;
+
+        p {
+            margin-right: 0;
+        }
+    }
+
+    .meditator {
+        margin-top: 2rem;
+        height: 50vw;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+    }
+
+    .headline {
+         font-size: 2rem;
+    }
 }
