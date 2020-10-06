@@ -2,7 +2,8 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
 
-export default function Home() {
+
+export default function Explore() {
     return (
         <Layout>
             <Helmet>
@@ -12,7 +13,6 @@ export default function Home() {
                     content="Explore what KCSOC has to offer."
                 />
             </Helmet>
-            <h1>Explore page</h1>
         </Layout>
     )
 }

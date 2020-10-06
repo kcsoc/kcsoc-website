@@ -32,7 +32,7 @@ export default function UniversityMap() {
                 return (
                     <>
                         <h2>Glasgow</h2>
-                        <p>University of Glasgow KCSoc</p>
+                        <p>University of Glasgow KCSOC</p>
                     </>
                 )
 
@@ -40,7 +40,7 @@ export default function UniversityMap() {
                 return (
                     <>
                         <h2>Edinburgh</h2>
-                        <p>University of Edinburgh KCSoc</p>
+                        <p>University of Edinburgh KCSOC</p>
                     </>
                 )
 
@@ -48,7 +48,7 @@ export default function UniversityMap() {
                 return (
                     <>
                         <h2>Manchester</h2>
-                        <p>Manchester Metropolitan University KCSoc</p>
+                        <p>Manchester Metropolitan University KCSOC</p>
                     </>
                 )
 
@@ -56,7 +56,7 @@ export default function UniversityMap() {
                 return (
                     <>
                         <h2>Nottingham</h2>
-                        <p>University of Nottingham KCSoc</p>
+                        <p>University of Nottingham KCSOC</p>
                     </>
                 )
 
@@ -64,7 +64,7 @@ export default function UniversityMap() {
                 return (
                     <>
                         <h2>Loughborough</h2>
-                        <p>Loughborough University KCSoc</p>
+                        <p>Loughborough University KCSOC</p>
                     </>
                 )
 
@@ -72,7 +72,7 @@ export default function UniversityMap() {
                 return (
                     <>
                         <h2>Leicester</h2>
-                        <p>De Montfort University KCSoc</p>
+                        <p>De Montfort University KCSOC</p>
                     </>
                 )
 
@@ -80,7 +80,7 @@ export default function UniversityMap() {
                 return (
                     <>
                         <h2>Coventry</h2>
-                        <p>Coventry University KCSoc</p>
+                        <p>Coventry University KCSOC</p>
                     </>
                 )
 
@@ -88,7 +88,7 @@ export default function UniversityMap() {
                 return (
                     <>
                         <h2>Warwick</h2>
-                        <p>University of Warwick KCSoc</p>
+                        <p>University of Warwick KCSOC</p>
                     </>
                 )
 
@@ -96,23 +96,23 @@ export default function UniversityMap() {
                 return (
                     <>
                         <h2>Birmingham</h2>
-                        <p>Aston University KCSoc</p>
-                        <p>Birmingham City University KCSoc</p>
-                        <p>University of Birmingham KCSoc</p>
+                        <p>Aston University KCSOC</p>
+                        <p>Birmingham City University KCSOC</p>
+                        <p>University of Birmingham KCSOC</p>
                     </>
                 )
             case "cambridge":
                 return (
                     <>
                         <h2>Cambridge</h2>
-                        <p>University of Cambridge KCSoc</p>
+                        <p>University of Cambridge KCSOC</p>
                     </>
                 )
             case "oxford":
                 return (
                     <>
                         <h2>Oxford</h2>
-                        <p>University of Oxford KCSoc</p>
+                        <p>University of Oxford KCSOC</p>
                     </>
                 )
             case "hatfield":
@@ -121,7 +121,7 @@ export default function UniversityMap() {
                         <h2>Hatfield</h2>
                         <p>
                             University of Hertfordshire (College Lane Campus)
-                            KCSoc
+                            KCSOC
                         </p>
                     </>
                 )
@@ -129,14 +129,14 @@ export default function UniversityMap() {
                 return (
                     <>
                         <h2>Bristol</h2>
-                        <p>University of Bristol KCSoc</p>
+                        <p>University of Bristol KCSOC</p>
                     </>
                 )
             case "reading":
                 return (
                     <div>
                         <h2>Reading</h2>
-                        <p>University of Reading KCSoc</p>
+                        <p>University of Reading KCSOC</p>
                     </div>
                 )
 
@@ -145,18 +145,18 @@ export default function UniversityMap() {
                     <div>
                         <h2>London</h2>
 
-                        <p>Brunel University KCSoc</p>
-                        <p>City KCSoc</p>
-                        <p>Imperial College London KCSoc</p>
-                        <p>King's College London KCSoc</p>
-                        <p>Kingston University KCSoc</p>
-                        <p>London Metropolitan University KCSoc</p>
-                        <p>Queen Mary KCSoc</p>
-                        <p>Roehampton University KCSoc</p>
-                        <p>SOAS KCSoc</p>
-                        <p>St George's KCSoc</p>
-                        <p>University College London KCSoc</p>
-                        <p>University of East London KCSoc</p>
+                        <p>Brunel University KCSOC</p>
+                        <p>City KCSOC</p>
+                        <p>Imperial College London KCSOC</p>
+                        <p>King's College London KCSOC</p>
+                        <p>Kingston University KCSOC</p>
+                        <p>London Metropolitan University KCSOC</p>
+                        <p>Queen Mary KCSOC</p>
+                        <p>Roehampton University KCSOC</p>
+                        <p>SOAS KCSOC</p>
+                        <p>St George's KCSOC</p>
+                        <p>University College London KCSOC</p>
+                        <p>University of East London KCSOC</p>
                     </div>
                 )
 
@@ -164,14 +164,14 @@ export default function UniversityMap() {
                 return (
                     <>
                         <h2>Canterbury</h2>
-                        <p>University of Kent KCSoc</p>
+                        <p>University of Kent KCSOC</p>
                     </>
                 )
             case "southampton":
                 return (
                     <>
                         <h2>Southampton</h2>
-                        <p>University of Southampton KCSoc</p>
+                        <p>University of Southampton KCSOC</p>
                     </>
                 )
             default:
@@ -369,9 +369,11 @@ export default function UniversityMap() {
                 </div>
             </div>
             <div className={universityMapStyles.setUpContainer}>
-                <h2>Can't find your university on the list?</h2>
+                <h2 className={universityMapStyles.setUpMessage}>
+                    Can't find your university on the list?
+                </h2>
                 <Link className={universityMapStyles.btn} to="/set-up-a-kcsoc">
-                    Set Up a KCSoc
+                    Set Up a KCSOC
                 </Link>
             </div>
         </div>

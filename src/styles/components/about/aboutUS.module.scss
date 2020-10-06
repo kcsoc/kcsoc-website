@@ -232,3 +232,50 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+@media only screen and (max-width: 1200px) {
+    .top {
+        max-width: 90vw;
+        padding: 1rem;
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+    .subtitle-container {
+        height: 30vh;
+    }
+    .philosophy {
+        font-size: 3rem;
+    }
+
+    .h4 {
+        font-size: 3rem;
+    }
+    .featurebox2 {
+        width: 90vw;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .featurebox {
+        padding: 1rem;
+        margin: 0 auto 2rem;
+        width: 90vw;
+        box-sizing: border-box;
+        h2 {
+            font-size: 2rem;
+        }
+    }
+    .img {
+        height: 50vw;
+    }
+    .featurebox2 {
+        padding: 1rem;
+    }
+}

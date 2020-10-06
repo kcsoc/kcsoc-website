@@ -62,3 +62,28 @@
         color: black;
     }
 }
+
+@media only screen and (max-width: 1200px) {
+    .outer-container {
+        width: 90vw;
+    }
+    .title {
+        font-size: 2rem;
+        text-align: center;
+        margin-left: 0;
+    }
+    .menu-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .university-container {
+        width: 100%;
+    }
+    .event-type-container {
+        width: 100%;
+    }
+
+    .date-picker-container {
+        width: 100%;
+    }
+}

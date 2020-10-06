@@ -97,6 +97,7 @@ export default function EventInfo() {
             <div className={renderBackground()}>
                 <div className={eventInfoStyles.content}>{renderContent()}</div>
             </div>
+            <div className={eventInfoStyles.contentMobile}>{renderContent()}</div>
         </div>
     )
 }

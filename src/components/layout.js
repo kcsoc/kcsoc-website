@@ -1,22 +1,88 @@
-import React from "react"
+import React, { useState } from "react"
+import { Link } from "gatsby"
 import "../styles/global.scss"
-import underConstruction from "../../static/under-construction.png"
+import layoutStyles from "../styles/components/layout.module.scss"
+import MenuContext from "./contexts/menuContext"
+
 export default function Layout(props) {
+    const [menuShown, setMenuShown] = useState(false)
+    const [menuCross, setMenuCross] = useState(false)
+
     return (
         <>
-            <div className="desktop">{props.children}</div>
-            <div className="mobile">
-                <h2>Mobile not optimised</h2>
-                <p>
-                    Unfortunately, the KCSOC team has not optimised this website
-                    for mobile and tablet yet! We're working on it!
-                </p>
-                <p>
-                    In the meantime, please checkout kcsoc.com on a laptop
-                    or desktop to get the full experience!
-                </p>
-                <img src={underConstruction} alt="Under Construction" />
+            <div
+                className={`${layoutStyles.mobileMenu} ${
+                    !menuShown && layoutStyles.hidden
+                }`}
+            >
+                <nav className={layoutStyles.overlay}>
+                    <ul>
+                        <li>
+                            <Link
+                                href="/"
+                                activeClassName={layoutStyles.active}
+                            >
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href="/about"
+                                activeClassName={layoutStyles.active}
+                            >
+                                About
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href="/events"
+                                activeClassName={layoutStyles.active}
+                            >
+                                Events
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link
+                                href="/contact"
+                                activeClassName={layoutStyles.active}
+                            >
+                                Contact
+                            </Link>
+                        </li>
+                    </ul>
+                </nav>
+
+                <input
+                    type="checkbox"
+                    id="overlay-input"
+                    value={menuShown}
+                    onChange={() => {
+                        setMenuShown(!menuShown)
+                        setTimeout(() => {
+                            setMenuCross(!menuCross)
+                        }, 50)
+                    }}
+                    className={layoutStyles.overlayInput}
+                />
+                <label
+                    htmlFor="overlay-input"
+                    for="overlay-input"
+                    className={`${layoutStyles.overlayButton} ${
+                        menuCross && layoutStyles.cross
+                    }`}
+                >
+                    <span></span>
+                </label>
             </div>
+
+            <MenuContext.Provider
+                value={{
+                    menuCross,
+                }}
+            >
+                {props.children}
+            </MenuContext.Provider>
         </>
     )
 }

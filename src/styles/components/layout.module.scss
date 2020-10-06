@@ -1,0 +1,114 @@
+@media only screen and (min-width: 1300px) {
+    .mobile-menu {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+    .mobile-menu {
+        height: 100vh;
+        width: 100vw;
+        background-image: url(../../../static/watercolor-2.jpg);
+        background-position: center;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .overlay {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        &.active {
+            visibility: visible;
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            height: 100vh;
+            padding-left: 0;
+            list-style-type: none;
+            li {
+                padding: 1em;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.5em;
+                    &:hover {
+                        color: #333332;
+                    }
+                }
+            }
+        }
+    }
+
+    .overlay-button {
+        position: absolute;
+        right: 1em;
+        top: 2.5em;
+        padding: 26px 11px;
+        z-index: 5;
+        cursor: pointer;
+        user-select: none;
+        span {
+            height: 4px;
+            width: 35px;
+            border-radius: 2px;
+            background-color: white;
+            position: relative;
+            display: block;
+            transition: all 0.2s ease-in-out;
+            &:before {
+                top: -10px;
+                visibility: visible;
+            }
+            &:after {
+                top: 10px;
+            }
+            &:before,
+            &:after {
+                height: 4px;
+                width: 35px;
+                border-radius: 2px;
+                background-color: white;
+                position: absolute;
+                content: "";
+                transition: all 0.2s ease-in-out;
+                right: 0;
+            }
+        }
+    }
+
+    .overlay-input {
+        display: none;
+    }
+
+    .cross {
+        &:hover span,
+        span {
+            background: transparent;
+        }
+        span {
+            &:before {
+                transform: rotate(45deg) translate(7px, 7px);
+                opacity: 1;
+            }
+            &:after {
+                transform: rotate(-45deg) translate(7px, -7px);
+            }
+        }
+    }
+}

@@ -34,8 +34,33 @@
     svg {
         color: black;
         position: absolute;
-        left:50%;
-        right: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
 
+@media only screen and (max-width: 1200px) {
+    .top {
+        max-width: 90vw;
+     
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .info-container {
+        flex-direction: column;
+        position: relative;
+    }
+    .info-box {
+        width: 80vw;
+        margin-bottom: 1rem;
     }
 }

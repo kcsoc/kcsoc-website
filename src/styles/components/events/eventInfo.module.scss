@@ -1,8 +1,9 @@
-.outerContainer {
+.outer-container {
     display: flex;
     flex-direction: row;
     margin: 0 auto 5rem;
-    width: 1100px;
+    max-width: 1100px;
+    width: 90%;
     min-height: 500px;
 }
 
@@ -89,4 +90,57 @@
 
 .retreats {
     background-image: url(/retreats.jpg);
+}
+
+.content-mobile {
+    visibility: hidden;
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .outer-container {
+        flex-direction: column;
+        min-height: 0;
+    }
+    .menu {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 1rem;
+        }
+        button {
+            padding: 0;
+        }
+    }
+
+    .content-container {
+        width: 90vw;
+        height: 50vw;
+        position: relative;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .content {
+        visibility: hidden;
+    }
+
+    .content-mobile {
+        align-self: flex-end;
+        align-items: center;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+        visibility: visible;
+
+        p {
+            color: white;
+            line-height: 1.5;
+        }
+    }
 }

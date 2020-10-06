@@ -22,6 +22,22 @@ export default function GetInvolved() {
         setIsTriggered(!isTriggered)
     }
 
+    const renderWidth = () => {
+        if (window && window.innerWidth < 1000) {
+            return `${window.innerWidth * 0.7} px`
+        }
+
+        return "810px"
+    }
+    console.log(renderWidth())
+
+    const renderHeight = () => {
+        if (window && window.innerWidth < 1000) {
+            return `${Math.floor((window.innerWidth * 0.8) / 810)} px`
+        }
+        return "456px"
+    }
+
     return (
         <div
             className={`${getInvolvedStyles.container} ${
@@ -33,8 +49,8 @@ export default function GetInvolved() {
                 <ReactPlayer
                     url="https://www.youtube.com/watch?v=s6QJBk0NZEM"
                     controls={true}
-                    width="810px"
-                    height="456px"
+                    width={renderWidth()}
+                    height={renderHeight()}
                 />
                 <h1 className={getInvolvedStyles.headline}>
                     Be Part of Something Amazing
@@ -47,7 +63,7 @@ export default function GetInvolved() {
                 <div className={getInvolvedStyles.aboutInfo}>
                     <div>
                         <h2>What We Do</h2>
-                        <p>
+                        <p className={getInvolvedStyles.aboutMessage}>
                             The Krishna Consciousness Society is a platform
                             which brings together deep thinkers and spiritual
                             seekers for interactive seminars, refreshing

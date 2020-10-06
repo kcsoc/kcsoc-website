@@ -10,15 +10,19 @@
 }
 
 .image {
-    width: 100%;
     height: 100%;
+    width: 100%;
     position: absolute;
     transition: opacity 0.3s linear;
+    display: flex;
+    justify-content: center;
+    background-image: url(../../../../static/watercolor-2.jpg);
 }
 
 .image img {
     height: 100%;
-    width: 100%;
+    margin: auto;
+    // width: 100%;
 }
 
 .content {
@@ -32,6 +36,7 @@
     opacity: 0;
     transform: translate(-50%, -50%);
     transition: opacity 0.3s linear;
+    height: 100%;
     width: 100%;
 }
 
@@ -99,5 +104,39 @@
         transform: translateY(-3px) scale(1.1);
     }
     -webkit-backface-visibility: hidden;
-    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    -webkit-transform: translateZ(0) scale(1, 1);
+}
+
+.icons-mobile {
+    display: none;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 90vw;
+        height: 65vw;
+    }
+
+    .content {
+        width: 90vw;
+        height: 65vw;
+
+        p {
+            font-size: 0.8rem;
+        }
+    }
+    .icons {
+        visibility: hidden;
+        display: none;
+    }
+    .icons-mobile {
+        display: flex;
+        margin: 0 0 2rem;
+        position: relative;
+        visibility: visible;
+        div {
+            padding: 0 1rem;
+        }
+    }
 }

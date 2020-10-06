@@ -6,11 +6,12 @@
     padding: 0;
     perspective: 1px;
     transform-style: preserve-3d;
-    min-height:100vh;
+    min-height: 100vh;
     height: 100%;
     width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+    position: relative;
 }
 
 @keyframes transitionIn {
@@ -20,5 +21,11 @@
 
     to {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .fade-in {
+        width: 100vw;
     }
 }
