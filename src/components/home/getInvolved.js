@@ -60,7 +60,9 @@ export default function GetInvolved() {
                 </Link>
             </div>
             <Fade>
-                <div className={getInvolvedStyles.aboutInfo}>
+                <div
+                    className={`${getInvolvedStyles.aboutInfo} ${getInvolvedStyles.desktopOnly}`}
+                >
                     <div>
                         <h2>What We Do</h2>
                         <p className={getInvolvedStyles.aboutMessage}>
@@ -89,11 +91,47 @@ export default function GetInvolved() {
                         src={lotusPosition}
                     />
                 </div>
-
-                <UniversityMap />
-                <QuoteSlider />
-                <NeverForget trigger={trigger} isTriggered={isTriggered} />
+                <div className={getInvolvedStyles.desktopOnly}>
+                    <UniversityMap />
+                    <QuoteSlider />
+                    <NeverForget trigger={trigger} isTriggered={isTriggered} />
+                </div>
             </Fade>
+            <div
+                className={`${getInvolvedStyles.aboutInfo} ${getInvolvedStyles.mobileOnly}`}
+            >
+                <div>
+                    <h2>What We Do</h2>
+                    <p className={getInvolvedStyles.aboutMessage}>
+                        The Krishna Consciousness Society is a platform which
+                        brings together deep thinkers and spiritual seekers for
+                        interactive seminars, refreshing retreats and
+                        association of like-minded people.
+                        <br />
+                        <br />
+                        Would you say you’re a deep thinker? Are you interested
+                        in finding out how to apply spiritual principles to your
+                        every day life, to not only benefit your life, but the
+                        lives of others? The Krishna Consciousness Society
+                        offers a platform to evolve the mind, give direction in
+                        life, and reveal a deeper level of insight with
+                        like-minded people.
+                    </p>
+                    <Link to="/about">
+                        <p>Find out more</p>
+                    </Link>
+                </div>
+
+                <img
+                    className={getInvolvedStyles.meditator}
+                    alt="meditation"
+                    src={lotusPosition}
+                />
+            </div>
+
+            <UniversityMap />
+            <QuoteSlider />
+            <NeverForget trigger={trigger} isTriggered={isTriggered} />
         </div>
     )
 }
