@@ -39,7 +39,9 @@ export default function GetInvolvedForm() {
     return (
         <div className={formStyles.container}>
             <form className={formStyles.form} onSubmit={handleSubmit(onSubmit)}>
-                <label htmlFor="firstName" className={formStyles.label}>First Name</label>
+                <label htmlFor="firstName" className={formStyles.label}>
+                    First Name
+                </label>
                 <input name="firstName" ref={register({ required: true })} />
                 {errors.firstName && (
                     <p className={formStyles.errorMessage}>
@@ -47,7 +49,9 @@ export default function GetInvolvedForm() {
                     </p>
                 )}
 
-                <label htmlFor="lastName" className={formStyles.label}>Last Name</label>
+                <label htmlFor="lastName" className={formStyles.label}>
+                    Last Name
+                </label>
                 <input name="lastName" ref={register({ required: true })} />
                 {errors.lastName && (
                     <p className={formStyles.errorMessage}>
@@ -55,7 +59,9 @@ export default function GetInvolvedForm() {
                     </p>
                 )}
 
-                <label htmlFor="university" className={formStyles.label}>University</label>
+                <label htmlFor="university" className={formStyles.label}>
+                    University
+                </label>
                 <select
                     name="university"
                     defaultValue="Select"
@@ -64,10 +70,10 @@ export default function GetInvolvedForm() {
                     <option value="" selected>
                         Select
                     </option>
-
-                    <option value="Brunel">
-                        Not affiliated with a university
+                    <option value="Not affiliated / Other University">
+                        Not affiliated to a university / Other
                     </option>
+                    <option value="Brunel">Brunel</option>
                     <option value="City">City</option>
                     <option value="Imperial">Imperial</option>
                     <option value="KCL">KCL</option>
@@ -104,7 +110,9 @@ export default function GetInvolvedForm() {
                     </p>
                 )}
 
-                <label htmlFor="email" className={formStyles.label}>Email Address</label>
+                <label htmlFor="email" className={formStyles.label}>
+                    Email Address
+                </label>
                 <input
                     name="email"
                     ref={register({
@@ -125,7 +133,9 @@ export default function GetInvolvedForm() {
                         Valid email address required.
                     </p>
                 )}
-                <label  htmlFor="phoneNumber" className={formStyles.label}>Phone Number</label>
+                <label htmlFor="phoneNumber" className={formStyles.label}>
+                    Phone Number
+                </label>
                 <input name="phoneNumber" ref={register({ required: true })} />
                 {errors.phoneNumber && (
                     <p className={formStyles.errorMessage}>
