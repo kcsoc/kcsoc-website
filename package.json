@@ -38,7 +38,7 @@
     "react-rainbow-components": "^1.16.0",
     "react-responsive-carousel": "^3.2.9",
     "react-reveal": "^1.2.2",
-    "react-select": "^3.1.0",
+    "react-select": "^4.3.1",
     "react-spinners": "^0.9.0",
     "react-visibility-sensor": "^5.1.1"
   },
