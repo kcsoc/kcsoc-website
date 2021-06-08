@@ -1666,10 +1666,10 @@
     native-url "^0.2.6"
     schema-utils "^2.6.5"
 
-"@rainbow-modules/hooks@^0.1.2":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@rainbow-modules/hooks/-/hooks-0.1.4.tgz#87940e81a81ac7dda599bbd266d928bfa3043b77"
-  integrity sha512-S0zn26xH5RRIoDKevDq1A6S17c9c/n5pPZeYVtRBzvUd2IYb9ZtR3/X25sKZwqugGnD6MSpS7SnImQJW7X1OnA==
+"@rainbow-modules/hooks@^0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@rainbow-modules/hooks/-/hooks-0.12.0.tgz#d1293691aff4d94202b694d5004254fb25900824"
+  integrity sha512-ndpr7Hazm+np5wYwPPGKsxFMKwFyfxiYQTy/cMo/nQyi7orcYR8myU2/qsHcNJXLPA4UQl6s1la3rQnVIQ4NFA==
 
 "@reach/alert@0.10.3":
   version "0.10.3"
@@ -12630,12 +12630,12 @@ react-player@^2.6.1:
     prop-types "^15.7.2"
     react-fast-compare "^3.0.1"
 
-react-rainbow-components@^1.16.0:
-  version "1.20.0"
-  resolved "https://registry.yarnpkg.com/react-rainbow-components/-/react-rainbow-components-1.20.0.tgz#6765efe666cecadb4ef40d590015a821f7686e6c"
-  integrity sha512-dO6dF/xVIiHcBQL/enOgIvheiiKsm+w1oXZ7yaqMZEoRy4CbBih8lnKKAkTZYuh/FFdFB/LwtGQ0iUISYrvP6Q==
+react-rainbow-components@^1.25.0:
+  version "1.25.0"
+  resolved "https://registry.yarnpkg.com/react-rainbow-components/-/react-rainbow-components-1.25.0.tgz#785b81bb877c6e82ddc8bbba50f6aa1dbd889d5c"
+  integrity sha512-8NHJ2gj68X5nOGny5qocpcMd2AI8o0c3BsVrmuoulioNqxSqFPmGPlTQRRFHdCROfWYo/TbptH+0re328Q6x+A==
   dependencies:
-    "@rainbow-modules/hooks" "^0.1.2"
+    "@rainbow-modules/hooks" "^0.12.0"
     autosize "^4.0.2"
     chart.js "2.7.3"
     clipboard-copy "^2.0.0"
