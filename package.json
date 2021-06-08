@@ -16,7 +16,7 @@
   "dependencies": {
     "@loadable/component": "^5.13.2",
     "background-image-on-load": "^1.1.0",
-    "chroma-js": "^2.1.0",
+    "chroma-js": "^2.1.2",
     "gatsby": "^2.24.47",
     "gatsby-background-image": "^1.1.2",
     "gatsby-plugin-react-helmet": "^3.3.10",
