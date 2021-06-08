@@ -14,7 +14,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@loadable/component": "^5.13.2",
+    "@loadable/component": "^5.15.0",
     "background-image-on-load": "^1.1.0",
     "chroma-js": "^2.1.0",
     "gatsby": "^2.24.47",
