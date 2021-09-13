@@ -11,6 +11,7 @@ export default function GetInvolvedForm() {
     const url = process.env.GATSBY_SERVER_URL.replace(/\/$/, "")
 
     const onSubmit = async data => {
+        console.log(data)
         try {
             setDisabledButton(true)
             setMessage("")
@@ -142,7 +143,13 @@ export default function GetInvolvedForm() {
                         Phone number is required.
                     </p>
                 )}
+                <label htmlFor="studentID" className={formStyles.label}>
+                    Student ID
+                </label>
+                <input name="studentID" ref={register({ required: false })} />
+
                 <input type="submit" disabled={disabledButton} />
+
                 <p className={formStyles.message}>{message}</p>
             </form>
         </div>
