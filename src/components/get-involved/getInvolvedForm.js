@@ -74,36 +74,45 @@ export default function GetInvolvedForm() {
                     <option value="Not affiliated / Other University">
                         Not affiliated to a university / Other
                     </option>
+                    <option value="Anglia Ruskin">Anglia Ruskin</option>
+                    <option value="Aston">Aston</option>
+                    <option value="Birmingham">Birmingham</option>
+                    <option value="Birmingham City">Birmingham City</option>
+                    <option value="Brighton and Sussex">
+                        Brighton and Sussex
+                    </option>
+                    <option value="Bristol">Bristol</option>
                     <option value="Brunel">Brunel</option>
+                    <option value="Cambridge">Cambridge</option>
                     <option value="City">City</option>
+                    <option value="Coventry">Coventry</option>
+                    <option value="De Montfort">De Montfort</option>
+                    <option value="East London">East London</option>
+                    <option value="Edinburgh">Edinburgh</option>
+                    <option value="Glasgow">Glasgow</option>
+                    <option value="Hertfordshire">Hertfordshire</option>
                     <option value="Imperial">Imperial</option>
                     <option value="KCL">KCL</option>
+                    <option value="Kent">Kent</option>
                     <option value="Kingston">Kingston</option>
+                    <option value="Lincolnshire">Lincolnshire</option>
+                    <option value="London Goldsmiths">Goldsmiths</option>
                     <option value="London Met">London Met</option>
+                    <option value="London Southbank">London Southbank</option>
+                    <option value="Loughborough">Loughborough</option>
+                    <option value="Manchester Met">Manchester Met</option>
+                    <option value="Nottingham">Nottingham</option>
+                    <option value="Nottingham Trent">Nottingham Trent</option>
+                    <option value="Oxford">Oxford</option>
                     <option value="Queen Mary">Queen Mary</option>
+                    <option value="Reading">Reading</option>
                     <option value="Roehampton">Roehampton</option>
                     <option value="SOAS">SOAS</option>
-                    <option value="St George's">St George's</option>
-                    <option value="UCL">UCL</option>
-                    <option value="East London">East London</option>
-                    <option value="Kent">Kent</option>
                     <option value="Southampton">Southampton</option>
-                    <option value="Hertfordshire">Hertfordshire</option>
-                    <option value="Cambridge">Cambridge</option>
-                    <option value="Oxford">Oxford</option>
-                    <option value="Bristol">Bristol</option>
-                    <option value="Reading">Reading</option>
+                    <option value="St George's">St George's</option>
+                    <option value="Staffordshire">Staffordshire</option>
+                    <option value="UCL">UCL</option>
                     <option value="Warwick">Warwick</option>
-                    <option value="DMU">DMU</option>
-                    <option value="Coventry">Coventry</option>
-                    <option value="Aston">Aston</option>
-                    <option value="BCU">BCU</option>
-                    <option value="Birmingham">Birmingham</option>
-                    <option value="Loughborough">Loughborough</option>
-                    <option value="Nottingham">Nottingham</option>
-                    <option value="MMU">MMU</option>
-                    <option value="Glasgow">Glasgow</option>
-                    <option value="Edinburgh">Edinburgh</option>
                 </select>
                 {errors.university && (
                     <p className={formStyles.errorMessage}>
