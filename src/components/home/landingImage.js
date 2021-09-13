@@ -11,7 +11,7 @@ export default function landingImage() {
                 <div className={landingImageStyles.innerContainer}>
                     <h1 className={landingImageStyles.title}>Find Yourself</h1>
                     <h2 className={landingImageStyles.subtitle}>
-                        Your online spiritual experience
+                        Your on-campus spiritual experience
                     </h2>
                 </div>
 
