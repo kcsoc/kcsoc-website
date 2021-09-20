@@ -123,6 +123,11 @@ export default function GetInvolvedForm() {
                     Course
                 </label>
                 <input name="course" ref={register({ required: true })} />
+                {errors.course && (
+                    <p className={formStyles.errorMessage}>
+                        Course is required.
+                    </p>
+                )}
 
                 <label htmlFor="email" className={formStyles.label}>
                     Email Address
@@ -161,6 +166,11 @@ export default function GetInvolvedForm() {
                     Student ID
                 </label>
                 <input name="studentID" ref={register({ required: true })} />
+                {errors.studentID && (
+                    <p className={formStyles.errorMessage}>
+                        Student ID is required.
+                    </p>
+                )}
 
                 <label
                     htmlFor="somethingInteresting"
@@ -180,6 +190,12 @@ export default function GetInvolvedForm() {
                     rows={4}
                     ref={register({ required: true })}
                 />
+                {/* That's a smiley face encoded */}
+                {errors.somethingInteresting && (
+                    <p className={formStyles.errorMessage}>
+                        Tell us a fun fact! &#58;&#41; 
+                    </p>
+                )}
 
                 <input type="submit" disabled={disabledButton} />
 
