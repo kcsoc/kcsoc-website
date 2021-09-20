@@ -122,7 +122,7 @@ export default function GetInvolvedForm() {
                 <label htmlFor="course" className={formStyles.label}>
                     Course
                 </label>
-                <input name="course" ref={register({ required: false })} />
+                <input name="course" ref={register({ required: true })} />
 
                 <label htmlFor="email" className={formStyles.label}>
                     Email Address
@@ -157,10 +157,10 @@ export default function GetInvolvedForm() {
                         Phone number is required.
                     </p>
                 )}
-                <label htmlFor="studentID" className={formStyles.label}>
+                <label htmlFor="studentID" className={formStyles.label} ref={register({ required: true })}>
                     Student ID
                 </label>
-                <input name="studentID" ref={register({ required: false })} />
+                <input name="studentID" ref={register({ required: true })} />
 
                 <label
                     htmlFor="somethingInteresting"
