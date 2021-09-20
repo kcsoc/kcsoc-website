@@ -15,11 +15,12 @@ export default function GetInvolvedInfo() {
                         wide as we can.
                     </p>
                     <p>
-                        Currently, due to the new lockdown rules imposed by the
-                        UK government, we are not able to hold our sessions in
-                        person. Rather, we have moved our talks, workshops and
-                        retreats online, so you can enjoy our sessions from the
-                        comfort of your home!
+                        After a full year of KCSOC online over lockdown, we're
+                        extremely excited to announce that KCSOCs are returning
+                        to in-person events across the country! Get Involved
+                        today, to make new spiritual friendships, learn
+                        incredible mind-blowing philsophy and experience the
+                        ultimate happiness!
                     </p>
                 </div>
 
