@@ -169,11 +169,16 @@ export default function GetInvolvedForm() {
                     Tell us something interesting about yourself
                 </label>
                 <textarea
-                    style={{ resize: "none" }}
+                    style={{
+                        resize: "none",
+                        "-webkit-box-sizing": "border-box",
+                        "-moz-box-sizing": "border-box",
+                        "box-sizing": "border-box",
+                        width: "100%",
+                    }}
                     name="somethingInteresting"
+                    rows={4}
                     ref={register({ required: false })}
-                    rows="4"
-                    cols="60"
                 />
 
                 <input type="submit" disabled={disabledButton} />
