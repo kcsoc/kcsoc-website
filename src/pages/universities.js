@@ -1,6 +1,9 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
+import UniversityMap from "../components/home/universityMap"
+import Header from "../components/header"
+import styles from "../styles/components/universities/universities.module.scss"
 
 export default function Home() {
     return (
@@ -8,19 +11,14 @@ export default function Home() {
             <Helmet>
                 <title>Universities | KCSOC</title>
                 <meta
-                    name="description"
+                    name="KCSOC Universities"
                     content="KCSOC runs university societies around the UK"
                 />
             </Helmet>
-            <h2>We have x many KCSocs at universities around the world!</h2>
-            <h2>
-                Don't see your university on the list? Why not help start one at
-                your university?
-            </h2>
+            <Header isOpaque={true} dark={true} />
 
-            <h1>Map(s) here</h1>
-
-            <h1>University images here</h1>
+            <h1 className={styles.title}>Find Your KCSOC</h1>
+            <UniversityMap />
         </Layout>
     )
 }
