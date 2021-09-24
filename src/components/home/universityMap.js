@@ -1,6 +1,9 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import universityMapStyles from "../../styles/components/home/universityMap.module.scss"
+import mapPointer from "../../../static/map-pointer.png"
+import mapPointerInverted from "../../../static/map-pointer-inverted.png"
+import ukMap from "../../../static/uk.png"
 
 export default function UniversityMap() {
     const [selected, setSelected] = useState("")
@@ -185,14 +188,14 @@ export default function UniversityMap() {
                 <div className={universityMapStyles.mapContainer}>
                     <img
                         className={universityMapStyles.map}
-                        src="uk.png"
+                        src={ukMap}
                         alt="uk-map"
                     />
 
                     <input
                         type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.glasgow}`}
-                        src="map-pointer.png"
+                        src={mapPointer}
                         alt="glasgow"
                         onClick={() => {
                             setInfo("glasgow")
@@ -202,7 +205,7 @@ export default function UniversityMap() {
                     <input
                         type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.edinburgh}`}
-                        src="map-pointer-inverted.png"
+                        src={mapPointerInverted}
                         alt="edinburgh"
                         onClick={() => {
                             setInfo("edinburgh")
@@ -212,7 +215,7 @@ export default function UniversityMap() {
                     <input
                         type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.manchester}`}
-                        src="map-pointer.png"
+                        src={mapPointer}
                         alt="manchester"
                         onClick={() => {
                             setInfo("manchester")
@@ -222,7 +225,7 @@ export default function UniversityMap() {
                     <input
                         type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.nottingham}`}
-                        src="map-pointer.png"
+                        src={mapPointer}
                         alt="nottingham"
                         onClick={() => {
                             setInfo("nottingham")
@@ -232,7 +235,7 @@ export default function UniversityMap() {
                     <input
                         type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.loughborough}`}
-                        src="map-pointer-inverted.png"
+                        src={mapPointerInverted}
                         alt="loughborough"
                         onClick={() => {
                             setInfo("loughborough")
@@ -242,7 +245,7 @@ export default function UniversityMap() {
                     <input
                         type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.leicester}`}
-                        src="map-pointer.png"
+                        src={mapPointer}
                         alt="leicester"
                         onClick={() => {
                             setInfo("leicester")
@@ -252,7 +255,7 @@ export default function UniversityMap() {
                     <input
                         type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.coventry}`}
-                        src="map-pointer-inverted.png"
+                        src={mapPointerInverted}
                         alt="coventry"
                         onClick={() => {
                             setInfo("coventry")
@@ -262,7 +265,7 @@ export default function UniversityMap() {
                     <input
                         type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.warwick}`}
-                        src="map-pointer.png"
+                        src={mapPointer}
                         alt="warwick"
                         onClick={() => {
                             setInfo("warwick")
@@ -272,7 +275,7 @@ export default function UniversityMap() {
                     <input
                         type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.birmingham}`}
-                        src="map-pointer-inverted.png"
+                        src={mapPointerInverted}
                         alt="birmingham"
                         onClick={() => {
                             setInfo("birmingham")
@@ -282,7 +285,7 @@ export default function UniversityMap() {
                     <input
                         type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.cambridge}`}
-                        src="map-pointer-inverted.png"
+                        src={mapPointerInverted}
                         alt="cambridge"
                         onClick={() => {
                             setInfo("cambridge")
@@ -292,7 +295,7 @@ export default function UniversityMap() {
                     <input
                         type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.oxford}`}
-                        src="map-pointer-inverted.png"
+                        src={mapPointerInverted}
                         alt="oxford"
                         onClick={() => {
                             setInfo("oxford")
@@ -302,7 +305,7 @@ export default function UniversityMap() {
                     <input
                         type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.hatfield}`}
-                        src="map-pointer.png"
+                        src={mapPointer}
                         alt="hatfield"
                         onClick={() => {
                             setInfo("hatfield")
@@ -312,7 +315,7 @@ export default function UniversityMap() {
                     <input
                         type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.bristol}`}
-                        src="map-pointer-inverted.png"
+                        src={mapPointerInverted}
                         alt="bristol"
                         onClick={() => {
                             setInfo("bristol")
@@ -322,7 +325,7 @@ export default function UniversityMap() {
                     <input
                         type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.reading}`}
-                        src="map-pointer.png"
+                        src={mapPointer}
                         alt="reading"
                         onClick={() => {
                             setInfo("reading")
@@ -332,7 +335,7 @@ export default function UniversityMap() {
                     <input
                         type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.london}`}
-                        src="map-pointer-inverted.png"
+                        src={mapPointerInverted}
                         alt="london"
                         onClick={() => {
                             setInfo("london")
@@ -342,7 +345,7 @@ export default function UniversityMap() {
                     <input
                         type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.canterbury}`}
-                        src="map-pointer.png"
+                        src={mapPointer}
                         alt="canterbury"
                         onClick={() => {
                             setInfo("canterbury")
@@ -352,7 +355,7 @@ export default function UniversityMap() {
                     <input
                         type="image"
                         className={`${universityMapStyles.pointer} ${universityMapStyles.southampton}`}
-                        src="map-pointer-inverted.png"
+                        src={mapPointerInverted}
                         alt="southampton"
                         onClick={() => {
                             setInfo("southampton")
