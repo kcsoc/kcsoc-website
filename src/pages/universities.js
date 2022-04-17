@@ -14,6 +14,7 @@ export default function Home() {
                     name="KCSOC Universities"
                     content="KCSOC runs university societies around the UK"
                 />
+                <script defer data-domain="kcsoc.com" src="https://plausible.cc/js/script.js"></script>
             </Helmet>
             <Header isOpaque={true} dark={true} />
 

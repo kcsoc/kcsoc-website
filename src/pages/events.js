@@ -25,6 +25,7 @@ export default function Events() {
             <Helmet>
                 <title>Events | KCSOC</title>
                 <meta name="description" content="KCSOC Events" />
+                <script defer data-domain="kcsoc.com" src="https://plausible.cc/js/script.js"></script>
             </Helmet>
             <FadeIn>
                 <Header isOpaque={true} dark={true} />

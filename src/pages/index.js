@@ -24,6 +24,7 @@ export default function Home() {
                     name="description"
                     content="Welcome to KCSOC, the Krishna Consciousness Society."
                 />
+                <script defer data-domain="kcsoc.com" src="https://plausible.cc/js/script.js"></script>
             </Helmet>
             <FadeIn>
                 <LandingImage />
@@ -38,6 +39,7 @@ export default function Home() {
                     name="description"
                     content="Welcome to KCSOC, the Krishna Consciousness Society."
                 />
+                <script defer data-domain="kcsoc.com" src="https://plausible.cc/js/script.js"></script>
             </Helmet>
             <div className={loadingStyles.container}>
                 <BackgroundImageOnLoad

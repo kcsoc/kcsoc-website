@@ -15,6 +15,7 @@ export default function GetInvolved() {
                     name="description"
                     content="Get involved with KCSOC. Sign up to our events!"
                 />
+                <script defer data-domain="kcsoc.com" src="https://plausible.cc/js/script.js"></script>
             </Helmet>
             <FadeIn>
                 <Header isOpaque={true} dark={true} />

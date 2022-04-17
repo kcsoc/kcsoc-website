@@ -13,6 +13,7 @@ export default function NotFound() {
             <Helmet>
                 <title>404 Not Found | KCSOC</title>
                 <meta name="description" content="About KCSOC" />
+                <script defer data-domain="kcsoc.com" src="https://plausible.cc/js/script.js"></script>
             </Helmet>
             <FadeIn>
                 <Header isOpaque={true} dark={true} />

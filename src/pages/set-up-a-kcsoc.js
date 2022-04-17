@@ -12,6 +12,7 @@ export default function SetUpAKCSOC() {
             <Helmet>
                 <title>Set Up a KCSOC | KCSOC</title>
                 <meta name="description" content="Help set up a KCSOC" />
+                <script defer data-domain="kcsoc.com" src="https://plausible.cc/js/script.js"></script>
             </Helmet>
             <FadeIn>
                 <Header isOpaque={true} dark={true} />

@@ -11,6 +11,7 @@ export default function Home() {
                     name="description"
                     content="KCSOC Shop"
                 />
+                <script defer data-domain="kcsoc.com" src="https://plausible.cc/js/script.js"></script>
             </Helmet>
             <h1>Shop page</h1>
         </Layout>

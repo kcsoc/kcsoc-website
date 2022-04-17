@@ -12,6 +12,7 @@ export default function Explore() {
                     name="description"
                     content="Explore what KCSOC has to offer."
                 />
+                <script defer data-domain="kcsoc.com" src="https://plausible.cc/js/script.js"></script>
             </Helmet>
         </Layout>
     )

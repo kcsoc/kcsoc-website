@@ -48,6 +48,7 @@ export default function Home() {
             <Helmet>
                 <title>About | KCSOC</title>
                 <meta name="description" content="About KCSOC" />
+                <script defer data-domain="kcsoc.com" src="https://plausible.cc/js/script.js"></script>
             </Helmet>
             <FadeIn>
                 <Header isOpaque={true} dark={true} />
