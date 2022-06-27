@@ -162,15 +162,6 @@ export default function GetInvolvedForm() {
                         Phone number is required.
                     </p>
                 )}
-                <label htmlFor="studentID" className={formStyles.label}>
-                    Student ID
-                </label>
-                <input name="studentID" ref={register({ required: true })} />
-                {errors.studentID && (
-                    <p className={formStyles.errorMessage}>
-                        Student ID is required.
-                    </p>
-                )}
 
                 <label
                     htmlFor="somethingInteresting"
